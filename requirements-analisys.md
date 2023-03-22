@@ -11,6 +11,7 @@ Wymagania do systemu:
 *obsługa bonów/karty rabatowej
 *zapisywanie listy zakupów na później
 *wczytywanie listy zakupów
+*zwrot produktu
 
 
 
@@ -38,7 +39,7 @@ Zadanie 3: finalizacja zakupów
 
 ...
 user: to będzie wszystko
-system: chcesz przejśc to płatności?
+system: chcesz przejśc do płatności?
 user: tak
 system: koszyk, zapisany, czy chcesz abym przeczytał wszystkie artykuły w koszyku?
 user: nie
@@ -89,8 +90,26 @@ user: nie, chcę zapłacić
 system: suma zakupów łącznie wyniesie 69 cebulionów
 ....
 
+Zadanie 6: Proponowanie podobnych produktów w przypadku braku oczekiwanego
 
+user: proszę dodać do koszyka batonik "Mars"
+system: Aktualnie batonik "Mars" jest niedostępny, proponuję batoniki: "Bounty", "Twix", "Lion"
+user: dobrze, poproszę "Lion"
+system: Batonik "Lion" został dodany do koszyka
+.... 
 
+Zadanie 7: Zwrot produktu 
+
+user: dzień dobry, ser "Gouda", który niedawno zakupiłem u Państwa w sklepie okazał się spleśniały
+system: Dzień dobry, w takiej sytuacji możliwy jest zwrot pieniędzy lub wybór innego produktu w podobnej cenie
+user: dobrze, poproszę o wymiane produktu na ser "Cheddar" lub ser "Edamski"
+system: Dostępne są oba sery, proszę o wybór jednego
+user: niech będzie ser "Cheddar"
+system: Proszę o podanie numeru zamówienia (optional: oraz dowodu wadliwego produktu, który zostanie sprawdzony przez pracownika sklepu/innego bota) 
+user: XYZ (optional: gouda.jpg)
+...
+system: reklamacja została przyjęta
+...
 
 
 
