@@ -3,11 +3,11 @@
 
 Wymagania do systemu:
 *rozpoczęcie zakupów
+*informowanie o promocjach/sugerowanie dostępnych promocji
 *finalizacja zakupów
 *anulowanie złożonego zamówienia
-*Dodawanie & usuwanie przedmiotów do koszyka
+*dodawanie & usuwanie przedmiotów do koszyka
 *proponowanie podobnych produktów (jeśli nie ma danego produktu w ofercie)
-*sugerowanie dostępnych promocji
 *obsługa bonów/karty rabatowej
 *zapisywanie listy zakupów na później
 *wczytywanie listy zakupów
@@ -23,7 +23,7 @@ system: do koszyka zostały dodane: parówki z serem, makaron świderki oraz 4-p
 user: to będzie wszystko
 system: Dziękujemy, złożone zamówienie zostało przyjęte do realizacji. 
 
-Zadanie 2: informowanie o promocjach
+Zadanie 2: informowanie o promocjach/sugerowanie dostępnych promocji
 
 user: dodaj do koszyka masło 82% "Galaktyczna dolina"
 system: do koszyka dodano: masło 82% "Galaktyczna dolina. *Obecnie mamy promocje 3+1 dla masła 82% "Galaktylos", czy chciałbyś/chciałabyś skorzystać z promocji?*
@@ -32,8 +32,6 @@ system: *przy zakupie masła "Galaktylos" w promocji 3+1 zapłacisz 20 cebulion�
 user: nie
 system: dobrze, czy chcesz kupić coś jeszcze?
 ...
-
-
 
 Zadanie 3: finalizacja zakupów
 
@@ -57,8 +55,21 @@ system: zakupy zostały opłacone, dziekujemy za korzystanie z usług sklepu "Ga
 
 
 Zadanie 4: Anulowanie złożonego zamówienia
-...
+user: chciałbym anulować ostatnie zamówienie
+system: podaj numer karty klienta lub numer telefonu
+user: 420-213-769
+system: chcesz anulować zamówienie numer 1, 2 czy 3
+user: zamówienie numer 2
+system: czy potwierdzasz anulowanie zamównienia nr 2?
+user: tak, anuluj zamówienie
+system: zamówienie anulowano
 
+lub:
+system: chcesz anulować zamówienie numer 1, 2 czy 3
+user: zamówienie numer 1
+system: zamówienie numer 1 jest już w realizacji. Za anulowanie tego zamówienia nie otrzymasz zwrotu gotówki. Czy potwierdzasz anulowanie zamówienia numer 1?
+user: nie
+system: zamówienie nie zostało anulowane. Czy coś jeszcze mogę dla Ciebie zrobić?
 
 
 Zadanie 5: Dodawanie przedmiotów do koszyka oraz ich usuwanie
@@ -77,7 +88,7 @@ system: zawartość koszyka:
         - wódka "Marsówka"
 
 user: proszę usunąć awokado
-system: awokado zostałó usunięte
+system: awokado zostało usunięte
 user: a może nie, niech awokado zostanie
 system: awokado zostało przywrócone do twojego koszyka. Chcesz kontynuować zakupy?
 user: nie
@@ -98,7 +109,60 @@ user: dobrze, poproszę "Lion"
 system: Batonik "Lion" został dodany do koszyka
 .... 
 
-Zadanie 7: Zwrot produktu 
+Zadanie 7: obsługa bonów/karty rabatowej
+
+
+
+
+Zadanie 8:zapisywanie listy zakupów na później/wczytywanie listy zakupów
+
+user: prosze dodać parówki "Jupiterki"
+system: parówki "Jupiterki: Classic" zostały dodane do twojego koszyka. Kontynuować?
+user: dodaj do tego wódkę "Marsówka"
+system: wódka "Marsówka" została dodana to twojego koszyka
+user: co mam w koszyku
+system: zawartość koszyka:
+        - napój gazowany "Cosmic Coke"
+        - awokado
+        - zamrożona pizza "Hawajska: Dla wszyskich" marki "Kosmiczna Flota"
+        - ciasto w kostce "Czarna dziura"
+        - parówki "Jupiterki: Classic"
+        - wódka "Marsówka"
+
+user: proszę usunąć awokado
+system: awokado zostało usunięte
+user: a może nie, niech awokado zostanie
+system: awokado zostało przywrócone do twojego koszyka. Chcesz kontynuować zakupy?
+user: nie
+system: chcesz przejść do płatności?
+user: nie. zapisz mój koszyk
+system: do konta o numerze 420-213-769 zapisuje zawartość koszyka z numerem 5:
+        - napój gazowany "Cosmic Coke"
+        - awokado
+        - zamrożona pizza "Hawajska: Dla wszyskich" marki "Kosmiczna Flota"
+        - ciasto w kostce "Czarna dziura"
+        - parówki "Jupiterki: Classic"
+        - wódka "Marsówka"
+user: to pa
+....
+user: chce zreazlizować zapisany koszyk
+system: podaj numer konta lub numer telefonu
+user: 420-213-769
+system: dla tego konta mam zapisane trzy koszyki: 5,7, 11. który koszyk chcesz zrealizować?
+user: ten z avokado
+system: avokado znajduje się w 5 i 11 koszyku. Który koszyk chcesz zrealizować?
+user: co znajduje się w koszyku 5?
+system: - napój gazowany "Cosmic Coke"
+        - awokado
+        - zamrożona pizza "Hawajska: Dla wszyskich" marki "Kosmiczna Flota"
+        - ciasto w kostce "Czarna dziura"
+        - parówki "Jupiterki: Classic"
+        - wódka "Marsówka"
+user: chce zrealizować ten koszyk
+system: przechodzę do płatności za koszyk numer 5
+...
+
+Zadanie 9: Zwrot produktu 
 
 user: dzień dobry, ser "Gouda", który niedawno zakupiłem u Państwa w sklepie okazał się spleśniały
 system: Dzień dobry, w takiej sytuacji możliwy jest zwrot pieniędzy lub wybór innego produktu w podobnej cenie
