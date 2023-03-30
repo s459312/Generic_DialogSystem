@@ -1,0 +1,68 @@
+user	"Dzieñ dobry, w czym mo¿esz mi pomóc?"
+system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"
+user	"Chcia³bym zakupiæ kilka warzyw, jakie s¹ dostêpne w ofercie?"
+system	"Warzywa dostêpne dzisiaj w promocji:
+
+ 
+
+Papryka
+17,99 z³
+
+ 
+
+Rzodkiewki
+1,99 z³
+
+ 
+
+Ogórek
+2,99 z³
+
+ 
+
+Pomidory
+9,99 z³
+
+ 
+
+Cukinia
+9,99 z³
+
+ 
+
+Marchew
+3,99 z³"
+user	Proszê dodaæ do zamówienia 2 pomidory oraz 2 ogórki
+system	"Dodano do koszyka 2x pomidor, 2x ogórek."
+system	Czy to wszystko?
+user	"Tak, czy mo¿na p³aciæ kart¹?"
+system	"Dostêpne formy p³atnoœci:
+
+-Blik, 
+-przelew tradycyjny
+
+-gotówka przy odbiorze
+
+-PayPal
+
+-PayU
+
+-dotpay
+
+-Apple Pay/Google Pay"
+user	W takim razie Blikiem
+system	"Proszê wybraæ sposób dostawy. 
+
+Formy dostawy:
+
+dostawa do domu
+dostawa do paczkomatu
+odbiór osobisty"
+user	Odbiór osobisty
+system	Proszê podaæ kod BLIK.
+user	177 771
+system	Proszê potwierdziæ p³atnoœæ w aplikacji.
+user	Potwierdzone
+system	"Zamówienie: 2x pomidor, 2x ogórek bêdzie gotowe do odbioru o godz 11:30."
+system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."
+user	"Dobrze, dziêkujê"

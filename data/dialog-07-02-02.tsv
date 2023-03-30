@@ -1,0 +1,79 @@
+user	"dzieñ dobry, czy moge tu kupiæ kota?"
+system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". Kot jest niestety niedostêpny, ale proponujê karmê dla kota."
+user	Karmê akurat mam. A jakie jeszcze produkty macie w ofercie?
+system	"Produkty dostêpne dzisiaj w promocji:
+
+ 
+
+Goya Oliwki Gordales Z Pestk¹ 358 Ml 7,49z³
+Violife Plastry Smak Wêdzony 100 G 8,29 z³
+Hortex Sok 100% Jab³ko Butelka Apet 300 Ml - 2,79 z³
+Szynka Dojrzewaj¹ca Plastry 100G £uków - 11,29 z³
+Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 z³
+Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
+Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
+Chorizo Sarta Pikantne 200G - 14.99 z³
+Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"
+user	"a czy macie w ofercie piersi z kurczaka, paprykê, cebulê, kie³ki fasoli mung oraz sos pomidorowy?"
+system	"Niestety piersi z kurczaka oraz kie³ki fasoli mung s¹ niedostêpne. 
+
+Dostêpne papryki: anuum (roczne), baccatum (jagodowe), chinense (pochodz¹ce z Chin), frutescens (owocowe) i pubescens (omszone). 
+
+Dostêpne cebule: Bia³a cebula, Czerwona cebula, Cebula dymka. 
+
+Sos pomidorowy: £owicz Premium Basillico."
+user	poproszê cebulê bia³¹ oraz paprykê chinense oraz ten sos pomidorowy. Czy jakieœ inne miêso jest dostêpne w sklepie?
+system	"Dodano do koszyka 1x cebula bia³a, 1x papryka chinense, 1x sos pomidorowy: £owicz Premium Basillico."
+system	"Dostêpne produkty miêsne:
+
+Wieprzownia
+
+Drób
+
+Dziczyzna"
+user	w jakiej postaci mo¿na kupiæ drób?
+system	Aktualnie dostêpne s¹: P³at trybowany z kurczaka nadbiebrzañskiego oraz Podudzie z kurczaka nadbiebrzañskiego.
+user	jakie opakowania podudzia s¹ dostêpne?
+system	Zafoliowana tacka.
+user	mam na myœli wagê porcji
+system	"Podudzie z kurczaka nadbiebrzañskiego, 0.621 kg."
+user	"œwietnie, poprosze o dodanie do zamówienia"
+system	"Dodano do koszyka Podudzie z kurczaka nadbiebrzañskiego, 0.621 kg."
+system	Chcesz zamówiæ coœ jeszcze?
+user	"to wszystko, jaka jest cena produktów w koszyku?"
+system	37.29 z³
+system	"Proszê wybraæ formê dostawy. 
+
+Formy dostawy:
+
+dostawa do domu
+dostawa do paczkomatu
+odbiór osobisty"
+user	jaka jest lokalizacja sklepu?
+system	"Koœcielna 30, Poznañ."
+user	w takim razie mogê odebraæ osobiœcie
+user	w jakich godzinach jest to mo¿liwe?
+system	7:00-21:00
+system	"Proszê o wybranie formy p³atnoœci.
+
+Dostêpne formy p³atnoœci:
+
+-Blik, 
+-przelew tradycyjny
+
+-gotówka przy odbiorze
+
+-PayPal
+
+-PayU
+
+-dotpay
+
+-Apple Pay/Google Pay"
+user	gotówka
+system	"Zamówienie przyjête, odbiór osobisty, p³atnoœæ gotówk¹. O dostêpie do odbioru zostanie Pan powiadomiony przez SMS."
+user	a mój numer zdobêdziecie w jakiœ nielegalny sposób?
+system	Przepraszam nast¹pi³a pomy³ka. Powiadomienie otrzyma Pan na aktualnym chacie.
+user	"ah rozumiem, w porz¹dku"
+system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."

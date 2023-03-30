@@ -1,0 +1,142 @@
+user	Dzieñ dobry
+system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"
+user	"Chcia³bym kupiæ mleko, chleb, jakieœ wino."
+system	"Mleko z laktoz¹ czy bez? 
+
+Aktualnie dostêpne chleby: Chleb razowy, Chleb jasny, Chleb pszenny, Chleb ¿ytni. 
+
+Karta win: FRANZ ANTON MAYER | LITER GRUNER VELTLINER | WAGRAM, AUSTRIA
+Cytrusowy, zwiewny i zbalansowany 23 PLN
+2020    CHATELAIN DESJACQUES | SAUVIGNON BLANC IGP | DOLINA LOARY, FRANCJA
+Przystêpne, œwie¿e i rzeœkie 23 PLN
+2020    BODEGA LAS VIRTUDES | ARCABUCERO BLANCO DO | ALICANTE, HISZPANIA
+£agodne, owocowe i orzeŸwiaj¹ce 14 PLN
+2021    MARTÍN CÓDAX | ALBA MARTÍN ALBARI?O DO | RÍAS BAIXAS, HISZPANIA
+Rzeœkie, zwiewne i mineralne    30 PLN
+2021    LEITZ | EINS ZWEI ZERO RIESLING | DOLINA RENU, NIEMCY (BEZALKOHOLOWE)
+Bezalkoholowe, œwie¿e i przyjemne"
+user	"Mleko zwyk³e, chleb ¿ytni. S¹ jakieœ dro¿sze wina?"
+system	"Szampany oraz wina musuj¹ce ekskluzywne: 
+
+2012    MOET & CHANDON | DOM PERIGNON BRUT I SZAMPANIA, FRANCJA  
+Z³o¿ony, elegancki i klasyczny 2288 PLN
+2012    POL ROGER | SIR WINSTON CHURCHILL | SZAMPANIA, FRANCJA
+Bogaty, aromatyczny i dojrza³y 2008 PLN
+NV    BERNARD PERTOIS | BRUT TRADITION BLANC DE BLANCS | SZAMPANIA, FRANCJA
+¯ywy, elegancki i zbalansowany 398 PLN
+NV    BERNARD PERTOIS | DEMI SEC TRADITION BLANC DE BLANCS | SZAMPANIA, FRANCJA
+Obfity, kremowy i pó³wytrawny398 PLN
+NV    BERNARD PERTOIS | CUVÉE FLAVIE BRUT ROSÉ | SZAMPANIA, FRANCJA
+Aromatyczny, elegancki i z³o¿ony 508 PLN
+NV    POL ROGER | BRUT | SZAMPANIA, FRANCJA
+Klasyczny, œwie¿y i aromatyczny 598 PLN
+2013    POL ROGER | BRUT BLANC DE BLANCS | SZAMPANIA, FRANCJA
+Elegancki, z³o¿ony i efektowny 888 PLN
+2015    POL ROGER | BRUT ROSE | SZAMPANIA, FRANCJA
+Aromatyczny, œwie¿y i treœciwy 858 PLN
+NV    TAITTINGER | BRUT | SZAMPANIA, FRANCJA
+Owocowy, harmonijny i aromatyczny 648 PLN
+NV    TAITTINGER | DEMI-SEC | SZAMPANIA, FRANCJA
+Pó³wytrawny, owocowy i delikatny 598 PLN
+NV    TAITTINGER | PRESTIGE ROSE | SZAMPANIA, FRANCJA
+Elegancki, z³o¿ony i aromatyczny 708 PLN
+NV    HENRI CHAMPLIAU | CRÉMANT DE BOURGOGNE | BRUT AUTHENTIQUE | BURGUNDIA, FRANCJA
+Owocowy, strukturalny i wytrawny 238 PLN
+NV    HENRY CHAMPLIAU | PÉTRONE 68 | BLANC DE BLANCS BRUT | BURGUNDIA, FRANCJA
+Soczysty, œwie¿y i aromatyczny 148 PLN
+2021    SOLIGO | PROSECCO MILLESIMATO ROSE DOC | TREVISO, W£OCHY
+Aromatyczne, owocowe i ró¿owe 138 PLN
+NV    EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY
+Przyjemny œwie¿y i bezalkoholowy 178 PLN
+2018    2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA
+Klasyczny, œwie¿y i aromatyczny 178 PLN
+2020    TORELLÓ | CORPINNAT BRUT ROSÉ RESERVA | PENED?S, HISZPANIA
+Intryguj¹cy, owocowy i wytrawny 218 PLN
+NV    EMILIANA | SANTA EMILIANA BRUT | CASABLANCA VALLEY, CHILE
+Aromatyczny, œwie¿y i treœciwy 198 PLN
+NV    HENNERS | BRUT | EAST SUSSEX, ANGLIA
+Powœci¹gliwy, delikatny i aromatyczny 378 PLN"
+user	To ja chcia³bym to za 178pln
+system	"Dodano do koszyka Mleko zwyk³e, chleb ¿ytni, 2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA. Czy chcesz zamówiæ coœ jeszcze?"
+user	"Nie to, to drugie za 178pln"
+system	"Usuniêto z koszyka 2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA."
+system	"Dodano do koszyka EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY."
+system	Polecamy równie¿ produkty dostêpne w promocji.
+system	Czy chcesz zamówiæ coœ jeszcze?
+user	A co jest w promocji?
+system	"Goya Oliwki Gordales Z Pestk¹ 358 Ml 7,49z³
+Violife Plastry Smak Wêdzony 100 G 8,29 z³
+Hortex Sok 100% Jab³ko Butelka Apet 300 Ml - 2,79 z³
+Szynka Dojrzewaj¹ca Plastry 100G £uków - 11,29 z³
+Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 z³
+Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
+Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
+Chorizo Sarta Pikantne 200G - 14.99 z³
+Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"
+user	Chcê szynkê dojrzewaj¹c¹ jeszcze. Macie otwieracz do wina?
+system	Dodano do koszyka Szynka Dojrzewaj¹ca Plastry 100G £uków.
+system	"Aktualnie dostêpne s¹: Prosty korkoci¹g rêczny, korkoci¹g automatyczny."
+user	"Tak, chcê korkoci¹g automatyczny, ile kosztuje?"
+system	"Cena korkoci¹gu automatycznego: 39,99 z³."
+user	"Poproszê spakowaæ, co mam w koszyku aktualnie ?"
+system	"Produkty dodane do koszyka:
+
+-Mleko zwyk³e, 
+
+-chleb ¿ytni, 
+
+-EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY.
+
+-Szynka Dojrzewaj¹ca Plastry 100G £uków
+
+-korkoci¹g automatyczny."
+user	I ile to wysz³o?
+system	"Cena produktów w koszyku: 213,79 z³. Czy chcesz przejœæ do kasy?"
+user	"Tak, czy przywozicie zamówienia na adres?"
+system	"Formy dostawy:
+
+dostawa do domu
+dostawa do paczkomatu
+odbiór osobisty"
+user	"To ja chcê dostawê do domu, i chcê 2 butelki tego wina z mojego koszyka jednak"
+system	"Dodano do koszyka EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY."
+system	"Cena produktów w koszyku: 393,79 z³. Proszê podaæ adres dostawy"
+user	ul. Banananana 69 Poznañ
+user	Mo¿na p³aciæ online?
+system	"Dostêpne formy p³atnoœci:
+
+-Blik, 
+-przelew tradycyjny
+
+-gotówka przy odbiorze
+
+-PayPal
+
+-PayU
+
+-dotpay
+
+-Apple Pay/Google Pay"
+user	To zap³acê gotówk¹ przy odbiorze. Kiedy bêdzie dostawa?
+system	Dostawa na adres: ul. Banananana 69 Poznañ zostanie dostarczona w okolicach godz. 11:05 - 11:15.
+system	"Zamówienie przyjête, proszê przygotowaæ 393,79 z³ w gotówce przy odbiorze."
+user	Wtedy mnie nie bêdzie w domu. Mo¿e byæ po 12:00?
+system	Zmiana godziny dostawy na godz. 12:00.
+user	"Super, dziêkujê"
+system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."
+user	Chcia³bym anulowaæ zamówienie
+system	Czy na pewno chcesz anulowaæ ca³e zamówienie?
+user	"W sumie to nie, chcia³bym tylko zostawiæ wino z mojego koszyka"
+system	"Usuniêto z koszyka 
+
+-Mleko zwyk³e, 
+
+-chleb ¿ytni, 
+
+-Szynka Dojrzewaj¹ca Plastry 100G £uków
+
+-korkoci¹g automatyczny."
+system	Dostawa zostanie dostarczona o godzinie 12:00. Forma p³atnoœci: gotówka przy odbiorze.
+user	"Oki, dziêkujê"
+system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."
