@@ -1,0 +1,17 @@
+system:	Dzie? dobry, jestem systemem obs?uguj?cym zakupy online, co chcia?by? zrobi??
+user:	jakie produkty s? u was dost?pne?
+system:	Nasz sklep oferuje zakupy spo?ywcze najwy?szej jako?ci
+user:	okej, to ja bym chcia? zam?wi? mleko, chleb, ???ty ser i sok jab?kowy
+system:	"Do koszyka dodano mleko ""?aciate"",  chleb ""Bochenek"", Ser ???ty ""Gouda"" oraz sok jab?kowy ""Maciu?"". Czy to wszystko?"
+user:	zamie? sok jab?kowy na firmy Tymbark
+system:	"Zamieniam sok jab?kowy ""Maciu?"" na ""Tymbark"", czy chcia?by? co? jeszcze?"
+user:	nie, ile b?d? kosztowa?y te zakupy?
+system:	Suma produkt?w w koszyku wynosi 33,96 z?
+user:	troch? du?o, odejmij mi ser ???ty z zam?wienia
+system:	"Usuwam ser ???ty ""Gouda"" z koszyka. Czy chcia?by? kontynuowa? zakupy czy przej?? do p?atno?ci?"
+user:	chcia?bym przej?? do p?atno?ci
+system:	Czy posiadasz kart? lojalno?ciow??
+user:	nie
+system:	Finalna kwota do zap?aty to 33,96 z?
+user:	super, to b?dzie wszystko
+system:	"Dzi?kujemy za skorzystanie z us?ug sklepu ""Motylek"""

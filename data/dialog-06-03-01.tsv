@@ -1,0 +1,15 @@
+system:	Dzie? dobry, jestem systemem obs?uguj?cym zakupy online, co chcia?by? zrobi??
+user:	Chcia?bm kupi? jaki? prezent na urodziny. My?la?em o jaki? perfumach.
+system:	"Dost?pne perfumy w naszym sklepie to ""Marcini"", ""Vitolio"", ""Jaushiu"" oraz ""Polini"""
+user:	Czy to nazwy marek, czy produkt?w?
+system:	S? to nazwy marek produkuj?cych perfumy
+user:	Czy w?r?d tych producent?w znajduj? si? perfumy z dominuj?c? nut? go?dzik?w? 
+system:	"Perfumy marki ""Marcini"" posiadaj? takow? w?a?ciwo??"
+user:	Czy m?g?by? poda? cen? tych perfum? 
+system:	"Cena perfum ""Marcini"" to 33,99 z?"
+user:	Super! Chcia?bym je zam?wi?. Czy potrzeba poda? adres zam?wienia.
+system:	"Przy opcji ""dostawa do domu"" adres jest wymagany. Czy chcesz wybra? t? opcj??"
+user:	Tak, poprosz?
+system:	Prosz? poda? Imi? i nazwisko oraz adres dostawy.
+user:	Bilbo Baggins Shire ul. Nizo?kowska 13a, 14-8897
+system:	"Zam?wienie z?o?one pomy?lnie. Dzi?kujemy za skorzystanie z us?ug sklepu ""Motylek""!"

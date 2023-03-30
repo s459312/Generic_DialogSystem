@@ -1,0 +1,27 @@
+system:	Dzie? dobry, jestem systemem obs?uguj?cym zakupy online, co chcia?by? zrobi??
+user:	Dla jakiego rodzaju sklep?w dzia?a system?
+system:	W naszej ofercie znajduj? si? produkty spo?ywcze
+user:	"Chcia?bym zam?wi? zakupy z odbiorem na jutro o godzinie 16 W sk?ad listy zakupowej b?dzie: Chleb pe?noziarnisty, 2szt
+Mleko, 5l
+Ser ???ty, 1kg
+Jajka, 2 opakowania po 12szt
+Mas?o, 3 kostki
+Jogurt naturalny, 10 szt
+P?atki owsiane, 2szt
+Mi?so mielone, 1kg
+Filet z kurczaka, 1kg
+Kie?basa, 1szt"
+system:	"Dodano 2 x Chleb pe?noziarnisty, 5l Mleko, 1kg Ser ???ty ""gouda"", 2 opakowania jajek ""kurniczek"", 3 kostki mas?a ""delka"", 10 x jogurt naturalny, 2 x p?atki owsiane, 1kg mi?so mielone z ?opatki, 1kg filet z kurczaka oraz 1 x kie?basa ""?l?ska"" do koszyka. Czy to wszystko?"
+user:	poprosz? o zmian? sera ???tego gouda na inn? mark? 
+system:	"Zmieniono ser ""Gouda"" na ser ""Cheddar"", czy co? jeszcze?"
+user:	Nie to wszystko
+system:	Czy posiadasz kart? lojalno?ciow??
+user:	Nie, chcia?bym za?o?y?
+system:	W celu za?o?enia karty lojalno?ciowej nale?y poda? numer telefonu
+user:	48 123 123 123
+system:	Prosz? poda? kod weryfikacyjny wys?any na podany numer telefonu
+user:	2137
+system:	Karta lojalno?ciowa za?o?ona pomy?lnie. Suma do zap?aty wynosi 134,43 z? czy chcia?by? op?aci? zam?wienie online czy przy odbiorze?
+user:	Przy odbiorze
+system:	"Dobrze, zam?wienie z?o?one pomy?lnie. Na numer telefonu zostanie wys?any sms z informacj? gdy zakupy bed? gotowe do odbioru. Dzi?kujemy za skorzystanie ze sklepu ""Motylek""!"
+user:	Dzi?kuje, do widzenia

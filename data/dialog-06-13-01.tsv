@@ -1,0 +1,19 @@
+system:	Dzie? dobry, jestem systemem obs?uguj?cym zakupy online, co chcia?by? zrobi??
+user:	jakie sery ???te macie w ofercie?
+system:	"W naszej ofercie dost?pne s? nast?puj?ce sery: ""Gouda"", ""Cheddar"", ""Ple?niowy u?mieszek"""
+user:	dodaj do listy 0.5kg ple?niowego u?mieszka. chcia?bym jeszcze czekolad? gorzk?
+system:	"Do koszyka dodano 0.5kg sera ""ple?niowy u?mieszek"" oraz jedn? sztuk? czekolady gorzkiej ""wedel"". Co jeszcze chcia?by? doda??"
+user:	usu? czekolad? wedel z listy. jakie s? dostepne gorzkie czekolady?
+system:	"Usuwam czekolad? ""Wedel"" z listy. Aktualnie dost?pnymi czekoladami gorzkimi s? ""Wedel"", ""Milka"" oraz ""Gorzeczka"""
+user:	dodaj do listy zakup?w gorzk? milk? i gorzeczk?
+system:	"Dodaj? do koszyka czekolad? ""Milka"" oraz czekolad? ""Gorzeczka"", czy to wszystko?"
+user:	poka? mi aktualn? list? zakup?w
+system:	"Aktualnie w koszyku znajduj? si?: 0.5kg sera ""ple?niowy u?mieszek"", czekolada ""Milka"" oraz czekolada ""Gorzeczka""."
+user:	to wszystko
+system:	Dobrze, suma do zap?aty wynosi 24,42 z?. Czy posiadasz kart? lojalno?ciow??
+user:	tak
+system:	Prosz? poda? numer karty lojalno?ciowej
+user:	32432942
+system:	Karta zaakceptowana. Finalna kwota do zap?aty to 22,65 z?
+user:	chc? zap?aci? przy odbiorze
+system:	"Dobrze, zam?wienie zosta?o z?o?one, numer zam?wienia: 452625435246. Na numer telefonu przyjdzie powiadomienie o terminie odbioru zam?wienia. Dzi?kujemy za skorzystanie ze sklepu ""Motylek"""

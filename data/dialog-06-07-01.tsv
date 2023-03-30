@@ -1,0 +1,18 @@
+system:	Dzie? dobry, jestem systemem obs?uguj?cym zakupy online, co chcia?by? zrobi??
+user:	Chcia?bym kupi? chipsy firmy LAYS o smaku gulaszowym oraz do tego pepsi lime
+system:	Tak si? sk?ada, ?e aktualnie dost?pna jest promocja na chipsy LAYS 2 w cenie 1. Czy chcia?by? dobra? drugie chipsy aby aktywowa? promocj??
+user:	Bardzo ch?tnie
+system:	Jaki smak Ci? interesuje?
+user:	Zielona cebulka
+system:	Dodano chipsy LAYS zielona cebulka do koszyka, czy to wszystko?
+user:	To wszystko, prosz? o przej?cie do p?atno?ci
+system:	Dobrze, przechodz? do p?atno?ci. Czy posiadasz kart? rabatow? lub kart? lojalno?ciow??
+user:	Akurat nie posiadam, czy m?g?bym tak? wyrobi??
+system:	Aby wyrobi? kart? lojalno?ciow? nale?y poda? numer telefonu
+user:	666333999
+system:	Prosz? poda? kod weryfikacyjny wys?any na podany numer telefonu
+user:	LETMEBUY123
+system:	Karta lojalno?ciowa za?o?ona pomy?lnie. Kwota do zap?aty za zakupy wynosi 13.37 z?
+user:	*wysy?am pieni?dze*
+system:	"Zam?wienie z?o?one pomy?lnie. Dzi?kuj? za wybranie sklepu ""Motylek"". Do zobaczenia"
+user:	Dzi?kuje do widzenia.
