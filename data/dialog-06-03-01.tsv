@@ -6,7 +6,7 @@ system:	S? to nazwy marek produkuj±cych perfumy
 user:	Czy w¶ród tych producentów znajduj± siê perfumy z dominuj±c± nut± go¼dzików?
 system:	"Perfumy marki ""Marcini"" posiadaj± takow± w³a¶ciwo¶æ"
 user:	Czy móg³by¶ podaæ ceny tych perfum? 
-system:	"Cena perfum ""Marcini"" to 33,99 z?"
+system:	"Cena perfum ""Marcini"" to 33,99 z³"
 user:	Super! Chcia³bym je zamówiæ. Czy potrzeba podaæ adres zamówienia.
 system:	"Przy opcji ""dostawa do domu"" adres jest wymagany. Czy chcesz wybraæ tê opcjê?"
 user:	Tak, poproszê
