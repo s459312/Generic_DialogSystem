@@ -1,0 +1,108 @@
+user	"Dzieñ dobry, z jakich us³ug mo¿na w tym miejscu skorzystaæ?"
+system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". Jakie produkty Pana/Pani¹ interesuj¹?"
+user	Chcia³bym zamówiæ 2 litry mleka oraz chipsy lays zielona cebulka
+system	"Mleko krowie, kozie, owcze czy kokosowe? "
+user	mleko krowie by³oby idealne
+system	Z laktoz¹ czy bez?
+user	mo¿e byæ z laktoz¹
+system	"Dodano do koszyka mleko krowie z laktoz¹ 2L, chipsy lays smak zielona cebulka 140g. Czy chcia³byœ zamówiæ coœ jeszcze? Polecam produkty dostêpne w promocji."
+user	Promocja? Brzmi ciekawie... Co macie na promocji w tym momencie?
+system	"Goya Oliwki Gordales Z Pestk¹ 358 Ml 7,49z³
+Violife Plastry Smak Wêdzony 100 G 8,29 z³
+Hortex Sok 100% Jab³ko Butelka Apet 300 Ml - 2,79 z³
+Szynka Dojrzewaj¹ca Plastry 100G £uków - 11,29 z³
+Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 z³
+Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
+Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
+Chorizo Sarta Pikantne 200G - 14.99 z³
+Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"
+user	Ta szynka brzmi jak produkt który chcia³bym posiadaæ
+system	Dodano do koszyka Szynka Dojrzewaj¹ca Plastry 100G £uków
+system	Czy chcesz zamówiæ coœ jeszcze?
+user	"Myœlê ¿e do mleka idealne by³by jakieœ p³atki, jakie p³atki do mleka macie w ofercie?"
+system	"Lubella Catering P³atki kukurydziane 1 kg
+Lubella
+18,39z³
+NesVita Owsianka truskawkowa 45 g - Nesvita
+45g
+NesVita Owsianka truskawkowa 45 g
+Nesvita
+3,19z³
+Kupiec Coœ na z¹b Owsianka malina i ¿urawina 50 g - Kupiec
+
+ 
+
+50g
+Kupiec Coœ na z¹b Owsianka malina i ¿urawina 50 g
+Kupiec
+2,59z³
+Nestlé Corn Flakes Choco P³atki œniadaniowe o smaku czekoladowym 250 g - Corn Flakes
+450g
+Nestlé Corn Flakes Choco P³atki œniadaniowe o smaku czekoladowym 250 g
+Corn Flakes
+9,29z³
+Nestlé Corn Flakes P³atki kukurydziane 600 g - Nestlé
+600g
+Nestlé Corn Flakes P³atki kukurydziane 600 g
+Nestlé
+14,69z³
+Nestlé Frutina Owoce i B³onnik P³atki œniadaniowe 250 g - Nestlé
+250g
+Nestlé Frutina Owoce i B³onnik P³atki œniadaniowe 250 g
+Nestlé
+9,39z³
+NesVita Owsianka malinowa 45 g - Nesvita
+45g
+NesVita Owsianka malinowa 45 g
+Nesvita
+3,19z³
+NesVita Owsianka wiœniowa 45 g - Nesvita
+45g
+NesVita Owsianka wiœniowa 45 g
+Nesvita
+3,19z³
+Nestlé Lion WildCrush P³atki œniadaniowe 350 g - Lion
+350g
+Nestlé Lion WildCrush P³atki œniadaniowe 350 g
+Lion
+14,39z³
+Lubella Mleko³aki Choco Kulki Zbo¿owe kulki o smaku czekoladowym 500 g - Lubella
+500g
+Lubella Mleko³aki Choco Kulki Zbo¿owe kulki o smaku czekoladowym 500 g
+Lubella
+10,79z³"
+user	Chcia³bym te lajonki
+system	Dodano do koszyka Nestlé Lion WildCrush P³atki œniadaniowe 350 g - Lion.
+user	"Myœlê ¿e to wszystko, jakie formy dostawy s¹ dostêpne?"
+system	"Dostawa do domu, do paczkomatu oraz odbiór osobisty."
+user	dostawa do domu by³aby najbardziej optymalna
+system	Proszê podaæ adres dostawy.
+user	ul. wojska M.A.U. 21/13
+user	Stargard Szczeciñski
+user	73 - 102
+system	Czy chcesz przejœæ do p³atnoœci?
+user	Tak
+system	"Dostêpne formy p³atnoœci:
+
+-Blik, 
+-przelew tradycyjny
+
+-gotówka przy odbiorze
+
+-PayPal
+
+-PayU
+
+-dotpay
+
+-Apple Pay/Google Pay"
+user	bêdzie blik
+system	Proszê podaæ kod BLIK.
+user	6969
+system	Proszê potwierdziæ p³atnoœæ w aplikacji.
+user	potwiedzam intensywnie
+system	"Zamówienie przyjête.
+
+Dostawa na adres : ul. wojska M.A.U. 21/13, Stargard Szczeciñski, 73 - 102. Dostawca przyjedzie w okolicach godz 11:15-11:25. Dziêkujemy za skorzystanie z us³ug sklepu ""Surykatka""."
+user	Dziêkuje i do widzenia

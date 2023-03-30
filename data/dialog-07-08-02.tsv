@@ -1,0 +1,68 @@
+user	"dzieñ dobry, jak piêknie dziœ pada œnieg"
+system	"Dzieñ dobry, muszê uwierzyæ na s³owo. Jestem tylko zwyk³ym szarym robotem. Witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"", w czym mogê pomóc?"
+user	"œwietnie, poniewa¿ chcia³abym zjeœæ œniadanie. Czy macie mo¿e jajka, avokado oraz œwie¿e bu³ki?"
+system	"Pewnie, jajka kurze, perlicze, gêsie, kacze, przepiórcze czy strusie? "
+system	"Dostêpne bu³ki: Kajzerka, Bagietka, Ciabatta, Grahamka, Bu³ka pe³noziarnista, Brioszka."
+user	poproszê 10 jaj przepiórczych i œwie¿utk¹ bagietkê 
+system	Dodano do koszyka 10 jaj przepiórczych oraz Bagietkê. Czy chcesz zamówiæ coœ jeszcze? Polecamy produkty dostêpne na promocji.
+user	a co jest dzisiaj na promocji?
+system	"Goya Oliwki Gordales Z Pestk¹ 358 Ml 7,49z³
+Violife Plastry Smak Wêdzony 100 G 8,29 z³
+Hortex Sok 100% Jab³ko Butelka Apet 300 Ml - 2,79 z³
+Szynka Dojrzewaj¹ca Plastry 100G £uków - 11,29 z³
+Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 z³
+Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
+Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
+Chorizo Sarta Pikantne 200G - 14.99 z³
+Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"
+user	w takim razie poproszê jeszcze szynkê dojrzewaj¹ca
+user	i mase³ko!
+system	"Dodano do koszyka Szynka Dojrzewaj¹ca Plastry 100G £uków - 11,29 z³."
+system	"Mas³o ekstra, wyborowe, delikatesowe, sto³owe czy œmietankowe?"
+user	poproszê mas³o wyborowe
+system	Dodano do koszyka mas³o wyborowe. Czy to wszystko?
+user	tak to wszystko
+system	"Produkty dodane do koszyka: 
+
+10 jaj przepiórczych 
+
+Bagietka
+
+Szynka Dojrzewaj¹ca Plastry 100G £uków
+
+mas³o wyborowe"
+system	Czy chcesz przejœæ do p³atnoœci?
+user	tak
+system	"Dostêpne formy p³atnoœci:
+
+-Blik, 
+-przelew tradycyjny
+
+-gotówka przy odbiorze
+
+-PayPal
+
+-PayU
+
+-dotpay
+
+-Apple Pay/Google Pay"
+user	zap³acê blikiem
+system	"Proszê wybraæ formê dostawy. 
+
+Formy dostawy:
+
+dostawa do domu
+dostawa do paczkomatu
+odbiór osobisty"
+user	odbiorê osobiœcie
+system	Proszê podaæ kod BLIK.
+user	123 456
+system	Proszê potwierdziæ p³atnoœæ w aplikacji.
+user	potwierdzam
+system	Zamówienie przyjête. Gotowe do odbioru o godz 11:25. 
+system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."
+user	"wspaniale, dziêkujê"
+user	¿ycze mi³ego dzionka i smacznej kawusi
+system	Wzajemnie.
