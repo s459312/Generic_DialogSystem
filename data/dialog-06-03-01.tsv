@@ -1,15 +1,15 @@
-system:	Dzie? dobry, jestem systemem obs?uguj?cym zakupy online, co chcia?by? zrobi??
-user:	Chcia?bm kupi? jaki? prezent na urodziny. My?la?em o jaki? perfumach.
-system:	"Dost?pne perfumy w naszym sklepie to ""Marcini"", ""Vitolio"", ""Jaushiu"" oraz ""Polini"""
-user:	Czy to nazwy marek, czy produkt?w?
-system:	S? to nazwy marek produkuj?cych perfumy
-user:	Czy w?r?d tych producent?w znajduj? si? perfumy z dominuj?c? nut? go?dzik?w? 
-system:	"Perfumy marki ""Marcini"" posiadaj? takow? w?a?ciwo??"
-user:	Czy m?g?by? poda? cen? tych perfum? 
+system:	Dzieñ dobry, jestem systemem obs³uguj±cym zakupy online, co chcia³by¶ zrobiæ?
+user:	Chcia³bym kupiæ jaki¶ prezent na urodziny. My¶la³em o jaki¶ perfumach.
+system:	"Dostêpne perfumy w naszym sklepie to ""Marcini"", ""Vitolio"", ""Jaushiu"" oraz ""Polini"""
+user:	Czy to nazwy marek, czy produktów?
+system:	S? to nazwy marek produkuj±cych perfumy
+user:	Czy w¶ród tych producentów znajduj± siê perfumy z dominuj±c± nut± go¼dzików?
+system:	"Perfumy marki ""Marcini"" posiadaj± takow± w³a¶ciwo¶æ"
+user:	Czy móg³by¶ podaæ ceny tych perfum? 
 system:	"Cena perfum ""Marcini"" to 33,99 z?"
-user:	Super! Chcia?bym je zam?wi?. Czy potrzeba poda? adres zam?wienia.
-system:	"Przy opcji ""dostawa do domu"" adres jest wymagany. Czy chcesz wybra? t? opcj??"
-user:	Tak, poprosz?
-system:	Prosz? poda? Imi? i nazwisko oraz adres dostawy.
-user:	Bilbo Baggins Shire ul. Nizo?kowska 13a, 14-8897
-system:	"Zam?wienie z?o?one pomy?lnie. Dzi?kujemy za skorzystanie z us?ug sklepu ""Motylek""!"
+user:	Super! Chcia³bym je zamówiæ. Czy potrzeba podaæ adres zamówienia.
+system:	"Przy opcji ""dostawa do domu"" adres jest wymagany. Czy chcesz wybraæ tê opcjê?"
+user:	Tak, poproszê
+system:	Proszê podaæ Imiê i nazwisko oraz adres dostawy.
+user:	Bilbo Baggins Shire ul. Nizo³kowska 13a, 14-8897
+system:	"Zamówienie z³o¿one pomy¶lnie. Dziêkujemy za skorzystanie z us³ug sklepu ""Motylek""!"

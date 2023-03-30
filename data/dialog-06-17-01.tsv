@@ -1,27 +1,18 @@
-system:	Dzie? dobry, jestem systemem obs?uguj?cym zakupy online, co chcia?by? zrobi??
-user:	Dla jakiego rodzaju sklep?w dzia?a system?
-system:	W naszej ofercie znajduj? si? produkty spo?ywcze
-user:	"Chcia?bym zam?wi? zakupy z odbiorem na jutro o godzinie 16 W sk?ad listy zakupowej b?dzie: Chleb pe?noziarnisty, 2szt
-Mleko, 5l
-Ser ???ty, 1kg
-Jajka, 2 opakowania po 12szt
-Mas?o, 3 kostki
-Jogurt naturalny, 10 szt
-P?atki owsiane, 2szt
-Mi?so mielone, 1kg
-Filet z kurczaka, 1kg
-Kie?basa, 1szt"
-system:	"Dodano 2 x Chleb pe?noziarnisty, 5l Mleko, 1kg Ser ???ty ""gouda"", 2 opakowania jajek ""kurniczek"", 3 kostki mas?a ""delka"", 10 x jogurt naturalny, 2 x p?atki owsiane, 1kg mi?so mielone z ?opatki, 1kg filet z kurczaka oraz 1 x kie?basa ""?l?ska"" do koszyka. Czy to wszystko?"
-user:	poprosz? o zmian? sera ???tego gouda na inn? mark? 
-system:	"Zmieniono ser ""Gouda"" na ser ""Cheddar"", czy co? jeszcze?"
+system:	Dzieñ dobry, jestem systemem obs³uguj±cym zakupy online, co chcia³by¶ zrobiæ?
+user:	Dla jakiego rodzaju sklepów dzia³a system?
+system:	W naszej ofercie znajduj± siê produkty spo¿ywcze
+user:	Chcia³bym zamówiæ zakupy z odbiorem na jutro o godzinie 16 W sk³ad listy zakupowej bêdzie: Chleb pe³noziarnisty, 2szt Mleko, 5l; Ser ¿ó³ty, 1kg; Jajka, 2 opakowania po 12szt; Mas³o, 3 kostki; Jogurt naturalny, 10 szt; P³atki owsiane, 2szt; Miêso mielone, 1kg; Filet z kurczaka, 1kg; Kie³basa, 1szt
+system:	"Dodano 2 x Chleb pe³noziarnisty, 5l Mleko, 1kg Ser ¿ó³ty ""gouda"", 2 opakowania jajek ""kurniczek"", 3 kostki mas³a ""delka"", 10 x jogurt naturalny, 2 x p³atki owsiane, 1kg miêso mielone z ³opatki, 1kg filet z kurczaka oraz 1 x kie³basa ""¶l±ska"" do koszyka. Czy to wszystko?"
+user:	poproszê o zmianê sera ¿ó³tego gouda na inn± markê
+system:	"Zmieniono ser ""Gouda"" na ser ""Cheddar"", czy co¶ jeszcze?"
 user:	Nie to wszystko
-system:	Czy posiadasz kart? lojalno?ciow??
-user:	Nie, chcia?bym za?o?y?
-system:	W celu za?o?enia karty lojalno?ciowej nale?y poda? numer telefonu
-user:	48 123 123 123
-system:	Prosz? poda? kod weryfikacyjny wys?any na podany numer telefonu
+system:	Czy posiadasz kartê lojalno¶ciow±?
+user:	Nie, chcia³bym za³o¿yæ
+system:	W celu za³o¿enia karty lojalno¶ciowej nale¿y podaæ numer telefonu
+user:	48123123123
+system:	Proszê podaæ kod weryfikacyjny wys³any na podany numer telefonu
 user:	2137
-system:	Karta lojalno?ciowa za?o?ona pomy?lnie. Suma do zap?aty wynosi 134,43 z? czy chcia?by? op?aci? zam?wienie online czy przy odbiorze?
+system:	Karta lojalno¶ciowa za³o¿ona pomy¶lnie. Suma do zap³aty wynosi 134,43 z³ czy chcia³by¶ op³aciæ zamówienie online czy przy odbiorze?
 user:	Przy odbiorze
-system:	"Dobrze, zam?wienie z?o?one pomy?lnie. Na numer telefonu zostanie wys?any sms z informacj? gdy zakupy bed? gotowe do odbioru. Dzi?kujemy za skorzystanie ze sklepu ""Motylek""!"
-user:	Dzi?kuje, do widzenia
+system:	"Dobrze, zamówienie z³o¿one pomy¶lnie. Na numer telefonu zostanie wys³any sms z informacj± gdy zakupy bêd± gotowe do odbioru. Dziêkujemy za skorzystanie ze sklepu ""Motylek""!"
+user:	Dziêkuje, do widzenia

@@ -1,17 +1,17 @@
-system:	Dzie? dobry, jestem systemem obs?uguj?cym zakupy online, co chcia?by? zrobi??
-user:	jakie produkty s? u was dost?pne?
-system:	Nasz sklep oferuje zakupy spo?ywcze najwy?szej jako?ci
-user:	okej, to ja bym chcia? zam?wi? mleko, chleb, ???ty ser i sok jab?kowy
-system:	"Do koszyka dodano mleko ""?aciate"",  chleb ""Bochenek"", Ser ???ty ""Gouda"" oraz sok jab?kowy ""Maciu?"". Czy to wszystko?"
-user:	zamie? sok jab?kowy na firmy Tymbark
-system:	"Zamieniam sok jab?kowy ""Maciu?"" na ""Tymbark"", czy chcia?by? co? jeszcze?"
-user:	nie, ile b?d? kosztowa?y te zakupy?
-system:	Suma produkt?w w koszyku wynosi 33,96 z?
-user:	troch? du?o, odejmij mi ser ???ty z zam?wienia
-system:	"Usuwam ser ???ty ""Gouda"" z koszyka. Czy chcia?by? kontynuowa? zakupy czy przej?? do p?atno?ci?"
-user:	chcia?bym przej?? do p?atno?ci
-system:	Czy posiadasz kart? lojalno?ciow??
+system:	Dzieñ dobry, jestem systemem obs³uguj±cym zakupy online, co chcia³by¶ zrobiæ?
+user:	jakie produkty s± u was dostêpne?
+system:	Nasz sklep oferuje zakupy spo¿ywcze najwy¿szej jako¶ci
+user:	okej, to ja bym chcia³ zamówiæ mleko, chleb, ¿ó³ty ser i sok jab³kowy
+system:	"Do koszyka dodano mleko ""³aciate"", chleb ""Bochenek"", Ser ¿ó³ty ""Gouda"" oraz sok jab³kowy ""Maciu¶"". Czy to wszystko?"
+user:	zamieñ sok jab³kowy na firmy Tymbark
+system:	"Zamieniam sok jab³kowy ""Maciu¶"" na ""Tymbark"", czy chcia³by¶ co¶ jeszcze?"
+user:	nie, ile bêd± kosztowa³y te zakupy?
+system:	Suma produktów w koszyku wynosi 33,96 z³
+user:	trochê du¿o, odejmij mi ser ¿ó³ty z zamówienia
+system:	"Usuwam ser ¿ó³ty ""Gouda"" z koszyka. Czy chcia³by¶ kontynuowaæ zakupy czy przej¶æ do p³atno¶ci?"
+user:	chcia³bym przej¶æ do p³atno¶ci
+system:	Czy posiadasz kartê lojalno¶ciow±?
 user:	nie
-system:	Finalna kwota do zap?aty to 33,96 z?
-user:	super, to b?dzie wszystko
-system:	"Dzi?kujemy za skorzystanie z us?ug sklepu ""Motylek"""
+system:	Finalna kwota do zap³aty to 33,96 z³
+user:	super, to bêdzie wszystko
+system:	"Dziêkujemy za skorzystanie z us³ug sklepu ""Motylek"""

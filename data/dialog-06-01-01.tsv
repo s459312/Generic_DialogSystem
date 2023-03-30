@@ -1,10 +1,10 @@
-system:	Dzie? dobry, jestem systemem obs?uguj?cym zakupy online, co chcia?by? zrobi??
-user:	szukam sk?adnik?w do messer wat
-system:	"W naszej ofercie nie posiadamy przedmiotu o nazwie ""messer wat"", czy mo?esz rozwin?? my?l?"
+system:	Dzieñ dobry, jestem systemem obs³uguj±cym zakupy online, co chcia³by¶ zrobi??
+user:	szukam sk³adników do messer wat
+system:	"W naszej ofercie nie posiadamy przedmiotu o nazwie """"messer wat"""", czy mo¿esz rozwin±æ my¶l?"""
 user:	szukam ciekawych mieszanek przypraw. Jakie macie w swojej ofercie?
-system:	Posiadamy przyprawy KAMIS oraz PRYMAT, aktualnie w promocji mamy kurkum? za 0.15 z?!!!
-user:	interesuja mnie konkretne mieszanki typu garam masala czy berbere. Jakie podobne oferujecie?
-system:	"Nie posiadamy w ofercie produkt?w o nazwie ""garam"" oraz ""barbere"". Czy chcia?by? wybra? co? innego?"
-user:	nie
-system:	Przykro nam, ?e nie uda?o si? dobra? po??danych sk?adnik?w. ?yczymy mi?ego dnia!
-user:	do widzenia
+system:	Posiadamy przyprawy KAMIS oraz PRYMAT, aktualnie w promocji mamy kurkumê za 0.15 z³!!!
+"user:	"	interesuja mnie konkretne mieszanki typu garam masala czy berbere. Jakie podobne oferujecie?
+"system:	"	"Nie posiadamy w ofercie produktów o nazwie ""garam"" oraz ""barbere"". Czy chcia³by¶ wybraæ co¶ innego?"
+"user:	"	nie
+"system:	"	Przykro nam, ¿e nie uda³o siê dobraæ po¿±danych sk³adników. ¿yczymy mi³ego dnia!
+"user:	"	do widzenia
