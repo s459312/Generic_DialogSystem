@@ -16,6 +16,3 @@ system:	Karta lojalnościowa założona pomyślnie. Kwota do zapłaty za zakupy 
 user:	*wysyłam pieniądze*
 system:	"Zamówienie złożone pomyślnie. Dziękuję za wybranie sklepu ""Motylek"". Do zobaczenia"
 user:	Dziękuje do widzenia.
-system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?
-user:	Chciałbym kupić chipsy firmy LAYS o smaku gulaszowym oraz do tego pepsi lime
-system:	Tak się składa, że aktualnie dostępna jest promocja na chipsy LAYS 2 w cenie 1. Czy chciałbyś dobrać drugie chipsy aby aktywować promocję?

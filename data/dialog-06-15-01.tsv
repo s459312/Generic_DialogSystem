@@ -15,11 +15,3 @@ user:	nie
 system:	Finalna kwota do zapłaty to 33,96 zł
 user:	super, to będzie wszystko
 system:	"Dziękujemy za skorzystanie z usług sklepu ""Motylek"""
-system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?
-user:	jakie produkty są u was dostępne?
-system:	Nasz sklep oferuje zakupy spożywcze najwyższej jakości
-user:	okej, to ja bym chciał zamówić mleko, chleb, żółty ser i sok jabłkowy
-system:	"Do koszyka dodano mleko ""łaciate"", chleb ""Bochenek"", Ser żółty ""Gouda"" oraz sok jabłkowy ""Maciuś"". Czy to wszystko?"
-user:	zamień sok jabłkowy na firmy Tymbark
-system:	"Zamieniam sok jabłkowy ""Maciuś"" na ""Tymbark"", czy chciałbyś coś jeszcze?"
-user:	nie, ile będą kosztowały te zakupy?

@@ -17,9 +17,3 @@ user:	32432942
 system:	Karta zaakceptowana. Finalna kwota do zapłaty to 22,65 zł
 user:	chcę zapłacić przy odbiorze
 system:	"Dobrze, zamówienie zostało złożone, numer zamówienia: 452625435246. Na numer telefonu przyjdzie powiadomienie o terminie odbioru zamówienia. Dziękujemy za skorzystanie ze sklepu ""Motylek"""
-system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?
-user:	jakie sery żółte macie w ofercie?
-system:	"W naszej ofercie dostępne są następujące sery: ""Gouda"", ""Cheddar"", ""Pleśniowy uśmieszek"""
-user:	dodaj do listy 0.5kg pleśniowego uśmieszka. chciałbym jeszcze czekoladę gorzką
-system:	"Do koszyka dodano 0.5kg sera ""pleśniowy uśmieszek"" oraz jedną sztukę czekolady gorzkiej ""wedel"". Co jeszcze chciałbyś dodać?"
-user:	usuń czekoladę wedel z listy. jakie są dostepne gorzkie czekolady?
