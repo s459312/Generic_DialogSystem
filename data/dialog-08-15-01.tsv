@@ -1,0 +1,22 @@
+"subject"	"utterance"
+user	czeœæ, jakim systemem jesteœ?
+system	dzieñ dobry, jestem systemem obs³ugi sklepu spo¿ywczego
+user	okej, to ja bym chcia³ zamówiæ mleko, chleb, ¿ó³ty ser i sok jab³kowy
+system	dodaje do koszyka mleko, chleb, ¿ó³ty ser i sok jab³kowy. Czy chcia³byœ kupiæ coœ jeszcze?
+user	tak, dodaj jeszcze czekoladê mleczn¹	
+system	dodaje czekolade mleczn¹. Akurat dzisiaj mamy specjaln¹ ofertê - po dodaniu dwóch czekolad mlecznych, trzecia dostajesz gratis. Czy dodaæ jeszcze jedna czekolade mleczn¹?	
+user	o super, tak poproszê	
+system	w koszyk znajduj¹ siê teraz trzy czekolady. Czy chcia³byœ zamówiæ coœ jeszcze?	
+user	nie, ile bêd¹ mnie kosztowaæ te zakupy?
+system	kwota twojego koszyka wynosi aktualnie 28,96
+user	trochê sporo, odejmij mi mleko z koszyka
+system	odejmuje mleko, teraz kwota twojego zamowienia wynosi 23,46	
+user	okej, to bêdzie wszystko
+system	przechodzê do finalizacji. podaj adres zamowienia
+user	ul. XYZ 1/23, Poznañ
+system	przyjmuje adres zamowienia. przekierowuje do systemu p³atnoœci. NIe zamykaj okna czatu. gdy p³atnoœæ przebiegnie pomyœlnie, poinformuje ciê o tym tutaj
+user	okej
+system	p³atnoœæ zosta³a zrealizowana. Czy coœ jeszcze mogê dla ciebie zrobiæ?
+user	nie, to wszystko, dziêkujê
+system	dziekuje, do zobaczenia
+

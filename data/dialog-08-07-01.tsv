@@ -1,0 +1,21 @@
+"subject"	"utterance"
+user	dzieñ dobry, nast¹pi³o lekkie opóŸnienie z powodu braku pamiêci na moim urz¹dzeniu
+system	dzieñ dobry. jestem systemem obs³ugi sklepu spozywczego, w czym moge pomoc?
+user	chcia³bym zakupiæ bagietkê czosnkow¹ i do tego napój aloesowy
+system	dodaje bagietke czosnkow¹. napoj aloesowy w pojemnosci 0,5 czy 1 litr?
+user	2 razy 1 litr
+system	dodaje 2x npoj aleoswy 1litr. czy cos jeszcze chcesz zamowic?
+user	Nie, dziêkujê. Jeszcze mam sporo sklepów do odwiedzenia.
+system	czy chcesz przejsc do finalizacji zamówienia?
+user	Tak, proszê.
+system	podaj adres zamowienia
+user	Chatbota spo¿ywczego 24/7 A
+system	czy masz nasza karte lojalnosciow¹?
+user	Nie mam, na razie podziêkujê
+system	przyjmuje adres zamowienia. przekierowuje do systemu p³atnoœci. Nie zamykaj okna czatu. gdy p³atnoœæ przebiegnie pomyœlnie, poinformuje ciê o tym tutaj
+user	**blik blik**
+system	P³atnoœæ zosta³a zrealizowana. Czy coœ jeszcze mogê dla ciebie zrobiæ?
+user	To wszystko, dziêkuje. Super sklep!
+system	To mi³e. dziekuje i do zobaczenia
+user	Do zobaczenia!
+

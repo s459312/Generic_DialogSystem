@@ -1,0 +1,16 @@
+"subject"	"utterance"
+user	Hejka, co mogê tutaj zrobiæ?
+system	dzieñ dobry, jestem systemem obs³ugi sklepu spo¿ywczego
+user	Jasne, czy w tym sklepie mogê zamówiæ produkty kuchni azjatyckiej? 
+system	oczywiœcie, mamy w ofercie m.in sos sojowy, srirache, sos rybny, mleczko kokosowe, ocet ryzowy. ry¿, makaron ry¿owy. makaron udon, makaron ramen. kolendre, pasty miso. pasty curry
+user	Jak dobrze rozumiem pasty z tamarydnowca nie ma w ofercie, czy nie ma go obecnie na stanie. Czy by³aby mo¿liwoœæ zamówienia takiego produktu?
+system	Mamy równie¿ paste z tamaryndowca. Czy dodaæ j¹ do koszyka?
+user	Tak poproszê, razem z sosem rybnym, sojowym, makaronem ry¿owym, octem ry¿owym i srirach¹ 	
+system	dodaje paste z tamaryndowca, sos rybny, sos sojowy, makaron ryzowy, ocet ryzowy i sos srirache. czy cos jeszcze chcesz kupic?	
+user	Nie, to by by³o wszystko
+system	podaj adres zamowienia
+user	Shire ul. Nizo³kowska 13a, 14-8897
+system	przyjmuje adres zamowienia. Przekierowuje do systemu p³atnoœci. NIe zamykaj okna czatu. Gdy p³atnoœæ przebiegnie pomyœlnie, poinformuje ciê o tym tutaj. P³atnoœæ przebieg³a pomyslnie, twoje zamowienie jest w realizacji. Czy cos jeszcze moge dla ciebie zrobiæ?
+user	Nie, myœlê, ¿e to wszystko
+system	dziekuje, do zobaczenia
+

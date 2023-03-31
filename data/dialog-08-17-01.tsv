@@ -1,0 +1,15 @@
+"subject"	"utterance"
+user	Dzieñ dobry
+system	Dzieñ dobry, jestem systemem obs³ugi sklepu spo¿ywczego, w czym moge pomoc?
+user	Chcia³bym z³o¿yæ zamówienie na 50kg ziemniaków, wa¿ne jest te¿ by by³o dostarczone na dziœ wieczór.Dodatkowo chcia³bym zamówiæ 5l mleka 
+system	Dodaje do koszyka 50kg ziemniaków oraz 5l mleka. Dodaje do koszyka wysy³ke ekspresow¹. czy coœ jeszcze chcia³byœ zamówiæ?
+user	Nie to wszystko. Ile ³¹czny koszt wraz z wysy³k¹?
+system	Kwota twojego koszyka to 125 z³. Wysy³ka ekspresowa wyniesie 12 z³. razem 137 z³. czy przejœæ do p³atnoœci?	
+user	Tak	
+system	Podaj adres zamówienia	
+user	Ul. Uniwersytetu Poznañskiego 4, 61-000 Poznañ
+system	Przyjmuje adres zamówienia. Przekierowuje do systemu p³atnoœci. Nie zamykaj okna czatu. gdy p³atnoœæ przebiegnie pomyœlnie, poinformuje ciê o tym tutaj.
+system	P³atnoœæ zosta³a zrealizowana. Czy coœ jeszcze mogê dla Ciebie zrobiæ?	
+user	Nie, to wszystko
+system	Dziêkujê do zobaczenia
+

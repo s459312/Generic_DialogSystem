@@ -1,0 +1,33 @@
+"subject"	"utterance"
+user	Dzien dobry, chcialabym sie zapisac na zajecia
+system	dzieñ dobry, jestem systemem obs³ugi sklepu spo¿ywczego, nie posiadam informacji na temat zajêæ
+user	co moglibyœcie mi zaoferowaæ?
+system	w tym tygodniu mamy tydzieñ w³oski - passaty, spody do pizzy oraz w³oskie sery z specjaln¹ promocj¹ 2+1 za grosz
+user	mam ochotê dzisiaj na coœ greckiego, co byœcie mieli w ofercie?
+system	oczywiœcie, miedzy innymi sery (feta, graviera, metsovone, mizithra, halloumi, kefalotiri, manouri, jogurt grecki), ryby i owoce morza (tuñczyk, okoñ, sardynka, barwena, kalmary, oœmiornice), miêsa do gyrosa, produkty pszenne np pita oraz makarony, warzywa wykorzystywane w kuchni greckiej np. pomidor, ogórek, papryka, cebula, bak³a¿an, cukinia, str¹czki, czosnek, koper w³oski, karczoch, kapusta, szpinak	
+user	o to du¿y wybór, interesowa³ by mnie ser feta, makaron, i warzywa typu pomidor, cebula, cukinia, mo¿e te¿ papryka, poproszê wiêcej informacji o tych produktach
+system	warzywa mamy œwie¿utkie prostu z pola, ser feta idealnie s³ony, a z makaronów mo¿esz wybraæ pomiêdzy pszennym, pe³noziarnistym i ryzowym. Do kuchni greckiej polecam makaron pszenny lub pelnoziarnisty	
+user	super to poprosi³abym pszenny typu penne, macie mo¿e jakieœ promocje na któryœ z tych produktów?
+system	Tak dzisiaj specjalna promocja na makarony pszenne, druga paczka makaronu za pó³ ceny
+user	a jakie s¹ ceny tych produktów?
+system	paczka makaronu kosztuje 4 z³. czy interesuj¹ ciê ceny psozosta³ych produktów?	
+user	tak
+system	ser feta - 11 z³, pomidor 1 szt - 3,50z³, cebula 1 szt - 2 z³, cukinia - 3 z³, papryka - 5z³
+user	poprosi³abym 2 papryki, 2 cukinie, cebule, 4 pomidory i jeden ser feta, a i do tego 2 paczki makaronu. Czy maj¹ pañstwo w ofercie wodê na³êczowiankê niegazowan¹?
+system	dodaje produkty do koszyka. niestety mamy jedynie wode na³êczowianke gazowan¹. Czy coœ jeszcze chcia³byœ kupiæ?
+user	poproszê ¿elki œmiel¿elki kwaœne
+system	dodaje poproszê ¿elki œmiel¿elki kwaœne
+user	œmiej¿elki
+system	w³aœnie one. Czy chcesz kupic cos jeszcze?
+user	nie dziêkujê to by³oby wszystko
+system	przechodzê do finalizacji. Podaj adres zamownia
+user	ul. lasów polnych 8/3
+system	przyjmuje adres zamowienia. przekierowuje do systemu p³atnoœci. Nie zamykaj okna czatu. gdy p³atnoœæ przebiegnie pomyœlnie, poinformuje ciê o tym tutaj
+user	Kraków
+system	p³atnoœæ przebieg³a pomyslnie, twoje zamowienie jest w realizacji. czy cos jeszcze moge dla ciebie zrobiæ?
+user	Dziêkujê to by³oby wszystko
+system	dziêkujê, do zobaczenia
+
+
+
+
