@@ -1,17 +1,25 @@
-system:	Dzieñ dobry, jestem systemem obs³uguj±cym zakupy online, co chcia³by¶ zrobiæ?
-user:	jakie produkty s± u was dostêpne?
-system:	Nasz sklep oferuje zakupy spo¿ywcze najwy¿szej jako¶ci
-user:	okej, to ja bym chcia³ zamówiæ mleko, chleb, ¿ó³ty ser i sok jab³kowy
-system:	"Do koszyka dodano mleko ""³aciate"", chleb ""Bochenek"", Ser ¿ó³ty ""Gouda"" oraz sok jab³kowy ""Maciu¶"". Czy to wszystko?"
-user:	zamieñ sok jab³kowy na firmy Tymbark
-system:	"Zamieniam sok jab³kowy ""Maciu¶"" na ""Tymbark"", czy chcia³by¶ co¶ jeszcze?"
-user:	nie, ile bêd± kosztowa³y te zakupy?
-system:	Suma produktów w koszyku wynosi 33,96 z³
-user:	trochê du¿o, odejmij mi ser ¿ó³ty z zamówienia
-system:	"Usuwam ser ¿ó³ty ""Gouda"" z koszyka. Czy chcia³by¶ kontynuowaæ zakupy czy przej¶æ do p³atno¶ci?"
-user:	chcia³bym przej¶æ do p³atno¶ci
-system:	Czy posiadasz kartê lojalno¶ciow±?
+system:	DzieÅ„ dobry, jestem systemem obsÅ‚ugujÄ…cym zakupy online, co chciaÅ‚byÅ› zrobiÄ‡?
+user:	jakie produkty sÄ… u was dostÄ™pne?
+system:	Nasz sklep oferuje zakupy spoÅ¼ywcze najwyÅ¼szej jakoÅ›ci
+user:	okej, to ja bym chciaÅ‚ zamÃ³wiÄ‡ mleko, chleb, Å¼Ã³Å‚ty ser i sok jabÅ‚kowy
+system:	"Do koszyka dodano mleko ""Å‚aciate"",Â chleb ""Bochenek"", Ser Å¼Ã³Å‚ty ""Gouda"" oraz sok jabÅ‚kowy ""MaciuÅ›"". Czy to wszystko?"
+user:	zamieÅ„ sok jabÅ‚kowy na firmy Tymbark
+system:	"Zamieniam sok jabÅ‚kowy ""MaciuÅ›"" na ""Tymbark"", czy chciaÅ‚byÅ› coÅ› jeszcze?"
+user:	nie, ile bÄ™dÄ… kosztowaÅ‚y te zakupy?
+system:	Suma produktÃ³w w koszyku wynosi 33,96 zÅ‚
+user:	trochÄ™ duÅ¼o, odejmij mi ser Å¼Ã³Å‚ty z zamÃ³wienia
+system:	"Usuwam ser Å¼Ã³Å‚ty ""Gouda"" z koszyka. Czy chciaÅ‚byÅ› kontynuowaÄ‡ zakupy czy przejÅ›Ä‡ do pÅ‚atnoÅ›ci?"
+user:	chciaÅ‚bym przejÅ›Ä‡ do pÅ‚atnoÅ›ci
+system:	Czy posiadasz kartÄ™ lojalnoÅ›ciowÄ…?
 user:	nie
-system:	Finalna kwota do zap³aty to 33,96 z³
-user:	super, to bêdzie wszystko
-system:	"Dziêkujemy za skorzystanie z us³ug sklepu ""Motylek"""
+system:	Finalna kwota do zapÅ‚aty to 33,96 zÅ‚
+user:	super, to bÄ™dzie wszystko
+system:	"DziÄ™kujemy za skorzystanie z usÅ‚ug sklepu ""Motylek"""
+system:	DzieÅ„ dobry, jestem systemem obsÅ‚ugujÄ…cym zakupy online, co chciaÅ‚byÅ› zrobiÄ‡?
+user:	jakie produkty sÄ… u was dostÄ™pne?
+system:	Nasz sklep oferuje zakupy spoÅ¼ywcze najwyÅ¼szej jakoÅ›ci
+user:	okej, to ja bym chciaÅ‚ zamÃ³wiÄ‡ mleko, chleb, Å¼Ã³Å‚ty ser i sok jabÅ‚kowy
+system:	"Do koszyka dodano mleko ""Å‚aciate"",Â chleb ""Bochenek"", Ser Å¼Ã³Å‚ty ""Gouda"" oraz sok jabÅ‚kowy ""MaciuÅ›"". Czy to wszystko?"
+user:	zamieÅ„ sok jabÅ‚kowy na firmy Tymbark
+system:	"Zamieniam sok jabÅ‚kowy ""MaciuÅ›"" na ""Tymbark"", czy chciaÅ‚byÅ› coÅ› jeszcze?"
+user:	nie, ile bÄ™dÄ… kosztowaÅ‚y te zakupy?

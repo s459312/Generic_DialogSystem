@@ -1,18 +1,21 @@
-system:	Dzieñ dobry, jestem systemem obs³uguj±cym zakupy online, co chcia³by¶ zrobiæ?
-user:	Chcia³bym kupiæ chipsy firmy LAYS o smaku gulaszowym oraz do tego pepsi lime
-system:	Tak siê sk³ada, ¿e aktualnie dostêpna jest promocja na chipsy LAYS 2 w cenie 1. Czy chcia³by¶ dobraæ drugie chipsy aby aktywowaæ promocjê?
-user:	Bardzo chêtnie
-system:	Jaki smak Ciê interesuje?
+system:	DzieÅ„ dobry, jestem systemem obsÅ‚ugujÄ…cym zakupy online, co chciaÅ‚byÅ› zrobiÄ‡?
+user:	ChciaÅ‚bym kupiÄ‡ chipsy firmy LAYS o smaku gulaszowym oraz do tego pepsi lime
+system:	Tak siÄ™ skÅ‚ada, Å¼e aktualnie dostÄ™pna jest promocja na chipsy LAYS 2 w cenie 1. Czy chciaÅ‚byÅ› dobraÄ‡ drugie chipsy aby aktywowaÄ‡ promocjÄ™?
+user:	Bardzo chÄ™tnie
+system:	Jaki smak CiÄ™ interesuje?
 user:	Zielona cebulka
 system:	Dodano chipsy LAYS zielona cebulka do koszyka, czy to wszystko?
-user:	To wszystko, proszê o przej¶cie do p³atno¶ci
-system:	Dobrze, przechodzê do p³atno¶ci. Czy posiadasz kartê rabatow± lub kartê lojalno¶ciow±?
-user:	Akurat nie posiadam, czy móg³bym tak± wyrobiæ?
-system:	Aby wyrobiæ kartê lojalno¶ciow± nale¿y podaæ numer telefonu
+user:	To wszystko, proszÄ™ o przejÅ›cie do pÅ‚atnoÅ›ci
+system:	Dobrze, przechodzÄ™ do pÅ‚atnoÅ›ci. Czy posiadasz kartÄ™ rabatowÄ… lub kartÄ™ lojalnoÅ›ciowÄ…?
+user:	Akurat nie posiadam, czy mÃ³gÅ‚bym takÄ… wyrobiÄ‡?
+system:	Aby wyrobiÄ‡ kartÄ™ lojalnoÅ›ciowÄ… naleÅ¼y podaÄ‡ numer telefonu
 user:	666333999
-system:	Proszê podaæ kod weryfikacyjny wys³any na podany numer telefonu
+system:	ProszÄ™ podaÄ‡ kod weryfikacyjny wysÅ‚any na podany numer telefonu
 user:	LETMEBUY123
-system:	Karta lojalno¶ciowa za³o¿ona pomy¶lnie. Kwota do zap³aty za zakupy wynosi 13.37 z³
-user:	*wysy³am pieni±dze*
-system:	"Zamówienie z³o¿one pomy¶lnie. Dziêkujê za wybranie sklepu ""Motylek"". Do zobaczenia"
-user:	Dziêkuje do widzenia.
+system:	Karta lojalnoÅ›ciowa zaÅ‚oÅ¼ona pomyÅ›lnie. Kwota do zapÅ‚aty za zakupy wynosi 13.37 zÅ‚
+user:	*wysyÅ‚am pieniÄ…dze*
+system:	"ZamÃ³wienie zÅ‚oÅ¼one pomyÅ›lnie. DziÄ™kujÄ™ za wybranie sklepu ""Motylek"". Do zobaczenia"
+user:	DziÄ™kuje do widzenia.
+system:	DzieÅ„ dobry, jestem systemem obsÅ‚ugujÄ…cym zakupy online, co chciaÅ‚byÅ› zrobiÄ‡?
+user:	ChciaÅ‚bym kupiÄ‡ chipsy firmy LAYS o smaku gulaszowym oraz do tego pepsi lime
+system:	Tak siÄ™ skÅ‚ada, Å¼e aktualnie dostÄ™pna jest promocja na chipsy LAYS 2 w cenie 1. Czy chciaÅ‚byÅ› dobraÄ‡ drugie chipsy aby aktywowaÄ‡ promocjÄ™?

@@ -1,19 +1,25 @@
-system:	Dzieñ dobry, jestem systemem obs³uguj±cym zakupy online, co chcia³by¶ zrobiæ?
-user:	jakie sery ¿ó³te macie w ofercie?
-system:	"W naszej ofercie dostêpne s± nastêpuj±ce sery: ""Gouda"", ""Cheddar"", ""Ple¶niowy u¶mieszek"""
-user:	dodaj do listy 0.5kg ple¶niowego u¶mieszka. chcia³bym jeszcze czekoladê gorzk±
-system:	"Do koszyka dodano 0.5kg sera ""ple¶niowy u¶mieszek"" oraz jedn± sztukê czekolady gorzkiej ""wedel"". Co jeszcze chcia³by¶ dodaæ?"
-user:	usuñ czekoladê wedel z listy. jakie s± dostepne gorzkie czekolady?
-system:	"Usuwam czekoladê ""Wedel"" z listy. Aktualnie dostêpnymi czekoladami gorzkimi s± ""Wedel"", ""Milka"" oraz ""Gorzeczka"""
-user:	dodaj do listy zakupów gorzk± milkê i gorzeczkê
-system:	"Dodajê do koszyka czekoladê ""Milka"" oraz czekoladê ""Gorzeczka"", czy to wszystko?"
-user:	poka¿ mi aktualn± listê zakupów
-system:	"Aktualnie w koszyku znajduj± siê: 0.5kg sera ""ple¶niowy u¶mieszek"", czekolada ""Milka"" oraz czekolada ""Gorzeczka""."
+system:	DzieÅ„ dobry, jestem systemem obsÅ‚ugujÄ…cym zakupy online, co chciaÅ‚byÅ› zrobiÄ‡?
+user:	jakie sery Å¼Ã³Å‚te macie w ofercie?
+system:	"W naszej ofercie dostÄ™pne sÄ… nastÄ™pujÄ…ce sery: ""Gouda"", ""Cheddar"", ""PleÅ›niowy uÅ›mieszek"""
+user:	dodaj do listy 0.5kg pleÅ›niowego uÅ›mieszka. chciaÅ‚bym jeszcze czekoladÄ™ gorzkÄ…
+system:	"Do koszyka dodano 0.5kg sera ""pleÅ›niowy uÅ›mieszek"" oraz jednÄ… sztukÄ™ czekolady gorzkiej ""wedel"". Co jeszcze chciaÅ‚byÅ› dodaÄ‡?"
+user:	usuÅ„ czekoladÄ™ wedel z listy. jakie sÄ… dostepne gorzkie czekolady?
+system:	"Usuwam czekoladÄ™ ""Wedel"" z listy. Aktualnie dostÄ™pnymi czekoladami gorzkimi sÄ… ""Wedel"", ""Milka"" oraz ""Gorzeczka"""
+user:	dodaj do listy zakupÃ³w gorzkÄ… milkÄ™ i gorzeczkÄ™
+system:	"DodajÄ™ do koszyka czekoladÄ™ ""Milka"" oraz czekoladÄ™ ""Gorzeczka"", czy to wszystko?"
+user:	pokaÅ¼ mi aktualnÄ… listÄ™ zakupÃ³w
+system:	"Aktualnie w koszyku znajdujÄ… siÄ™: 0.5kg sera ""pleÅ›niowy uÅ›mieszek"", czekolada ""Milka"" oraz czekolada ""Gorzeczka""."
 user:	to wszystko
-system:	Dobrze, suma do zap³aty wynosi 24,42 z³. Czy posiadasz kartê lojalno¶ciow±?
+system:	Dobrze, suma do zapÅ‚aty wynosi 24,42 zÅ‚. Czy posiadasz kartÄ™ lojalnoÅ›ciowÄ…?
 user:	tak
-system:	Proszê podaæ numer karty lojalno¶ciowej
+system:	ProszÄ™ podaÄ‡ numer karty lojalnoÅ›ciowej
 user:	32432942
-system:	Karta zaakceptowana. Finalna kwota do zap³aty to 22,65 z³
-user:	chcê zap³aciæ przy odbiorze
-system:	"Dobrze, zamówienie zosta³o z³o¿one, numer zamówienia: 452625435246. Na numer telefonu przyjdzie powiadomienie o terminie odbioru zamówienia. Dziêkujemy za skorzystanie ze sklepu ""Motylek"""
+system:	Karta zaakceptowana. Finalna kwota do zapÅ‚aty to 22,65 zÅ‚
+user:	chcÄ™ zapÅ‚aciÄ‡ przy odbiorze
+system:	"Dobrze, zamÃ³wienie zostaÅ‚o zÅ‚oÅ¼one, numer zamÃ³wienia: 452625435246. Na numer telefonu przyjdzie powiadomienie o terminie odbioru zamÃ³wienia. DziÄ™kujemy za skorzystanie ze sklepu ""Motylek"""
+system:	DzieÅ„ dobry, jestem systemem obsÅ‚ugujÄ…cym zakupy online, co chciaÅ‚byÅ› zrobiÄ‡?
+user:	jakie sery Å¼Ã³Å‚te macie w ofercie?
+system:	"W naszej ofercie dostÄ™pne sÄ… nastÄ™pujÄ…ce sery: ""Gouda"", ""Cheddar"", ""PleÅ›niowy uÅ›mieszek"""
+user:	dodaj do listy 0.5kg pleÅ›niowego uÅ›mieszka. chciaÅ‚bym jeszcze czekoladÄ™ gorzkÄ…
+system:	"Do koszyka dodano 0.5kg sera ""pleÅ›niowy uÅ›mieszek"" oraz jednÄ… sztukÄ™ czekolady gorzkiej ""wedel"". Co jeszcze chciaÅ‚byÅ› dodaÄ‡?"
+user:	usuÅ„ czekoladÄ™ wedel z listy. jakie sÄ… dostepne gorzkie czekolady?

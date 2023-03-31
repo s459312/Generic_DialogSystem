@@ -1,25 +1,25 @@
-system:	Dzieñ dobry, jestem systemem obs³uguj±cym zakupy online, co chcia³by¶ zrobiæ?
-user:	a co mo¿na u was kupiæ?
-system:	Nasz sklep oferuje zakupy spo¿ywcze najwy¿szej jako¶ci
-user:	jakie dok³adnie produkty oferujecie?
-system:	"Aktualnie posiadamy promocjê na chipsy LAYS 2 w cenie 1 oraz promocjê 7 dni z ""7 days""."
+system:	DzieÅ„ dobry, jestem systemem obsÅ‚ugujÄ…cym zakupy online, co chciaÅ‚byÅ› zrobiÄ‡?
+user:	a co moÅ¼na u was kupiÄ‡?
+system:	Nasz sklep oferuje zakupy spoÅ¼ywcze najwyÅ¼szej jakoÅ›ci
+user:	jakie dokÅ‚adnie produkty oferujecie?
+system:	"Aktualnie posiadamy promocjÄ™ na chipsy LAYS 2 w cenie 1 oraz promocjÄ™ 7 dni z ""7 days""."
 user:	nie jestem zainteresowana chipsami
-system:	A czym drogi u¿ytkowniku jeste¶ zainteresowany? Cu¿e¶ chcia³by¶ kupiæ?
-user:	w sumie chcia³abym kupiæ owoce, macie jakie¶ w promocji?
-system:	Aktualnie na promocji znajduj± siê pomarañcze. 6Z³ za kilogram!!!
-user:	poprosi³abym w takim razie 3kg, a jakie jeszcze owoce macie w ofercie?
-system:	Dodano 3 kg pomarañczy. W naszym sklepie s± równie¿ dostêpne jab³ka, gruszki, banany, kiwi, kokosy, mandarynki i wiele wiêcej. Pe³na oferta sklepu jest dostêpna pod adresem www.motylek.pl/oferta
-user:	o super, to poprosi³abym 5 bananów ³adnych, 6 kiwi i mo¿e jaki¶ jogurt, jakie macie jogurty waniliowe w ofercie?
-system:	"Dodano 5 x banan ""Piêknisiek"" oraz 6 x kiwi do koszyka. Posiadamy jogurty waniliowe ""Bakoma"" oraz ""Taratoma"""
-user:	poprosi³abym ten drugi
-system:	"Dodano jogurt waniliowy ""Taratoma"" do koszyka. Czy chcia³by¶ kupiæ co¶ jeszcze?"
-user:	nie dziêkujê to by³oby wszystko
-system:	Czy posiadasz kartê lojalno¶ciow±?
+system:	A czym drogi uÅ¼ytkowniku jesteÅ› zainteresowany? CuÅ¼eÅ› chciaÅ‚byÅ› kupiÄ‡?
+user:	w sumie chciaÅ‚abym kupiÄ‡ owoce, macie jakieÅ› w promocji?
+system:	Aktualnie na promocji znajdujÄ… siÄ™ pomaraÅ„cze. 6ZÅ‚ za kilogram!!!
+user:	poprosiÅ‚abym w takim razie 3kg, a jakie jeszcze owoce macie w ofercie?
+system:	Dodano 3 kg pomaraÅ„czy. W naszym sklepie sÄ… rÃ³wnieÅ¼ dostÄ™pne jabÅ‚ka, gruszki, banany, kiwi, kokosy, mandarynki i wiele wiÄ™cej. PeÅ‚na oferta sklepu jest dostÄ™pna pod adresem www.motylek.pl/oferta
+user:	o super, to poprosiÅ‚abym 5 bananÃ³w Å‚adnych, 6 kiwi i moÅ¼e jakiÅ› jogurt, jakie macie jogurty waniliowe w ofercie?
+system:	"Dodano 5 x banan ""PiÄ™knisiek"" oraz 6 x kiwi do koszyka. Posiadamy jogurty waniliowe ""Bakoma"" oraz ""Taratoma"""
+user:	poprosiÅ‚abym ten drugi
+system:	"Dodano jogurt waniliowy ""Taratoma"" do koszyka. Czy chciaÅ‚byÅ› kupiÄ‡ coÅ› jeszcze?"
+user:	nie dziÄ™kujÄ™ to byÅ‚oby wszystko
+system:	Czy posiadasz kartÄ™ lojalnoÅ›ciowÄ…?
 user:	nie posiadam
-system:	Czy chcia³by¶ za³o¿yæ kartê lojalno¶ciow±?
-user:	nie dziêkujê
-system:	Suma do zap³aty wynosi 27,13 z³
+system:	Czy chciaÅ‚byÅ› zaÅ‚oÅ¼yÄ‡ kartÄ™ lojalnoÅ›ciowÄ…?
+user:	nie dziÄ™kujÄ™
+system:	Suma do zapÅ‚aty wynosi 27,13 zÅ‚
 user:	oki
-system:	Czy chcia³by¶ op³aciæ zamówienie online czy te¿ przy odbiorze?
+system:	Czy chciaÅ‚byÅ› opÅ‚aciÄ‡ zamÃ³wienie online czy teÅ¼ przy odbiorze?
 user:	online, przelewem
-system:	"Link do p³atno¶ci: www.przelewikniescam.pl/zmowienie14123315435/przelewik Po zaksiêgowaniu p³atno¶ci zamówienie zostanie z³o¿one. Dziêkujemy za skorzystanie ze sklepu ""Motylek"""
+system:	"Link do pÅ‚atnoÅ›ci: www.przelewikniescam.pl/zmowienie14123315435/przelewik Po zaksiÄ™gowaniu pÅ‚atnoÅ›ci zamÃ³wienie zostanie zÅ‚oÅ¼one. DziÄ™kujemy za skorzystanie ze sklepu ""Motylek"""

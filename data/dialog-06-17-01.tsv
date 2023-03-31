@@ -1,18 +1,25 @@
-system:	Dzieñ dobry, jestem systemem obs³uguj±cym zakupy online, co chcia³by¶ zrobiæ?
-user:	Dla jakiego rodzaju sklepów dzia³a system?
-system:	W naszej ofercie znajduj± siê produkty spo¿ywcze
-user:	Chcia³bym zamówiæ zakupy z odbiorem na jutro o godzinie 16 W sk³ad listy zakupowej bêdzie: Chleb pe³noziarnisty, 2szt Mleko, 5l; Ser ¿ó³ty, 1kg; Jajka, 2 opakowania po 12szt; Mas³o, 3 kostki; Jogurt naturalny, 10 szt; P³atki owsiane, 2szt; Miêso mielone, 1kg; Filet z kurczaka, 1kg; Kie³basa, 1szt
-system:	"Dodano 2 x Chleb pe³noziarnisty, 5l Mleko, 1kg Ser ¿ó³ty ""gouda"", 2 opakowania jajek ""kurniczek"", 3 kostki mas³a ""delka"", 10 x jogurt naturalny, 2 x p³atki owsiane, 1kg miêso mielone z ³opatki, 1kg filet z kurczaka oraz 1 x kie³basa ""¶l±ska"" do koszyka. Czy to wszystko?"
-user:	poproszê o zmianê sera ¿ó³tego gouda na inn± markê
-system:	"Zmieniono ser ""Gouda"" na ser ""Cheddar"", czy co¶ jeszcze?"
+system:	DzieÅ„ dobry, jestem systemem obsÅ‚ugujÄ…cym zakupy online, co chciaÅ‚byÅ› zrobiÄ‡?
+user:	Dla jakiego rodzaju sklepÃ³w dziaÅ‚a system?
+system:	W naszej ofercie znajdujÄ… siÄ™ produkty spoÅ¼ywcze
+user:	ChciaÅ‚bym zamÃ³wiÄ‡ zakupy z odbiorem na jutro o godzinie 16 W skÅ‚ad listy zakupowej bÄ™dzie:Â Chleb peÅ‚noziarnisty, 2szt Mleko, 5l; Ser Å¼Ã³Å‚ty, 1kg; Jajka, 2 opakowania po 12szt; MasÅ‚o, 3 kostki; Jogurt naturalny, 10 szt; PÅ‚atki owsiane, 2szt; MiÄ™so mielone, 1kg; Filet z kurczaka, 1kg; KieÅ‚basa, 1szt
+system:	"Dodano 2 x Chleb peÅ‚noziarnisty, 5l Mleko, 1kg Ser Å¼Ã³Å‚ty ""gouda"", 2 opakowania jajek ""kurniczek"", 3 kostki masÅ‚a ""delka"", 10 x jogurt naturalny, 2 x pÅ‚atki owsiane, 1kg miÄ™so mielone z Å‚opatki, 1kg filet z kurczaka oraz 1 x kieÅ‚basa ""Å›lÄ…ska"" do koszyka. Czy to wszystko?"
+user:	poproszÄ™ o zmianÄ™ sera Å¼Ã³Å‚tego gouda na innÄ… markÄ™
+system:	"Zmieniono ser ""Gouda"" na ser ""Cheddar"", czy coÅ› jeszcze?"
 user:	Nie to wszystko
-system:	Czy posiadasz kartê lojalno¶ciow±?
-user:	Nie, chcia³bym za³o¿yæ
-system:	W celu za³o¿enia karty lojalno¶ciowej nale¿y podaæ numer telefonu
+system:	Czy posiadasz kartÄ™ lojalnoÅ›ciowÄ…?
+user:	Nie, chciaÅ‚bym zaÅ‚oÅ¼yÄ‡
+system:	W celu zaÅ‚oÅ¼enia karty lojalnoÅ›ciowej naleÅ¼y podaÄ‡ numer telefonu
 user:	48123123123
-system:	Proszê podaæ kod weryfikacyjny wys³any na podany numer telefonu
+system:	ProszÄ™ podaÄ‡ kod weryfikacyjny wysÅ‚any na podany numer telefonu
 user:	2137
-system:	Karta lojalno¶ciowa za³o¿ona pomy¶lnie. Suma do zap³aty wynosi 134,43 z³ czy chcia³by¶ op³aciæ zamówienie online czy przy odbiorze?
+system:	Karta lojalnoÅ›ciowa zaÅ‚oÅ¼ona pomyÅ›lnie. Suma do zapÅ‚aty wynosi 134,43 zÅ‚ czy chciaÅ‚byÅ› opÅ‚aciÄ‡ zamÃ³wienie online czy przy odbiorze?
 user:	Przy odbiorze
-system:	"Dobrze, zamówienie z³o¿one pomy¶lnie. Na numer telefonu zostanie wys³any sms z informacj± gdy zakupy bêd± gotowe do odbioru. Dziêkujemy za skorzystanie ze sklepu ""Motylek""!"
-user:	Dziêkuje, do widzenia
+system:	"Dobrze, zamÃ³wienie zÅ‚oÅ¼one pomyÅ›lnie. Na numer telefonu zostanie wysÅ‚any sms z informacjÄ… gdy zakupy bÄ™dÄ… gotowe do odbioru. DziÄ™kujemy za skorzystanie ze sklepu ""Motylek""!"
+user:	DziÄ™kuje, do widzenia
+system:	DzieÅ„ dobry, jestem systemem obsÅ‚ugujÄ…cym zakupy online, co chciaÅ‚byÅ› zrobiÄ‡?
+user:	Dla jakiego rodzaju sklepÃ³w dziaÅ‚a system?
+system:	W naszej ofercie znajdujÄ… siÄ™ produkty spoÅ¼ywcze
+user:	ChciaÅ‚bym zamÃ³wiÄ‡ zakupy z odbiorem na jutro o godzinie 16 W skÅ‚ad listy zakupowej bÄ™dzie:Â Chleb peÅ‚noziarnisty, 2szt Mleko, 5l; Ser Å¼Ã³Å‚ty, 1kg; Jajka, 2 opakowania po 12szt; MasÅ‚o, 3 kostki; Jogurt naturalny, 10 szt; PÅ‚atki owsiane, 2szt; MiÄ™so mielone, 1kg; Filet z kurczaka, 1kg; KieÅ‚basa, 1szt
+system:	"Dodano 2 x Chleb peÅ‚noziarnisty, 5l Mleko, 1kg Ser Å¼Ã³Å‚ty ""gouda"", 2 opakowania jajek ""kurniczek"", 3 kostki masÅ‚a ""delka"", 10 x jogurt naturalny, 2 x pÅ‚atki owsiane, 1kg miÄ™so mielone z Å‚opatki, 1kg filet z kurczaka oraz 1 x kieÅ‚basa ""Å›lÄ…ska"" do koszyka. Czy to wszystko?"
+user:	poproszÄ™ o zmianÄ™ sera Å¼Ã³Å‚tego gouda na innÄ… markÄ™
+system:	"Zmieniono ser ""Gouda"" na ser ""Cheddar"", czy coÅ› jeszcze?"
