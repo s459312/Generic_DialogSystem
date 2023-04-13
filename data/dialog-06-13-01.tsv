@@ -1,19 +1,19 @@
-system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?
-user:	jakie sery żółte macie w ofercie?
-system:	"W naszej ofercie dostępne są następujące sery: ""Gouda"", ""Cheddar"", ""Pleśniowy uśmieszek"""
-user:	dodaj do listy 0.5kg pleśniowego uśmieszka. chciałbym jeszcze czekoladę gorzką
-system:	"Do koszyka dodano 0.5kg sera ""pleśniowy uśmieszek"" oraz jedną sztukę czekolady gorzkiej ""wedel"". Co jeszcze chciałbyś dodać?"
-user:	usuń czekoladę wedel z listy. jakie są dostepne gorzkie czekolady?
-system:	"Usuwam czekoladę ""Wedel"" z listy. Aktualnie dostępnymi czekoladami gorzkimi są ""Wedel"", ""Milka"" oraz ""Gorzeczka"""
-user:	dodaj do listy zakupów gorzką milkę i gorzeczkę
-system:	"Dodaję do koszyka czekoladę ""Milka"" oraz czekoladę ""Gorzeczka"", czy to wszystko?"
-user:	pokaż mi aktualną listę zakupów
-system:	"Aktualnie w koszyku znajdują się: 0.5kg sera ""pleśniowy uśmieszek"", czekolada ""Milka"" oraz czekolada ""Gorzeczka""."
-user:	to wszystko
-system:	Dobrze, suma do zapłaty wynosi 24,42 zł. Czy posiadasz kartę lojalnościową?
-user:	tak
-system:	Proszę podać numer karty lojalnościowej
-user:	32432942
-system:	Karta zaakceptowana. Finalna kwota do zapłaty to 22,65 zł
-user:	chcę zapłacić przy odbiorze
-system:	"Dobrze, zamówienie zostało złożone, numer zamówienia: 452625435246. Na numer telefonu przyjdzie powiadomienie o terminie odbioru zamówienia. Dziękujemy za skorzystanie ze sklepu ""Motylek"""
+system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?	welcomemsg()
+user:	jakie sery żółte macie w ofercie?	request(productname=żółty ser)
+system:	"W naszej ofercie dostępne są następujące sery: ""Gouda"", ""Cheddar"", ""Pleśniowy uśmieszek"""	inform(count=3)
+user:	dodaj do listy 0.5kg pleśniowego uśmieszka. chciałbym jeszcze czekoladę gorzką	inform(brandname=pleśniowy uśmieszek, amount=0.5kg)&inform(productname=czekolada)
+system:	"Do koszyka dodano 0.5kg sera ""pleśniowy uśmieszek"" oraz jedną sztukę czekolady gorzkiej ""wedel"". Co jeszcze chciałbyś dodać?"	inform(brandname=pleśniowy uśmieszek, amount=0.5kg)&inform(productname=czekolada, brandname=Wedel)
+user:	usuń czekoladę wedel z listy. jakie są dostepne gorzkie czekolady?	deny(brandname=Wedel)&request(brandname)
+system:	"Usuwam czekoladę ""Wedel"" z listy. Aktualnie dostępnymi czekoladami gorzkimi są ""Wedel"", ""Milka"" oraz ""Gorzeczka"""	affirm()&inform(count=3)
+user:	dodaj do listy zakupów gorzką milkę i gorzeczkę	inform(brandname=Milka)&inform(brandname=Gorzeczka)
+system:	"Dodaję do koszyka czekoladę ""Milka"" oraz czekoladę ""Gorzeczka"", czy to wszystko?"	inform(brandname=Milka)&inform(brandname=Gorzeczka)
+user:	pokaż mi aktualną listę zakupów	request(cart)
+system:	"Aktualnie w koszyku znajdują się: 0.5kg sera ""pleśniowy uśmieszek"", czekolada ""Milka"" oraz czekolada ""Gorzeczka""."	inform(cart)
+user:	to wszystko	request(payment)
+system:	Dobrze, suma do zapłaty wynosi 24,42 zł. Czy posiadasz kartę lojalnościową?	inform(money)&request(card)
+user:	tak	inform(card=True)
+system:	Proszę podać numer karty lojalnościowej	request(cardnumber)
+user:	32432942	inform(cardnumber=32432942)
+system:	Karta zaakceptowana. Finalna kwota do zapłaty to 22,65 zł	affirm()&inform(money)
+user:	chcę zapłacić przy odbiorze	inform(paymentmethod=sklep)
+system:	"Dobrze, zamówienie zostało złożone, numer zamówienia: 452625435246. Na numer telefonu przyjdzie powiadomienie o terminie odbioru zamówienia. Dziękujemy za skorzystanie ze sklepu ""Motylek"""	bye()

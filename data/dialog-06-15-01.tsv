@@ -1,17 +1,17 @@
-system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?
-user:	jakie produkty są u was dostępne?
-system:	Nasz sklep oferuje zakupy spożywcze najwyższej jakości
-user:	okej, to ja bym chciał zamówić mleko, chleb, żółty ser i sok jabłkowy
-system:	"Do koszyka dodano mleko ""łaciate"", chleb ""Bochenek"", Ser żółty ""Gouda"" oraz sok jabłkowy ""Maciuś"". Czy to wszystko?"
-user:	zamień sok jabłkowy na firmy Tymbark
-system:	"Zamieniam sok jabłkowy ""Maciuś"" na ""Tymbark"", czy chciałbyś coś jeszcze?"
-user:	nie, ile będą kosztowały te zakupy?
-system:	Suma produktów w koszyku wynosi 33,96 zł
-user:	trochę dużo, odejmij mi ser żółty z zamówienia
-system:	"Usuwam ser żółty ""Gouda"" z koszyka. Czy chciałbyś kontynuować zakupy czy przejść do płatności?"
-user:	chciałbym przejść do płatności
-system:	Czy posiadasz kartę lojalnościową?
-user:	nie
-system:	Finalna kwota do zapłaty to 33,96 zł
-user:	super, to będzie wszystko
-system:	"Dziękujemy za skorzystanie z usług sklepu ""Motylek"""
+system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?	welcomemsg()
+user:	jakie produkty są u was dostępne?	request(shop)
+system:	Nasz sklep oferuje zakupy spożywcze najwyższej jakości	inform(shop)
+user:	okej, to ja bym chciał zamówić mleko, chleb, żółty ser i sok jabłkowy	inform(productname=mleko)&inform(productname=chleb)&inform(productname=żółty ser)&inform(productname=sok jabłkowy)
+system:	"Do koszyka dodano mleko ""łaciate"", chleb ""Bochenek"", Ser żółty ""Gouda"" oraz sok jabłkowy ""Maciuś"". Czy to wszystko?"	inform(productname=mleko)&inform(productname=chleb)&inform(productname=żółty ser)&inform(productname=sok jabłkowy)
+user:	zamień sok jabłkowy na firmy Tymbark	deny(brandname=Maciuś)&inform(brandname=Tymbark)
+system:	"Zamieniam sok jabłkowy ""Maciuś"" na ""Tymbark"", czy chciałbyś coś jeszcze?"	inform(brandname=Tymbark)
+user:	nie, ile będą kosztowały te zakupy?	request(money)
+system:	Suma produktów w koszyku wynosi 33,96 zł	inform(money)
+user:	trochę dużo, odejmij mi ser żółty z zamówienia	inform(productname=ser żółty, flag=delete)
+system:	"Usuwam ser żółty ""Gouda"" z koszyka. Czy chciałbyś kontynuować zakupy czy przejść do płatności?"	affirm()
+user:	chciałbym przejść do płatności	request(payment)
+system:	Czy posiadasz kartę lojalnościową?	request(card)
+user:	nie	inform(card=False)
+system:	Finalna kwota do zapłaty to 33,96 zł	inform(money)
+user:	super, to będzie wszystko	affirm()
+system:	"Dziękujemy za skorzystanie z usług sklepu ""Motylek"""	bye()

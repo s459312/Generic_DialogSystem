@@ -1,25 +1,25 @@
-system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?
-user:	a co można u was kupić?
-system:	Nasz sklep oferuje zakupy spożywcze najwyższej jakości
-user:	jakie dokładnie produkty oferujecie?
-system:	"Aktualnie posiadamy promocję na chipsy LAYS 2 w cenie 1 oraz promocję 7 dni z ""7 days""."
-user:	nie jestem zainteresowana chipsami
-system:	A czym drogi użytkowniku jesteś zainteresowany? Cużeś chciałbyś kupić?
-user:	w sumie chciałabym kupić owoce, macie jakieś w promocji?
-system:	Aktualnie na promocji znajdują się pomarańcze. 6Zł za kilogram!!!
-user:	poprosiłabym w takim razie 3kg, a jakie jeszcze owoce macie w ofercie?
-system:	Dodano 3 kg pomarańczy. W naszym sklepie są również dostępne jabłka, gruszki, banany, kiwi, kokosy, mandarynki i wiele więcej. Pełna oferta sklepu jest dostępna pod adresem www.motylek.pl/oferta
-user:	o super, to poprosiłabym 5 bananów ładnych, 6 kiwi i może jakiś jogurt, jakie macie jogurty waniliowe w ofercie?
-system:	"Dodano 5 x banan ""Pięknisiek"" oraz 6 x kiwi do koszyka. Posiadamy jogurty waniliowe ""Bakoma"" oraz ""Taratoma"""
-user:	poprosiłabym ten drugi
-system:	"Dodano jogurt waniliowy ""Taratoma"" do koszyka. Czy chciałbyś kupić coś jeszcze?"
-user:	nie dziękuję to byłoby wszystko
-system:	Czy posiadasz kartę lojalnościową?
-user:	nie posiadam
-system:	Czy chciałbyś założyć kartę lojalnościową?
-user:	nie dziękuję
-system:	Suma do zapłaty wynosi 27,13 zł
-user:	oki
-system:	Czy chciałbyś opłacić zamówienie online czy też przy odbiorze?
-user:	online, przelewem
-system:	"Link do płatności: www.przelewikniescam.pl/zmowienie14123315435/przelewik Po zaksięgowaniu płatności zamówienie zostanie złożone. Dziękujemy za skorzystanie ze sklepu ""Motylek"""
+system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?	welcomemsg()
+user:	a co można u was kupić?	request(shop)
+system:	Nasz sklep oferuje zakupy spożywcze najwyższej jakości	inform(shop)
+user:	jakie dokładnie produkty oferujecie?	null()
+system:	"Aktualnie posiadamy promocję na chipsy LAYS 2 w cenie 1 oraz promocję 7 dni z ""7 days""."	offer(promotion)
+user:	nie jestem zainteresowana chipsami	negate()
+system:	A czym drogi użytkowniku jesteś zainteresowany? Cużeś chciałbyś kupić?	request(productname)
+user:	w sumie chciałabym kupić owoce, macie jakieś w promocji?	inform(productcategory=owoce)&request(promotion)
+system:	Aktualnie na promocji znajdują się pomarańcze. 6Zł za kilogram!!!	offer(promotion, productcategory=owoce)
+user:	poprosiłabym w takim razie 3kg, a jakie jeszcze owoce macie w ofercie?	inform(productname=pomarańcza, amount=3kg)&request(productcategory=owoce)
+system:	Dodano 3 kg pomarańczy. W naszym sklepie są również dostępne jabłka, gruszki, banany, kiwi, kokosy, mandarynki i wiele więcej. Pełna oferta sklepu jest dostępna pod adresem www.motylek.pl/oferta	inform(productcategory=owoce)
+user:	o super, to poprosiłabym 5 bananów ładnych, 6 kiwi i może jakiś jogurt, jakie macie jogurty waniliowe w ofercie?	inform(productname=banan, amount=5)&inform(productname=kiwi, amount=6)&request(productname=jogurt)
+system:	"Dodano 5 x banan ""Pięknisiek"" oraz 6 x kiwi do koszyka. Posiadamy jogurty waniliowe ""Bakoma"" oraz ""Taratoma"""	inform(productname=banan, amount=5)&inform(productname=kiwi, amount=6)&inform(productname=jogurt, count=2)
+user:	poprosiłabym ten drugi	inform(brandname=Taratoma)
+system:	"Dodano jogurt waniliowy ""Taratoma"" do koszyka. Czy chciałbyś kupić coś jeszcze?"	inform(productname=jogurt, brandname=Taratoma)
+user:	nie dziękuję to byłoby wszystko	request(card)&request(payment)
+system:	Czy posiadasz kartę lojalnościową?	request(card)
+user:	nie posiadam	inform(card=False)
+system:	Czy chciałbyś założyć kartę lojalnościową?	offer(cardcreation)
+user:	nie dziękuję	negate()
+system:	Suma do zapłaty wynosi 27,13 zł	inform(money=27,13)
+user:	oki	affirm()
+system:	Czy chciałbyś opłacić zamówienie online czy też przy odbiorze?	request(paymentmethod)
+user:	online, przelewem	inform(paymentmethod=online)
+system:	"Link do płatności: www.przelewikniescam.pl/zmowienie14123315435/przelewik Po zaksięgowaniu płatności zamówienie zostanie złożone. Dziękujemy za skorzystanie ze sklepu ""Motylek"""	bye()

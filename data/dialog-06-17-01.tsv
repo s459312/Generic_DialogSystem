@@ -1,18 +1,18 @@
-system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?
-user:	Dla jakiego rodzaju sklepów działa system?
-system:	W naszej ofercie znajdują się produkty spożywcze
-user:	Chciałbym zamówić zakupy z odbiorem na jutro o godzinie 16 W skład listy zakupowej będzie: Chleb pełnoziarnisty, 2szt Mleko, 5l; Ser żółty, 1kg; Jajka, 2 opakowania po 12szt; Masło, 3 kostki; Jogurt naturalny, 10 szt; Płatki owsiane, 2szt; Mięso mielone, 1kg; Filet z kurczaka, 1kg; Kiełbasa, 1szt
-system:	"Dodano 2 x Chleb pełnoziarnisty, 5l Mleko, 1kg Ser żółty ""gouda"", 2 opakowania jajek ""kurniczek"", 3 kostki masła ""delka"", 10 x jogurt naturalny, 2 x płatki owsiane, 1kg mięso mielone z łopatki, 1kg filet z kurczaka oraz 1 x kiełbasa ""śląska"" do koszyka. Czy to wszystko?"
-user:	poproszę o zmianę sera żółtego gouda na inną markę
-system:	"Zmieniono ser ""Gouda"" na ser ""Cheddar"", czy coś jeszcze?"
-user:	Nie to wszystko
-system:	Czy posiadasz kartę lojalnościową?
-user:	Nie, chciałbym założyć
-system:	W celu założenia karty lojalnościowej należy podać numer telefonu
-user:	48123123123
-system:	Proszę podać kod weryfikacyjny wysłany na podany numer telefonu
-user:	2137
-system:	Karta lojalnościowa założona pomyślnie. Suma do zapłaty wynosi 134,43 zł czy chciałbyś opłacić zamówienie online czy przy odbiorze?
-user:	Przy odbiorze
-system:	"Dobrze, zamówienie złożone pomyślnie. Na numer telefonu zostanie wysłany sms z informacją gdy zakupy będą gotowe do odbioru. Dziękujemy za skorzystanie ze sklepu ""Motylek""!"
-user:	Dziękuje, do widzenia
+system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?	welcomemsg()
+user:	Dla jakiego rodzaju sklepów działa system?	request(shop)
+system:	W naszej ofercie znajdują się produkty spożywcze	inform(shop)
+user:	Chciałbym zamówić zakupy z odbiorem na jutro o godzinie 16 W skład listy zakupowej będzie: Chleb pełnoziarnisty, 2szt Mleko, 5l; Ser żółty, 1kg; Jajka, 2 opakowania po 12szt; Masło, 3 kostki; Jogurt naturalny, 10 szt; Płatki owsiane, 2szt; Mięso mielone, 1kg; Filet z kurczaka, 1kg; Kiełbasa, 1szt	inform(list)
+system:	"Dodano 2 x Chleb pełnoziarnisty, 5l Mleko, 1kg Ser żółty ""gouda"", 2 opakowania jajek ""kurniczek"", 3 kostki masła ""delka"", 10 x jogurt naturalny, 2 x płatki owsiane, 1kg mięso mielone z łopatki, 1kg filet z kurczaka oraz 1 x kiełbasa ""śląska"" do koszyka. Czy to wszystko?"	inform(list)
+user:	poproszę o zmianę sera żółtego gouda na inną markę	deny(brandname=gouda)&reqalts()
+system:	"Zmieniono ser ""Gouda"" na ser ""Cheddar"", czy coś jeszcze?"	affirm()&inform(brandname=cheddar)
+user:	Nie to wszystko	request(payment)
+system:	Czy posiadasz kartę lojalnościową?	request(card)
+user:	Nie, chciałbym założyć	inform(card=False)&inform(cardcreate=True)
+system:	W celu założenia karty lojalnościowej należy podać numer telefonu	request(phone)
+user:	48123123123	inform(phone=48123123123)
+system:	Proszę podać kod weryfikacyjny wysłany na podany numer telefonu	request(code)
+user:	2137	inform(code-2137)
+system:	Karta lojalnościowa założona pomyślnie. Suma do zapłaty wynosi 134,43 zł czy chciałbyś opłacić zamówienie online czy przy odbiorze?	affirm()&inform(moeny)&request(paymentmethod)
+user:	Przy odbiorze	inform(paymentmethod=sklep)
+system:	"Dobrze, zamówienie złożone pomyślnie. Na numer telefonu zostanie wysłany sms z informacją gdy zakupy będą gotowe do odbioru. Dziękujemy za skorzystanie ze sklepu ""Motylek""!"	affirm()&bye()
+user:	Dziękuje, do widzenia	bye()

@@ -1,18 +1,18 @@
-system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?
-user:	Chciałbym kupić chipsy firmy LAYS o smaku gulaszowym oraz do tego pepsi lime
-system:	Tak się składa, że aktualnie dostępna jest promocja na chipsy LAYS 2 w cenie 1. Czy chciałbyś dobrać drugie chipsy aby aktywować promocję?
-user:	Bardzo chętnie
-system:	Jaki smak Cię interesuje?
-user:	Zielona cebulka
-system:	Dodano chipsy LAYS zielona cebulka do koszyka, czy to wszystko?
-user:	To wszystko, proszę o przejście do płatności
-system:	Dobrze, przechodzę do płatności. Czy posiadasz kartę rabatową lub kartę lojalnościową?
-user:	Akurat nie posiadam, czy mógłbym taką wyrobić?
-system:	Aby wyrobić kartę lojalnościową należy podać numer telefonu
-user:	666333999
-system:	Proszę podać kod weryfikacyjny wysłany na podany numer telefonu
-user:	LETMEBUY123
-system:	Karta lojalnościowa założona pomyślnie. Kwota do zapłaty za zakupy wynosi 13.37 zł
-user:	*wysyłam pieniądze*
-system:	"Zamówienie złożone pomyślnie. Dziękuję za wybranie sklepu ""Motylek"". Do zobaczenia"
-user:	Dziękuje do widzenia.
+system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?	welcomemsg()
+user:	Chciałbym kupić chipsy firmy LAYS o smaku gulaszowym oraz do tego pepsi lime	inform(productname=chipsy, brandname=lays, taste=gulasz)& inform(productname=pepsi, taste=lime)
+system:	Tak się składa, że aktualnie dostępna jest promocja na chipsy LAYS 2 w cenie 1. Czy chciałbyś dobrać drugie chipsy aby aktywować promocję?	Impl-conf(productname=chipsy, brandname=lays, taste=gulasz)offer(promotion)
+user:	Bardzo chętnie	affirm()
+system:	Jaki smak Cię interesuje?	reqmore(taste)
+user:	Zielona cebulka	inform(taste=zielona cebulka)
+system:	Dodano chipsy LAYS zielona cebulka do koszyka, czy to wszystko?	inform(productname=chipsy, brandname=lays, taste=zielona cebulka)
+user:	To wszystko, proszę o przejście do płatności	request(payment)
+system:	Dobrze, przechodzę do płatności. Czy posiadasz kartę rabatową lub kartę lojalnościową?	affirm()&request(card)
+user:	Akurat nie posiadam, czy mógłbym taką wyrobić?	inform(card=False)
+system:	Aby wyrobić kartę lojalnościową należy podać numer telefonu	request(phonenumber)
+user:	666333999	inform(phonenumber)
+system:	Proszę podać kod weryfikacyjny wysłany na podany numer telefonu	request(code)
+user:	LETMEBUY123	inform(code)
+system:	Karta lojalnościowa założona pomyślnie. Kwota do zapłaty za zakupy wynosi 13.37 zł	affirm()&inform(money)
+user:	*wysyłam pieniądze*	null()
+system:	"Zamówienie złożone pomyślnie. Dziękuję za wybranie sklepu ""Motylek"". Do zobaczenia"	bye()
+user:	Dziękuje do widzenia.	bye()

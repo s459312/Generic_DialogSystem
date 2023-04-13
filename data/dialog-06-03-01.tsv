@@ -1,15 +1,15 @@
-system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?
-user:	Chciałbym kupić jakiś prezent na urodziny. Myślałem o jakiś perfumach.
-system:	"Dostępne perfumy w naszym sklepie to ""Marcini"", ""Vitolio"", ""Jaushiu"" oraz ""Polini"""
-user:	Czy to nazwy marek, czy produktów?
-system:	Są to nazwy marek produkujących perfumy
-user:	Czy wśród tych producentów znajdują się perfumy z dominującą nutą goździków?
-system:	"Perfumy marki ""Marcini"" posiadają takową właściwość"
-user:	Czy mógłbyś podać ceny tych perfum? 
-system:	"Cena perfum ""Marcini"" to 33,99 zł"
-user:	Super! Chciałbym je zamówić. Czy potrzeba podać adres zamówienia.
-system:	"Przy opcji ""dostawa do domu"" adres jest wymagany. Czy chcesz wybrać tę opcję?"
-user:	Tak, poproszę
-system:	Proszę podać Imię i nazwisko oraz adres dostawy.
-user:	Bilbo Baggins Shire ul. Nizołkowska 13a, 14-8897
-system:	"Zamówienie złożone pomyślnie. Dziękujemy za skorzystanie z usług sklepu ""Motylek""!"
+system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?	welcomemsg()
+user:	Chciałbym kupić jakiś prezent na urodziny. Myślałem o jakiś perfumach.	inform(productcategory=perfumy)
+system:	"Dostępne perfumy w naszym sklepie to ""Marcini"", ""Vitolio"", ""Jaushiu"" oraz ""Polini"""	inform(count=4)
+user:	Czy to nazwy marek, czy produktów?	reqmore(brandname)
+system:	Są to nazwy marek produkujących perfumy	inform(brandname)
+user:	Czy wśród tych producentów znajdują się perfumy z dominującą nutą goździków?	request(specialcondition)
+system:	"Perfumy marki ""Marcini"" posiadają takową właściwość"	inform(specialcondition=True)
+user:	Czy mógłbyś podać ceny tych perfum? 	request(price)
+system:	"Cena perfum ""Marcini"" to 33,99 zł"	inform(price=33,99)
+user:	Super! Chciałbym je zamówić. Czy potrzeba podać adres zamówienia.	affirm()&request(deliveryoption)
+system:	"Przy opcji ""dostawa do domu"" adres jest wymagany. Czy chcesz wybrać tę opcję?"	confirm-domain(deliveryoption=wysyłka)
+user:	Tak, poproszę	affirm()
+system:	Proszę podać Imię i nazwisko oraz adres dostawy.	request(name)&request(adress)
+user:	Bilbo Baggins Shire ul. Nizołkowska 13a, 14-8897	inform(adress=Bilbo Baggins Shire ul. Nizołkowska 13a, 14-8897)
+system:	"Zamówienie złożone pomyślnie. Dziękujemy za skorzystanie z usług sklepu ""Motylek""!"	bye()

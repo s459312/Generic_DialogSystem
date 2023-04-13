@@ -1,10 +1,10 @@
-system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?
-user:	szukam składników do messer wat
-system:	"W naszej ofercie nie posiadamy przedmiotu o nazwie ""messer wat"", czy możesz rozwinąć myśl?"
-user:	szukam ciekawych mieszanek przypraw. Jakie macie w swojej ofercie?
-system:	Posiadamy przyprawy KAMIS oraz PRYMAT, aktualnie w promocji mamy kurkumę za 0.15 zł!!!
-user:	interesuja mnie konkretne mieszanki typu garam masala czy berbere. Jakie podobne oferujecie?
-system:	"Nie posiadamy w ofercie produktów o nazwie ""garam"" oraz ""barbere"". Czy chciałbyś wybrać coś innego?"
-user:	nie
-system:	Przykro nam, że nie udało się dobrać pożądanych składników. Życzymy miłego dnia!
-user:	do widzenia
+system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?	welcomemsg()
+user:	szukam składników do messer wat	inform(productname=messer wat)
+system:	"W naszej ofercie nie posiadamy przedmiotu o nazwie ""messer wat"", czy możesz rozwinąć myśl?"	canthelp(productname=messer wat)&request(productname) 
+user:	szukam ciekawych mieszanek przypraw. Jakie macie w swojej ofercie?	inform(productcategory=przyprawa)
+system:	Posiadamy przyprawy KAMIS oraz PRYMAT, aktualnie w promocji mamy kurkumę za 0.15 zł!!!	inform(productcategory)
+user:	interesuja mnie konkretne mieszanki typu garam masala czy berbere. Jakie podobne oferujecie?	inform(productname=garam masala)&inform(productname=barbere)
+system:	"Nie posiadamy w ofercie produktów o nazwie ""garam"" oraz ""barbere"". Czy chciałbyś wybrać coś innego?"	canthelp(productname=garam)&canthelp(productname=barbere)&request(productcategory)
+user:	nie	negate()
+system:	Przykro nam, że nie udało się dobrać pożądanych składników. Życzymy miłego dnia!	bye()
+user:	do widzenia	bye()
