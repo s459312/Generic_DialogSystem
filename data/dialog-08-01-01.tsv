@@ -1,27 +1,27 @@
 "subject"	"utterance"
-user	Szukam restauracji z kuchni¹ etiopsk¹
-system	dzieñ dobry, jestem systemem obs³ugi sklepu spo¿ywczego, nie posiadam informacji na temat restauracji z kuchni¹ etiopsk¹
-user	szukam sk³adników do messer wat
-system	nie posiadam produktu "sk³adniki do messet wat". czy mo¿esz sformuowaæ to inaczej?
+user	Szukam restauracji z kuchniï¿½ etiopskï¿½
+system	dzieï¿½ dobry, jestem systemem obsï¿½ugi sklepu spoï¿½ywczego, nie posiadam informacji na temat restauracji z kuchniï¿½ etiopskï¿½
+user	szukam skï¿½adnikï¿½w do messer wat
+system  nie posiadam produktu "skï¿½adniki do messet wat". czy moï¿½esz sformuowaï¿½ to inaczej?
 user	szukam ciekawych mieszanek przypraw. Co macie w swojej ofercie?	
-system	z mieszanek przypraw mamy w ofercie: przyprawa arabska - sól, kukurydza, pieprz zio³owy (kukurydza, pietruszka, gorczyca, kolendra, kminek, majeranek, cz¹ber, tymianek, chilli), papryka s³odka, cukier, kolendra, papryka ostra, kmin rzymski, cynamon, soda, imbir, ziele angielskie, ga³ka muszkato³owa, goŸdziki; przyprawa azjatycka - sól, czosnek, marchew, kukurydza, papryka s³odka, imbir, curry, szczypiorek, chili, papryka ostra, barwnik naturalny-ekstrakt papryki; przyprawa cajun - papryka s³odka, pieprz cayenne, chili, sól, pieprz czarny, czosnek, cebula, oregano, tymianek, pieprz bia³y; przyprawa chiñska - sól, kolendra, imbir, papryka ostra, kozieradka, cynamon, cukier, kukurydza, kurkuma, kminek, koper w³oski, kardamon, pieprz bia³y, papryka chilli, naturalny barwnik- oleorezyna kurkumy; przyprawa "5 Smaków" - kolendra, sól, cynamon, ziele angielskie, kukurydza, papryka s³odka, papryka ostra, barwnik naturalny- ekstrakt z papryki.
-user	a posiadacie mieszanki bez soli w sk³adzie?	
-system	posiadamy dwie mieszanki: zio³a zamiast soli - gorczyca, papryka s³odka, kozieradka, kurkuma, cebula, czosnek, kolendra, pieprz czarny, oregano, imbir, pietruszka, papryka chilli, bazylia, lubczyk, majeranek; przyprawa garam masala premium bez soli - kolendra, pieprz czarny, kmin rzymski, cynamon, liœæ laurowy, goŸdziki, kardamon, imbir, ga³ka muszkato³owa.	
+system	z mieszanek przypraw mamy w ofercie: przyprawa arabska - sï¿½l, kukurydza, pieprz zioï¿½owy (kukurydza, pietruszka, gorczyca, kolendra, kminek, majeranek, czï¿½ber, tymianek, chilli), papryka sï¿½odka, cukier, kolendra, papryka ostra, kmin rzymski, cynamon, soda, imbir, ziele angielskie, gaï¿½ka muszkatoï¿½owa, goï¿½dziki; przyprawa azjatycka - sï¿½l, czosnek, marchew, kukurydza, papryka sï¿½odka, imbir, curry, szczypiorek, chili, papryka ostra, barwnik naturalny-ekstrakt papryki; przyprawa cajun - papryka sï¿½odka, pieprz cayenne, chili, sï¿½l, pieprz czarny, czosnek, cebula, oregano, tymianek, pieprz biaï¿½y; przyprawa chiï¿½ska - sï¿½l, kolendra, imbir, papryka ostra, kozieradka, cynamon, cukier, kukurydza, kurkuma, kminek, koper wï¿½oski, kardamon, pieprz biaï¿½y, papryka chilli, naturalny barwnik- oleorezyna kurkumy; przyprawa "5 Smakï¿½w" - kolendra, sï¿½l, cynamon, ziele angielskie, kukurydza, papryka sï¿½odka, papryka ostra, barwnik naturalny- ekstrakt z papryki.
+user	a posiadacie mieszanki bez soli w skï¿½adzie?	
+system	posiadamy dwie mieszanki: zioï¿½a zamiast soli - gorczyca, papryka sï¿½odka, kozieradka, kurkuma, cebula, czosnek, kolendra, pieprz czarny, oregano, imbir, pietruszka, papryka chilli, bazylia, lubczyk, majeranek; przyprawa garam masala premium bez soli - kolendra, pieprz czarny, kmin rzymski, cynamon, liï¿½ï¿½ laurowy, goï¿½dziki, kardamon, imbir, gaï¿½ka muszkatoï¿½owa.	
 user	dodaj obie mieszanki do koszyka
-system	dodaje zio³a zamiast soli oraz przyprawa garam masala bez soli. Czy coœ jeszcze dodaæ do koszyka
+system	dodaje zioï¿½a zamiast soli oraz przyprawa garam masala bez soli. Czy coï¿½ jeszcze dodaï¿½ do koszyka
 user	czy macie napoje z usa w ofercie?
-system	nie posiadam takiej kategorii napojów. Z kategorii napojów mamy coca-cole, pepsi, sprite oraz soki. czy któryœ z tych napojów ciê interesuje?	
+system	nie posiadam takiej kategorii napojï¿½w. Z kategorii napojï¿½w mamy coca-cole, pepsi, sprite oraz soki. czy ktï¿½ryï¿½ z tych napojï¿½w ciï¿½ interesuje?	
 user	nie
-system	czy chcesz przejœæ do p³atnoœci?
+system	czy chcesz przejï¿½ï¿½ do pï¿½atnoï¿½ci?
 user	tak
-system	czy posiadasz nasz¹ kartê lojalnoœciow¹?
+system	czy posiadasz naszï¿½ kartï¿½ lojalnoï¿½ciowï¿½?
 user	nie
-system	czy chcia³byœ za³o¿yæ kartê lojalnoœciow¹?
+system	czy chciaï¿½byï¿½ zaï¿½oï¿½yï¿½ kartï¿½ lojalnoï¿½ciowï¿½?
 user	nie
 system	podaj adres zamowenia
-user	ul. Uniwersytetu Poznañskiego 4, Poznañ
-system	przyjmuje adres zamowienia. przekierowuje do systemu p³atnoœci. NIe zamykaj okna czatu. gdy p³atnoœæ przebiegnie pomyœlnie, poinformuje ciê o tym tutaj
-user	system odrzuca mi platnoœæ kart¹
-system	jeœli wystêpuj¹ problemy z systemem p³atnoœci, skontaktuj siê z operatorem p³atnoœci. Czy coœ jeszcze moge dla ciebie zrobiæ?
+user	ul. Uniwersytetu Poznaï¿½skiego 4, Poznaï¿½
+system	przyjmuje adres zamowienia. przekierowuje do systemu pï¿½atnoï¿½ci. NIe zamykaj okna czatu. gdy pï¿½atnoï¿½ï¿½ przebiegnie pomyï¿½lnie, poinformuje ciï¿½ o tym tutaj
+user	system odrzuca mi platnoï¿½ï¿½ kartï¿½
+system	jeï¿½li wystï¿½pujï¿½ problemy z systemem pï¿½atnoï¿½ci, skontaktuj siï¿½ z operatorem pï¿½atnoï¿½ci. Czy coï¿½ jeszcze moge dla ciebie zrobiï¿½?
 user	nie
-system	dziêkujê i zapraszam ponownie
+system	dziï¿½kujï¿½ i zapraszam ponownie
