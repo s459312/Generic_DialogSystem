@@ -1,0 +1,19 @@
+user:	Dzień dobry, jakie dzisiaj mamy promocje?
+system:	"Witaj użytkowniku 08. Dzisiaj mamy taką listę promocji: - Pizza Hawajska dla wszystkich od firmy ""Galaktyczna Flota"": przy zakupie 2 artykułów ""Pizza Hawajska"" od ""Galaktycznej Floty"" 2 pizze gratis! - Masło 89% w cenie 3,69 cebulionów przy zakupie 10 sztuk - tanio jak 2021! - Bourbon ""Gallactines"" + ""Space-Cola"" w cenie 69 cebulionów - Wielkanocny Gorgielumper z czekolady mlecznej - 5 cebulionów/szt przy zakupie 3 artykułów - Buty do latania ""Scout MK1"" (zniżka 30%) - 2300 cebulionów - Cyberwizor ""Pandemonic"" (zniżka 20%) - 2222 cebulionów - Olej ""Wielkogalaktyczny"" 6,99 (cena za 1 butelkę) cebulionów przy zakupie 2 sztuk"
+user:	koniecznie wezme 10 sztuk masła na te cięzkie czasy. opowiedz mi wiecej o cyberwizorze
+system:	"Do koszyka zostały dodane: masło 89% - 10 szt. Cyberwizor ""Pandemonic"" to jeden z nowszych modeli cyberwizorów, dostępnych na rynku. Dany model posiada takie funkcjonalności: Interfejs AR do latania przy pomocy butów ""Scout MK1""  oraz do szybkiego namierzania celów (funkcjonalność dostępna po subskrybcji na pakiet dla kosmicznych łowców głów). Czy chcesz kupić cyberwizor ""Pandemonic""?"
+user:	biore
+system:	"Do koszyka zostały dodane:  cyberwizor ""Pandemonic"". Czy chcesz kontynuować zakupy?"
+user:	nie, to bedzie wszystko
+system:	Chcesz przejść do płatności?
+user:	tak
+system:	koszyk zapisany, czy chcesz abym przeczytał wszystkie artykuły w koszyku?
+user:	nie
+system:	suma płatności: 2,258.90 cebulionów  Czy posiadasz kartę klienta?
+user:	tak
+system:	poprosze numer karty lub numer telefonu, jeśli był podany przy rejestracji
+user:	123 456
+system:	dodatkowe zniżki zostały naliczone. Suma zniżek: 0 cebulionów. Suma płatności ze zniżkami - 2258,90 cebulionów. Czy chcesz zakończyć zakupy?
+user:	tak
+system:	"Dobrze, zamówienie zostało przyjęte ro realizacji, z twojego konta zostanie pobrane 2258,90 cebulionów. zakupy zostały opłacone, dziekujemy za korzystanie z usług sklepu ""Galaktyczny Skład"""
+user:	dzięki

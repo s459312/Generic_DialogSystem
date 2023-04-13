@@ -1,0 +1,14 @@
+user:	jakim systemem jesteś
+system:	"Witaj użytkowniku 18. To jest agent dialogowy sklepu ""Galaktyczny Skład"" - jest to sieć sklepów spożywczych w których każdy klient może dokonać zakupów spożywczych, opłacić rachunki za media, odebrać paczkę pocztową oraz skorzystać z usług gsm. Oprócz zakupów w sklepach stacjonarnych, nasi klienci też mogą zamawiać produkty w naszym sklepie internetowym oraz przy pomocy tego bota. W razie pytań proszę pisać to tego bota lub zadzwonić na infolinię pod numerem +48-217-342-069. W danej chwili bot jest w otwartej wersji beta, wszelkie błędy lub wątpliwości prosimy zgłaszać przy pomocy polecenia /bot_report w tym czacie lub dzwoniąc na infolinię"
+user:	dzień dobry, czy jest jakaś paczka dla mnie
+system:	W obecnej chwili nie ma oczekujących paczek. Liczba zamówionych paczek: 0. Czy mogę w czymś jeszcze pomóc?
+user:	Czekam na paczkę od 2 tygodni i status wskazuje, że od tego czasu czeka na odbiór w tym sklepie
+system:	Liczba odnotowanych paczek w systemie na Twoim koncie: 0. W razie problemów lub wątpliwości proszę dzwonić na infolinię pod numerem +48-217-342-069 lub zostawić zgłoszenie, używając polecenia /customer_support, a do Ciebie się odezwie pracownik naszej firmy. Czy mogę w czymś jeszcze pomóc?
+user:	czy mogę nadać paczkę
+system:	Mamy możliwość nadawania paczek w sklepach stacjonarnych lub przez kuriera dla klientów PREMIUM (funkcjonalność PREMIUM nie jest jeszcze zaimplementowana w wersji beta, przepraszamy za niedogodności, pracujemy nad tym aby wprowadzić nowe funkcjonalności jak najszybciej).  Czy mogę jeszcze w czymś pomóc? 
+user:	chciałbym skorzystać z nadawania paczki w sklepie stacjonarnym
+system:	"Możesz nadać paczkę w dowolnym sklepie stacjonarnym sieci sklepów ""Galaktyczny Skład"". Wystarczy, że się udasz do najbliższego sklepu sieci ""Galaktyczny Skład"" oraz nadasz paczkę. Dodatkowo mamy opcję pakowania oraz rejestrowanie paczki na miejscu. Czy mogę w czymś jeszcze pomóc?"
+user:	Jaki jest maksymalny rozmiar oraz waga nadawanych paczek
+system:	Maksymalny rozmiar paczki to 2m x 2m x 2m. Maksymalna waga: 1 tona (Dla użytkowników STANDARD
+user:	Ile kosztuje nadanie takiej paczki
+system:	SYSTEM ERROR

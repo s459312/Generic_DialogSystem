@@ -1,0 +1,14 @@
+user:	Dzień dobry, jakie usługi świadczy ten system?
+system:	"Witaj użytkowniku 12. To jest agent dialogowy sklepu ""Galaktyczny Skład"" - jest to sieć sklepów spożywczych w których każdy klient może dokonać zakupów spożywczych, opłacić rachunki za media, odebrać paczkę pocztową oraz skorzystać z usług gsm. Oprócz zakupów w sklepach stacjonarnych, nasi klienci też mogą zamawiać produkty w naszym sklepie internetowym oraz przy pomocy tego bota. W razie pytań proszę pisać to tego bota lub zadzwonić na infolinię pod numerem +48-217-342-069. W danej chwili bot jest w otwartej wersji beta, wszelkie błędy lub wątpliwości prosimy zgłaszać przy pomocy polecenia /bot_report w tym czacie lub dzwoniąc na infolinię. W czym mogę dzisiaj pomóc?"
+user:	Dzien dobry chciałbym zamówić karmę dla papug, ser żółty gouda 1kg mleko migdałowe i masło
+system:	Do koszyka zostały dodane:     - karma dla papug     - ser żółty gouda 1kg     - mleko migdałowe     - masło 89%      Obecnie mamy oferte promocyjna: Masło 89% w cenie 3,69 cebulionów/szt przy zakupie 10 sztuk - tanio jak 2021! Czy chcesz skorzystać z oferty?
+user:	tak poproszę
+system:	Koszyk został zaktualizowany:   masło 89%(usunięte) masło 89% 10szt(dodane). Czy chcesz kontynuować zakupy?   
+user:	Tak 
+system:	Co chciałbyś zamówić?
+user:	wcześniejsze produkty z koszyka i masło 10szt
+system:	czy chcesz abym przeczytał wszystkie artykuły w koszyku?
+user:	Tak poproszę
+system:	Twój koszyk:      - karma dla papug 1szt     - ser żółty gouda 1kg     - mleko migdałowe 1szt     - masło 89% 10szt
+user:	…
+system:	Niestety, przez brak odpowiedzi, sesja została zamknięta. Zapraszamy ponownie do skorzystania z usług sieci sklepów “Galaktyczny Skład”

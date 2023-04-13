@@ -1,0 +1,28 @@
+user:	Dzień dobry, chciałbym skorzystać z Państwa systemu dialogowego, co on potrafi?
+system:	"Witaj użytkowniku 11 To jest agent dialogowy sklepu ""Galaktyczny Skład"" - jest to sieć sklepów spożywczych w których każdy klient może dokonać zakupów spożywczych, opłacić rachunki za media, odebrać paczkę pocztową oraz skorzystać z usług gsm. Oprócz zakupów w sklepach stacjonarnych, nasi klienci też mogą zamawiać produkty w naszym sklepie internetowym oraz przy pomocy tego bota. W razie pytań proszę pisać to tego bota lub zadzwonić na infolinię pod numerem +48-217-342-069. W danej chwili bot jest w otwartej wersji beta, wszelkie błędy lub wątpliwości prosimy zgłaszać przy pomocy polecenia /bot_report w tym czacie lub dzwoniąc na infolinię. W czym mogę dzisiaj pomóc?"
+user:	Czy mogę zamówić zakupy z dostawą do domu?
+system:	W chwili obecnej można odebrać zamówienie w sklepie stacjonarnym lub skorzystać z dostawy przez kuriera (użytkownicy PREMIUM,). Jako wybrany użytkownik PREMIUM (zamknięte testowanie w wersji beta) możesz zamówić dostawę w dowolnej galaktyce obsługiwanej przez naszą sieć sklepów
+user:	W takim razie chciałbym zamówić z dostawą do domu
+system:	Wybrana opcja dostawy: dostawa kurierska do domu. Czy chcesz kontynuować zakupy?
+user:	Tak. Chciałbym kupić napój gazowany
+system:	"Obecnie oferujemy takie napoje gazowane:     - ""Space-Cola"" 1L - 6,99 cebulionów     - ""Space-Cola"" Light 1L - 6,99 cebulionów     - ""Space-Cola"" Zero 1L - 5,99 cebulionów     - ""Dr. Q'tar"" puszka 330ml - 3,80 cebulionów     - ""Słoneczny Wiatrak"" 1L - 5,99 cebulionów     - ""6-Down"" 1L - 7,99 cebulionów     Obecnie jest promocja na zakup ""Space-Cola"" w zestawie Bourbon ""Gallactines"" + ""Space-Cola"" w cenie 69 cebulionów     Czy chciałbyś zamówić coś z wyżej wymienionych produktów?"
+user:	Ile kosztują produkty z zestawu osobno?
+system:	"Produkty z zestawu ""Odlot Galaktyczny"":  Bourbon ""Gallactines"" - 75 cebulionów  Space-Cola 1L - 6,99 cebulionów. Czy chciałbyś zamówić coś z wyżej wymienionych produktów?"
+user:	Tak, poproszę zestaw Space Cola + Bourbon
+system:	"Do koszyka dodano:  -Bourbon ""Gallactines""  -Space-Cola. Czy chcesz kontynuować zakupy?"
+user:	Tak, czy macie Państwo w ofercie produkty mrożone
+system:	Produkty mrożone w ofercie:  -Lód w kostkach 1,5kg - 10 cebulionów. Czy chciałbyś zamówić coś z wyżej wymienionych produktów?
+user:	nie, dziękuję. Czy macie Państwo w ofercie produkty potrzebne do zrobienia pizzy?
+system:	"Artykuły o nazwie pizza:  -pizza Gallarita  -pizza Kosmita  -pizza Meteoryt  -pizza ""Hawajska dla wszystkich""     Dostępne również promocje:  - Pizza Hawajska dla wszystkich od firmy ""Galaktyczna Flota"": przy zakupie 2 artykułów ""Pizza Hawajska"" od ""Galaktycznej Floty"" 2 pizze gratis!. Czy chciałbyś zamówić coś z wyżej wymienionych produktów?"
+user:	Nie, chciałbym zamówić produkty potrzebne do zrobienia pizzy samemu
+system:	"Brak produktu ""potrzebne do zrobienia pizzy samemu"", przepraszamy. Możemy zaoferować takie artykuły o nazwie pizza:   -pizza Gallarita  -pizza Kosmita  -pizza Meteoryt  -pizza ""Hawajska dla wszystkich""     Dostępne również promocje:  - Pizza Hawajska dla wszystkich od firmy ""Galaktyczna Flota"": przy zakupie 2 artykułów ""Pizza Hawajska"" od ""Galaktycznej Floty"" 2 pizze gratis! Czy chciałbyś zamówić coś z wyżej wymienionych produktów?"
+user:	Nie, dziękuję
+system:	Czy chcesz kontynuować zakupy?
+user:	Nie, chciałbym przejść do płatności
+system:	Zamówienie przyjęte do realizacji. Czy chcesz aby przeczytał zawartość koszyka?
+user:	Nie, dziękuję, chciałbym przejść do płatności
+system:	Suma płatności: 69 cebulionów. Naliczone zniżki dla użytkowników PREMIUM: 0 cebulionów.      Link do płatności: oszukaneplatnosci.pl/213742069. [21:22] Yevhenii Poliakov     Czy mogę w czymś jeszcze pomóc?        [21:25] Paweł Lewicki     Ile czasu będzie trwała dostawa?   
+user:	Ile czasu będzie trwała dostawa?
+system:	Szacunkowy czas dostawy to 30min. Czy mogę w czymś jeszcze pomóc?
+user:	Nie, dziękuję
+system:	"dziekujemy za korzystanie z usług sklepu ""Galaktyczny Skład"""
