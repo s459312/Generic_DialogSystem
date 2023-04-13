@@ -1,0 +1,23 @@
+system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?
+user:	chciałbym zamówić mleko, jajka, mąkę tortową, mleko zagęszczone słodzone, parówki oraz cygaro
+system:	Dodano do koszyka: mleko łaciate 1l, opakowanie jajek, 1kg mąki tortowej kremówka, 1 pojemnik mleka zagęszczonego słodzonego, 1 opakowanie parówek Marcinek oraz 1 sztukę cygara, czy coś jeszcze chciałbyś zamówić?
+user:	chcę jakiś napój gazowany, jakie napoje gazowanę są dostępne?
+system:	Aktualnie w ofercie mamy: coca cola, sprite, 7up, fanta, mirinda, orenżada helena, polo cola, mountain dew
+user:	w jakich pojemnościach są dostępne napoje polo cola?
+system:	Napój polo cola jest dostępny w pojemnościach, 250ml, 333ml, 500ml, 850ml, 1l, 2l, 10l
+user:	poproszę 6 sztuk polo cola 333ml
+system:	Dodano do koszyka: 6 sztuk polo cola 333ml, czy chciałbyś kupić coś jeszcze?
+user:	"Czy jest obecnie dostępne wino ""Ciekły Bismor""?"
+system:	"W naszej ofercie nie mogę znaleźć wina o nazwie ""Ciekły Bismor"". Czy chciałbyś wybrać jakieś inne wino? Aktualnie na promocji znajduje się wino ""Uśmieszek"""
+user:	"Proszę podać informację na temat wina ""Uśmieszek"""
+system:	Jest to wino czerwone z roku 1976, posiada 32% alkoholu i jest w niesamowicie atrakcyjnej cenie 79.99 zł !!!
+user:	"prosze dodać do koszyka wino ""Uśmieszek"""
+system:	"Dodano do koszyka: wino ""Uśmieszek"", czy coś jeszcze?"
+user:	proszę podać zawartość mojego koszyka oraz sumę należności
+system:	"Zawartość koszyka to: mleko łaciate 1l, opakowanie jajek, 1kg mąki tortowej kremówka, 1 pojemnik mleka zagęszczonego słodzonego, 1 opakowanie parówek Marcinek, 1 sztuka cygara, 6 sztuk polo cola 333ml oraz wino ""Uśmieszek"". Suma produktów w koszyku to 156,96 zł"
+user:	chciałbym przejść do płatności
+system:	Czy chciałbyś zapłacić przy odbiorze czy online?
+user:	zapłacę online kartą
+system:	dobrze, płatność można dokonać pod tym linkiem: www.oszukanepłatności.pl/2137694201337
+user:	dziekuję, to będzie wszystko z mojej strony, do widzenia 
+system:	"Zamówienie zostało złożone pomyślnie, do widzenia. Dziękujemy za skorzystanie z usług sklepu ""Motylek"""

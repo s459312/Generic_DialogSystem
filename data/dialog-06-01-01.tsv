@@ -1,10 +1,10 @@
 system:	Dzień dobry, jestem systemem obsługującym zakupy online, co chciałbyś zrobić?
 user:	szukam składników do messer wat
-system:	"W naszej ofercie nie posiadamy przedmiotu o nazwie """"messer wat"""", czy możesz rozwinąć myśl?"""
+system:	W naszej ofercie nie posiadamy przedmiotu o nazwie "messer wat", czy możesz rozwinąć myśl?
 user:	szukam ciekawych mieszanek przypraw. Jakie macie w swojej ofercie?
 system:	Posiadamy przyprawy KAMIS oraz PRYMAT, aktualnie w promocji mamy kurkumę za 0.15 zł!!!
 user:	interesuja mnie konkretne mieszanki typu garam masala czy berbere. Jakie podobne oferujecie?
-system:	"Nie posiadamy w ofercie produktów o nazwie ""garam"" oraz ""barbere"". Czy chciałbyś wybrać coś innego?"
+system:	Nie posiadamy w ofercie produktów o nazwie "garam" oraz "barbere". Czy chciałbyś wybrać coś innego?
 user:	nie
 system:	Przykro nam, że nie udało się dobrać pożądanych składników. życzymy miłego dnia!
 user:	do widzenia
