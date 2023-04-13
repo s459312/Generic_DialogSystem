@@ -1,0 +1,28 @@
+user:	Dzień dobry, z jakich usług można w tym miejscu skorzystać?
+system:	"Witaj użytkowniku 06. To jest agent dialogowy sklepu ""Galaktyczny Skład"" - jest to sieć sklepów spożywczych w których każdy klient może dokonać zakupów spożywczych, opłacić rachunki za media, odebrać paczkę pocztową oraz skorzystać z usług gsm. Oprócz zakupów w sklepach stacjonarnych, nasi klienci też mogą zamawiać produkty w naszym sklepie internetowym oraz przy pomocy tego bota. W razie pytań proszę pisać to tego bota lub zadzwonić na infolinię pod numerem +48-217-342-069. W danej chwili bot jest w otwartej wersji beta, wszelkie błędy lub wątpliwości prosimy zgłaszać przy pomocy polecenia /bot_report w tym czacie lub dzwoniąc na infolinię. W czym mogę dzisiaj pomóc?"
+user:	Chciałbym zamówić cziperki lays zielona cebulka i papryka
+system:	"Do koszyka zostały dodane: Czipsy ""Lays"" Zelona Cebulka, Papryka Czerwona"
+user:	Nie chce papryki tylko lays paprykowe
+system:	"Rozumiem, z koszyka zostały usunietę artykuły: - Papryka Czerwona, Do koszyka zostały dodane artykuły:  Czipsy ""Lays"" papryka"
+user:	No to fajnie
+system:	Czy mógłbym w czymś jeszcze pomóc?
+user:	Jakie macie dostępne napoje gazowane, robię bibe i przyda się trochę płynów
+system:	"Obecnie oferujemy takie napoje gazowane:     - ""Space-Cola"" 1L - 6,99 cebulionów     - ""Space-Cola"" Light 1L - 6,99 cebulionów     - ""Space-Cola"" Zero 1L - 5,99 cebulionów     - ""Dr. Q'tar"" puszka 330ml - 3,80 cebulionów     - ""Słoneczny Wiatrak"" 1L - 5,99 cebulionów     - ""6-Down"" 1L - 7,99 cebulionów     Obecnie jest promocja na zakup ""Space-Cola"" w zestawie Bourbon ""Gallactines"" + ""Space-Cola"" w cenie 69 cebulionów     Czy chciałbyś zamówić coś z wyżej wymienionych produktów?"
+user: 	niech będą te produkty z promki i 4 butelki 6-down 
+system:	"Do koszyka zostały dodane:  Bourbon ""Gallactines"" 1szt Space-Cola 1L 1szt 6-Down 1L 4szt, Czy chcesz kontynuować zakupy?"
+user: 	to będzie wszystko
+system:	Chcesz przejść do płatności?
+user:	tak
+system:	koszyk zapisany, czy chcesz abym przeczytał wszystkie artykuły w koszyku?
+user:	proszę nie, jakie są opcje dostawy?
+system:	W chwili obecnej można odebrać zamówienie w sklepie stacjonarnym lub skorzystać z dostawy przez kuriera (użytkownicy PREMIUM,). Jako wybrany użytkownik PREMIUM (zamknięte testowanie w wersji beta) możesz zamówić dostawę w dowolnej galaktyce obsługiwanej przez naszą sieć sklepów
+user:	wybiorę odbiór osobisty
+system:	Wybrana opcja odbioru: odbiór osobisty w sklepie stacjonarnym. Proszę podać kod sklepu w którym chcesz odebrać zamówienie
+user:	420 - 69696
+system:	Twoje zamówienie będzie dostępne do odbioru w wybranym sklepie po finalizacji zakupów.  Suma płatności: 100,96 cebulionów. Czy chcesz zakończyć zakupy?
+user:	tak
+system:	Czy posiadasz kartę klienta?
+user:	nie
+system:	"Dobrze, zamówienie zostało przyjęte ro realizacji, z twojego konta zostanie pobrane 100,96 cebulionów. zakupy zostały opłacone, dziekujemy za korzystanie z usług sklepu ""Galaktyczny Skład"""
+user:	Dziękuję, do widzenia
+system:	Do widzenia!

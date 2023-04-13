@@ -1,0 +1,24 @@
+user:	Dzień dobry, chciałbym zamówić składniki na kotlety mielone
+system:	"Witaj użytkowniku 14 w systemie zakupów sieci sklepów spożywczych ""Galaktyczny Skład"".  Czy chcesz zamówić mięso mielone na kotlety?"
+user:	Tak, poproszę mięso mielone, bułkę tartą, kajzerkę i mleko.
+system:	Proszę wybrać typ mięsa mielonego:  -mieso wołowe  -mieso z kurczaka  -mieso z indyka  -mięso wieprzowe. do koszyka zostały dodane:  -bułka tarta  -kajzerka  -mleko
+user:	Poproszę mięso wieprzowe, jaka jest jego cena
+system:	"Cena artykułu ""mięso wołowe mielone"" 500g: 15 cebulionów  Do koszyka dodano: -mięso wołowe mielone"
+user:	Jednak nie potrzebuję mleka, proszę usuń je z koszyka
+system:	Z koszyka usunięto: -mleko  Czy chcesz abym przeczytał aktualną zawartość koszyka?
+user:	Tak, poproszę
+system:	Koszyk:  -bułka tarta  -kajzerka  -mięso wołowe mielone. czy chcesz kontynuować zakupy?
+user:	Nie, to wszystko, jaka jest cena tego koszyka?
+system:	Suma płatności za wszystkie artykuły w koszyku: 20 cebulionów. Czy chcesz prejść do płatności?
+user:	Przepraszam, ale w koszyku jest błąd, chciałem mięso wieprzowe, nie wołowe
+system:	Koszyk został zaktualizowany:  Usunięto z koszyka:   -mięso wołowe mielone  Dodano do koszyka:  -mięso wieprzowe mielone     czy chcesz abym przeczytał zawartość koszyka?
+user:	Tak, poproszę. Podaj mi również cenę koszyka.
+system:	Koszyk:  -bułka tarta 4 cebuliony  -kajzerka 1 cebulion  -mięso wieprzowe mielone 14 cebulionów     Suma płatności: 19 cebulionów. Czy chcesz kontynuować zakupy?
+user:	Tak, chciałbym zapłacić za koszyk online
+system:	Zamówienie zostało przyjęto do realizacji. Czy posiadasz kartę klienta?
+user:	Tak, posiadam. Numer mojej karty to 694202137
+system:	dodatkowe zniżki zostały naliczone. Suma zniżek: 0 cebulionów. Suma płatności ze zniżkami - 19 cebulionów.      Wygenerowany link do płatności: oszukaneplatnosci.pl/213769420. Czy mogę w czymś jeszcze pomóc?
+user:	Tak, kiedy będę mógł odebrać zakupy?
+system:	Odebrać zakupy można w trakcie 24h od momentu złożenia zamówienia (20:35). Obecny punkt odbioru to : 420-69
+user:	Dziękuję, wszystko wiem. Do zobaczenia!
+system:	"dziekujemy za korzystanie z usług sklepu ""Galaktyczny Skład"""

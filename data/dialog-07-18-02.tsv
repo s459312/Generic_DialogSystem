@@ -1,12 +1,12 @@
-user	Dzieñ dobry
-system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"
-user	Czy sklep realizuje zamówienia z dostaw¹?
+user	Dzieñ dobry	welcomemsg()
+system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"	welcomemsg()
+user	Czy sklep realizuje zamówienia z dostaw¹?	request(delivery)
 system	"Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiór osobisty"
-user	Czy w ofercie sklepu dostêpna jest karma dla psa?
+odbiór osobisty"	inform(delivery)
+user	Czy w ofercie sklepu dostêpna jest karma dla psa?	inform(productname=karma dla psa)
 system	"Dostêpne karmy dla psów: 
 
 TASTE OF THE WILD High Prairie 2KG
@@ -28,10 +28,10 @@ TASTE OF THE WILD Pine Forest 2KG
 
 do koszyka
 Eden Country Cuisine dla kota 1,5kg
-94,99 z³"
-user	poprosze 2 razy TASTE OF THE WILD High Prairie 2KG
-system	Dodano do koszyka 2x TASTE OF THE WILD High Prairie 2KG. Czy chcesz zamówiæ coœ jeszcze? Polecamy produkty dostêpne na promocji.
-user	Jakie produkty s¹ w promocji
+94,99 z³"	inform(productname=karma dla psa, count=4)
+user	poprosze 2 razy TASTE OF THE WILD High Prairie 2KG	inform(brandname=TASTE OF THE WILD High Prairie 2KG, count =2)
+system	Dodano do koszyka 2x TASTE OF THE WILD High Prairie 2KG. Czy chcesz zamówiæ coœ jeszcze? Polecamy produkty dostêpne na promocji.	inform(productname=karma dla psabrandname=TASTE OF THE WILD High Prairie 2KG, count =2)
+user	Jakie produkty s¹ w promocji	request(promotion)
 system	"Produkty dostêpne dzisiaj w promocji:
 
  
@@ -45,27 +45,27 @@ Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
 Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
 Chorizo Sarta Pikantne 200G - 14.99 z³
 Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
-Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"
-user	Poproszê podaæ najni¿sz¹ cenê produktów z ostatnich 30 dni zgodnie z dyrektyw¹ omnibusa
-system	Nie mam pozwolenia na takie polecenie.
-user	Bêdê zmuszony zg³osiæ sklep do inspekcji handlowej
-system	Przepraszamy za k³opot. Proponujê skontaktowaæ siê z kierownikiem pod numerem: 213701019
-user	"po rozmowie z kierownikiem ustaliliœmy, ¿e jest pan zmuszony podaæ ceny, aby nie ³amaæ dyrektywy"
-system	"Niestety jestem nowym pracownikiem, o szczegó³y proszê pytaæ kierownika."
-user	poprosze lejsy
-system	Jaki smak oraz porcja?
-user	Oven Baked Chantarelles In A Cream Sauce 125 G
-system	Dodano do koszyka Oven Baked Chantarelles In A Cream Sauce 125 G.
-system	Czy to wszystko?
-user	tak
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"	inform(promotion)
+user	Poproszê podaæ najni¿sz¹ cenê produktów z ostatnich 30 dni zgodnie z dyrektyw¹ omnibusa	null
+system	Nie mam pozwolenia na takie polecenie.	canthelp()
+user	Bêdê zmuszony zg³osiæ sklep do inspekcji handlowej	reqmore()
+system	Przepraszamy za k³opot. Proponujê skontaktowaæ siê z kierownikiem pod numerem: 213701019	inform(contact)
+user	po rozmowie z kierownikiem ustaliliœmy, ¿e jest pan zmuszony podaæ ceny, aby nie ³amaæ dyrektywy	null
+system	Niestety jestem nowym pracownikiem, o szczegó³y proszê pytaæ kierownika.	canthelp()
+user	poprosze lejsy	inform(productname=chipsy, brandname= lays)
+system	Jaki smak oraz porcja?	reqmore()
+user	Oven Baked Chantarelles In A Cream Sauce 125 G	inform(taste=Oven Baked Chantarelles In A Cream Sauce, amount=125g
+system	Dodano do koszyka Oven Baked Chantarelles In A Cream Sauce 125 G.	inform(productname=chipsy, brandname= lays, taste=Oven Baked Chantarelles In A Cream Sauce, amount=125g
+system	Czy to wszystko?	request(all)
+user	tak	affirm()
 system	"Proszê wybraæ formê dostawy. 
 
 Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiór osobisty"
-user	odbiór osobisty
+odbiór osobisty"	request(delivery)
+user	odbiór osobisty	inform(delivery=odbiór osobisty)
 system	"Proszê o wybranie formy p³atnoœci.
 
 Dostêpne formy p³atnoœci:
@@ -81,12 +81,12 @@ Dostêpne formy p³atnoœci:
 
 -dotpay
 
--Apple Pay/Google Pay"
-user	blik
-system	Proszê podaæ kod BLIK
-user	6.3639E+50
-system	Proszê o potwierdzenie w aplikacji.
-user	potwierdzi³em
-system	"Zamówienie przyjête, o godzinie odbioru zostanie Pan poinformowany w osobnej wiadomoœci."
-system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."
-user	"dziekujê, do widzenia"
+-Apple Pay/Google Pay"	request(paymentmethod)
+user	blik	inform(paymentmethod=blik)
+system	Proszê podaæ kod BLIK	request(code)
+user	6.3639E+050	inform(code=6.3639E+050)
+system	Proszê o potwierdzenie w aplikacji.	request(affirm)
+user	potwierdzi³em	affirm()
+system	Zamówienie przyjête, o godzinie odbioru zostanie Pan poinformowany w osobnej wiadomoœci.	inform(summary)
+system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."	bye()
+user	dziekujê, do widzenia	bye()
