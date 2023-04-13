@@ -1,6 +1,6 @@
-user	"Czeœæ, czym zajmuje siê wasz system?"
-system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"
-user	Jakiego rodzaju produkty oferujecie?
+user	Czeœæ, czym zajmuje siê wasz system?	welcomemsg()
+system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"	welcomemsg()
+user	Jakiego rodzaju produkty oferujecie?	inform(products)
 system	"Produkty dostêpne dzisiaj w promocji:
 
  
@@ -14,10 +14,10 @@ Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
 Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
 Chorizo Sarta Pikantne 200G - 14.99 z³
 Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
-Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"
-user	Interesuje mnie g³ównie zakup sk³adników do Fondue
-system	"Fondue serowe, czekoladowe czy miêsne?"
-user	serowe
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"	inform(promotion)
+user	Interesuje mnie g³ównie zakup sk³adników do Fondue	request(productname=Fondue)
+system	Fondue serowe, czekoladowe czy miêsne?	reqmore(productname=Fondue, type)
+user	serowe	inform(productname=Fondue, type = serowe)
 system	"Proponujemy:
 
 Ser Ementaler oraz Gruy?re
@@ -34,24 +34,24 @@ ga³ka muszkato³owa
 
 cytryna
 
-bia³e wytrawne wino"
-user	"Z listy wzi¹³bym w takim razie oba sery, po 300g oraz ga³kê muszkato³ow¹. Chcia³bym do tego te¿ Bazyliê oraz dowiedzieæ siê jakie wino proponujecie?"
-system	"Dodano do koszyka ser ementaler 300g, ser Gruy?re, ga³ka muszkato³owa, bazylia."
+bia³e wytrawne wino"	inform(productname=Fondue, ingredients=all)
+user	Z listy wzi¹³bym w takim razie oba sery, po 300g oraz ga³kê muszkato³ow¹. Chcia³bym do tego te¿ Bazyliê oraz dowiedzieæ siê jakie wino proponujecie?	inform(productname=ser, count=2, amount=300g)&inform(productname=ga³ka muszkato³owa)&inform(productname=bazylia)&request(wino)
+system	Dodano do koszyka ser ementaler 300g, ser Gruy?re, ga³ka muszkato³owa, bazylia.	inform(productname=ser, count=2, amount=300g)&inform(productname=ga³ka muszkato³owa)&inform(productname=bazylia)
 system	"Proponujemy wina: 
 
-Chardonnay, Sauvignon Blanc oraz Riesling"
-user	Mo¿e byæ Chardonnay. To by by³o wszystko dla mnie.
-system	Dodano do koszyka Chardonnay.
+Chardonnay, Sauvignon Blanc oraz Riesling"	inform(productname=wino)
+user	Mo¿e byæ Chardonnay. To by by³o wszystko dla mnie.	inform(productname=wino, brandname=Chardonnay)&inform(all)
+system	Dodano do koszyka Chardonnay.	inform(productname=wino, brandname=Chardonnay)
 system	"Proszê wybraæ formê dostawy. 
 
 Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiór osobisty"
-user	Dostawa do paczkomatu
-system	Proszê wybraæ adres lub numer paczkomatu
-user	POZ29A
+odbiór osobisty"	request(delivery)
+user	Dostawa do paczkomatu	inform(delivery=Dostawa do paczkomatu)
+system	Proszê wybraæ adres lub numer paczkomatu	request(address)
+user	POZ29A	inform(address=POZ29A)
 system	"Proszê o wybranie formy p³atnoœci.
 
 Dostêpne formy p³atnoœci:
@@ -67,7 +67,7 @@ Dostêpne formy p³atnoœci:
 
 -dotpay
 
--Apple Pay/Google Pay"
-user	Gotówka przy odbiorze
-system	"Zamówienie przyjête, o godzinie odbioru zostanie Pan poinformowany w osobnej wiadomoœci."
-system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."
+-Apple Pay/Google Pay"	request(paymentmethod)
+user	Gotówka przy odbiorze	inform(paymentmethod=gotówka)
+system	Zamówienie przyjête, o godzinie odbioru zostanie Pan poinformowany w osobnej wiadomoœci.	bye()
+system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."	bye()

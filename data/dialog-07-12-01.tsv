@@ -1,15 +1,15 @@
-user	"Dzieñ dobry, jakie us³ugi œwiadczy ten system?"
-system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"
-user	"chcialbym kupic karme dla kota, mleko i pepsi"
+user	Dzieñ dobry, jakie us³ugi œwiadczy ten system?	welcomemsg()
+system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"	welcomemsg()
+user	chcialbym kupic karme dla kota, mleko i pepsi	inform(productname=karma dla kota)&inform(productname=mleko)&inform(productname=pepsi)
 system	"Karma dla kota mokra, sucha czy pó³wilgotna?
 
 Pepsi 0.5L czy 1L?
 
-Mleko z laktoz¹ czy bez?"
-user	"karma dla kota pó³wilgotna, pepsi 1l 3szt mleko bez laktozy 10l"
-system	"Dodano do koszyka: karma dla kota pó³wilgotna, pepsi 1l, 3x mleko bez laktozy 10l. "
-system	Czy to wszystko?
-user	Macie jakieœ owoce w promocji?
+Mleko z laktoz¹ czy bez?"	reqmore(productname=karma dla kota, type)&reqmore(productname=pepsi, amount)&reqmore(productname=mleko, ingredient)
+user	karma dla kota pó³wilgotna, pepsi 1l 3szt mleko bez laktozy 10l	inform(productname=karma dla kota, type=pó³wilgotna)&inform(productname=mleko, ingredient=bez laktozy, count=3, amount=10l)&inform(productname=pepsi, amount=1l)
+system	Dodano do koszyka: karma dla kota pó³wilgotna, pepsi 1l, 3x mleko bez laktozy 10l. 	inform(productname=karma dla kota, type=pó³wilgotna)&inform(productname=mleko, ingredient=bez laktozy, count=3, amount=10l)&inform(productname=pepsi, amount=1l)
+system	Czy to wszystko?	request(all)
+user	Macie jakieœ owoce w promocji?	inform(promotion, productcategory=owoce)
 system	"Produkty dostêpne dzisiaj w promocji:
 
  
@@ -23,20 +23,20 @@ Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
 Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
 Chorizo Sarta Pikantne 200G - 14.99 z³
 Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
-Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"
-user	poproszê Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G
-system	Dodano do koszyka Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G.
-system	Czy chcesz zamówiæ coœ jeszcze?
-user	Nie dziêkujê
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"	inform(promotion)
+user	poproszê Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G	inform(productname=jogurt, brandname=Bakoma, taste=banan z nut¹ wanilii, amount=150g)
+system	Dodano do koszyka Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G.	inform(productname=jogurt, brandname=Bakoma, taste=banan z nut¹ wanilii, amount=150g)
+system	Czy chcesz zamówiæ coœ jeszcze?	request(all)
+user	Nie dziêkujê	affirm()
 system	"Proszê wybraæ formê dostawy. 
 
 Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiór osobisty"
-user	Dostawa do paczkomatu
-user	POZ230M
+odbiór osobisty"	request(delivery)
+user	Dostawa do paczkomatu	inform(delivery=dostawa do paczkomatu)
+user	POZ230M	inform(address=POZ230M)
 system	"Proszê wybraæ sposób p³atnoœci. 
 
 Dostêpne formy p³atnoœci:
@@ -52,12 +52,12 @@ Dostêpne formy p³atnoœci:
 
 -dotpay
 
--Apple Pay/Google Pay"
-user	BLIK
-system	Proszê podaæ kod BLIK.
-user	666666
-system	Proszê potwierdziæ w aplikacji.
-user	potwierdzam
-system	Zamówienie otrzymane. Dostawa do paczkomatu POZ230M. Œledz paczkê w aplikacji.
-system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."
-user	Dziêkujê!
+-Apple Pay/Google Pay"	request(paymentmethod)
+user	BLIK	inform(paymentmethod=blik)
+system	Proszê podaæ kod BLIK.	request(code)
+user	666666	inform(code=666666)
+system	Proszê potwierdziæ w aplikacji.	request(affirm)
+user	potwierdzam	affirm()
+system	Zamówienie otrzymane. Dostawa do paczkomatu POZ230M. Œledz paczkê w aplikacji.	inform(summary)
+system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."	bye()
+user	Dziêkujê!	bye()

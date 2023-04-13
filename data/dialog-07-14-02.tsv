@@ -1,6 +1,6 @@
-user	Dzieñ dobry
-system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"
-user	"Chcia³bym kupiæ mleko, chleb, jakieœ wino."
+user	Dzieñ dobry	welcomemsg()
+system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"	welcomemsg()
+user	Chcia³bym kupiæ mleko, chleb, jakieœ wino.	inform(productname=mleko)&inform(productname=chleb)&inform(productname=wino)
 system	"Mleko z laktoz¹ czy bez? 
 
 Aktualnie dostêpne chleby: Chleb razowy, Chleb jasny, Chleb pszenny, Chleb ¿ytni. 
@@ -14,8 +14,8 @@ Przystêpne, œwie¿e i rzeœkie 23 PLN
 2021    MARTÍN CÓDAX | ALBA MARTÍN ALBARI?O DO | RÍAS BAIXAS, HISZPANIA
 Rzeœkie, zwiewne i mineralne    30 PLN
 2021    LEITZ | EINS ZWEI ZERO RIESLING | DOLINA RENU, NIEMCY (BEZALKOHOLOWE)
-Bezalkoholowe, œwie¿e i przyjemne"
-user	"Mleko zwyk³e, chleb ¿ytni. S¹ jakieœ dro¿sze wina?"
+Bezalkoholowe, œwie¿e i przyjemne"	reqmore(productname=mleko, ingredient)&reqmore(productname=chleb, type)&reqmore(productname=wino, type)
+user	Mleko zwyk³e, chleb ¿ytni. S¹ jakieœ dro¿sze wina?	inform(productname=mleko)&inform(productname=chleb, type=¿ythni)&reqmore(productname=wino, price=expensive)
 system	"Szampany oraz wina musuj¹ce ekskluzywne: 
 
 2012    MOET & CHANDON | DOM PERIGNON BRUT I SZAMPANIA, FRANCJA  
@@ -55,15 +55,15 @@ Intryguj¹cy, owocowy i wytrawny 218 PLN
 NV    EMILIANA | SANTA EMILIANA BRUT | CASABLANCA VALLEY, CHILE
 Aromatyczny, œwie¿y i treœciwy 198 PLN
 NV    HENNERS | BRUT | EAST SUSSEX, ANGLIA
-Powœci¹gliwy, delikatny i aromatyczny 378 PLN"
-user	To ja chcia³bym to za 178pln
-system	"Dodano do koszyka Mleko zwyk³e, chleb ¿ytni, 2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA. Czy chcesz zamówiæ coœ jeszcze?"
-user	"Nie to, to drugie za 178pln"
-system	"Usuniêto z koszyka 2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA."
-system	"Dodano do koszyka EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY."
-system	Polecamy równie¿ produkty dostêpne w promocji.
-system	Czy chcesz zamówiæ coœ jeszcze?
-user	A co jest w promocji?
+Powœci¹gliwy, delikatny i aromatyczny 378 PLN"	inform(productname=wino, price=expensive)
+user	To ja chcia³bym to za 178pln	inform(productname=wino, price=178pln)
+system	Dodano do koszyka Mleko zwyk³e, chleb ¿ytni, 2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA. Czy chcesz zamówiæ coœ jeszcze?	inform(productname=mleko)&inform(productname=chleb, type=¿ythni)&inform(productname=wino, price=178pln)&request(all)
+user	Nie to, to drugie za 178pln	inform(productname=wino, price=178pln, brandname=EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY)
+system	Usuniêto z koszyka 2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA.	inform(productname=wino, price=178pln,brandname=2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA)
+system	Dodano do koszyka EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY.	inform(productname=wino, price=178pln, brandname=EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY)
+system	Polecamy równie¿ produkty dostêpne w promocji.	offer(promotion)
+system	Czy chcesz zamówiæ coœ jeszcze?	request(all)
+user	A co jest w promocji?	request(promotion)
 system	"Goya Oliwki Gordales Z Pestk¹ 358 Ml 7,49z³
 Violife Plastry Smak Wêdzony 100 G 8,29 z³
 Hortex Sok 100% Jab³ko Butelka Apet 300 Ml - 2,79 z³
@@ -73,13 +73,13 @@ Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
 Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
 Chorizo Sarta Pikantne 200G - 14.99 z³
 Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
-Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"
-user	Chcê szynkê dojrzewaj¹c¹ jeszcze. Macie otwieracz do wina?
-system	Dodano do koszyka Szynka Dojrzewaj¹ca Plastry 100G £uków.
-system	"Aktualnie dostêpne s¹: Prosty korkoci¹g rêczny, korkoci¹g automatyczny."
-user	"Tak, chcê korkoci¹g automatyczny, ile kosztuje?"
-system	"Cena korkoci¹gu automatycznego: 39,99 z³."
-user	"Poproszê spakowaæ, co mam w koszyku aktualnie ?"
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"	inform(promotion)
+user	Chcê szynkê dojrzewaj¹c¹ jeszcze. Macie otwieracz do wina?	inform(productname=szynka)&inform(productname=otwieracz do wina)
+system	Dodano do koszyka Szynka Dojrzewaj¹ca Plastry 100G £uków.	inform(productname=szynka)
+system	Aktualnie dostêpne s¹: Prosty korkoci¹g rêczny, korkoci¹g automatyczny.	inform(productname=otwieracz do wina, count=2)
+user	Tak, chcê korkoci¹g automatyczny, ile kosztuje?	request(productname=otwieracz do wina, type=automatyczny, price)
+system	Cena korkoci¹gu automatycznego: 39,99 z³.	inform(price)
+user	Poproszê spakowaæ, co mam w koszyku aktualnie ?	request(cart)
 system	"Produkty dodane do koszyka:
 
 -Mleko zwyk³e, 
@@ -90,20 +90,20 @@ system	"Produkty dodane do koszyka:
 
 -Szynka Dojrzewaj¹ca Plastry 100G £uków
 
--korkoci¹g automatyczny."
-user	I ile to wysz³o?
-system	"Cena produktów w koszyku: 213,79 z³. Czy chcesz przejœæ do kasy?"
-user	"Tak, czy przywozicie zamówienia na adres?"
+-korkoci¹g automatyczny."	inform(cart)
+user	I ile to wysz³o?	request(cartprice)
+system	Cena produktów w koszyku: 213,79 z³. Czy chcesz przejœæ do kasy?	inform(cartprice)&request(payment)
+user	Tak, czy przywozicie zamówienia na adres?	affirm()&inform(delivery)
 system	"Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiór osobisty"
-user	"To ja chcê dostawê do domu, i chcê 2 butelki tego wina z mojego koszyka jednak"
-system	"Dodano do koszyka EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY."
-system	"Cena produktów w koszyku: 393,79 z³. Proszê podaæ adres dostawy"
-user	ul. Banananana 69 Poznañ
-user	Mo¿na p³aciæ online?
+odbiór osobisty"	inform(delivery)
+user	To ja chcê dostawê do domu, i chcê 2 butelki tego wina z mojego koszyka jednak	inform(delivery=dostawa do domu)&inform(productname=wino, price=178pln, brandname=EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY)
+system	Dodano do koszyka EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY.	inform(productname=wino, price=178pln, brandname=EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY)
+system	Cena produktów w koszyku: 393,79 z³. Proszê podaæ adres dostawy	inform(cartprice)&request(address)
+user	ul. Banananana 69 Poznañ	inform(address=ul. Banananana 69 Poznañ)
+user	Mo¿na p³aciæ online?	request(payment)
 system	"Dostêpne formy p³atnoœci:
 
 -Blik, 
@@ -117,17 +117,17 @@ system	"Dostêpne formy p³atnoœci:
 
 -dotpay
 
--Apple Pay/Google Pay"
-user	To zap³acê gotówk¹ przy odbiorze. Kiedy bêdzie dostawa?
-system	Dostawa na adres: ul. Banananana 69 Poznañ zostanie dostarczona w okolicach godz. 11:05 - 11:15.
-system	"Zamówienie przyjête, proszê przygotowaæ 393,79 z³ w gotówce przy odbiorze."
-user	Wtedy mnie nie bêdzie w domu. Mo¿e byæ po 12:00?
-system	Zmiana godziny dostawy na godz. 12:00.
-user	"Super, dziêkujê"
-system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."
-user	Chcia³bym anulowaæ zamówienie
-system	Czy na pewno chcesz anulowaæ ca³e zamówienie?
-user	"W sumie to nie, chcia³bym tylko zostawiæ wino z mojego koszyka"
+-Apple Pay/Google Pay"	request(paymentmethod)
+user	To zap³acê gotówk¹ przy odbiorze. Kiedy bêdzie dostawa?	inform(paymentmethod=gotówka)&request(delivery, time)
+system	Dostawa na adres: ul. Banananana 69 Poznañ zostanie dostarczona w okolicach godz. 11:05 - 11:15.	inform(delivery, time)
+system	Zamówienie przyjête, proszê przygotowaæ 393,79 z³ w gotówce przy odbiorze.	inform(summary)
+user	Wtedy mnie nie bêdzie w domu. Mo¿e byæ po 12:00?	inform(delivery, time=12:00)
+system	Zmiana godziny dostawy na godz. 12:00.	inform(delivery, time=12:00)
+user	Super, dziêkujê	bye()
+system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."	bye()
+user	Chcia³bym anulowaæ zamówienie	inform(delivery, flag = cancel)
+system	Czy na pewno chcesz anulowaæ ca³e zamówienie?	request(affirm)
+user	W sumie to nie, chcia³bym tylko zostawiæ wino z mojego koszyka	negate()&inform(cart, flag = reset)&inform(productname=wino, price=178pln, brandname=EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY, count=2)
 system	"Usuniêto z koszyka 
 
 -Mleko zwyk³e, 
@@ -136,7 +136,7 @@ system	"Usuniêto z koszyka 
 
 -Szynka Dojrzewaj¹ca Plastry 100G £uków
 
--korkoci¹g automatyczny."
-system	Dostawa zostanie dostarczona o godzinie 12:00. Forma p³atnoœci: gotówka przy odbiorze.
-user	"Oki, dziêkujê"
-system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."
+-korkoci¹g automatyczny."	inform(cart)
+system	Dostawa zostanie dostarczona o godzinie 12:00. Forma p³atnoœci: gotówka przy odbiorze.	inform(summary)
+user	Oki, dziêkujê	bye()
+system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."	bye()
