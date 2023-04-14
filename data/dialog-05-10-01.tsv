@@ -1,8 +1,8 @@
-user:	Cześć, czym zajmuje się wasz system?
-system:	"Witaj użytkowniku 10. To jest agent dialogowy sklepu ""Galaktyczny Skład"" - jest to sieć sklepów spożywczych w których każdy klient może dokonać zakupów spożywczych, opłacić rachunki za media, odebrać paczkę pocztową oraz skorzystać z usług gsm. Oprócz zakupów w sklepach stacjonarnych, nasi klienci też mogą zamawiać produkty w naszym sklepie internetowym oraz przy pomocy tego bota. W razie pytań proszę pisać to tego bota lub zadzwonić na infolinię pod numerem +48-217-342-069. W danej chwili bot jest w otwartej wersji beta, wszelkie błędy lub wątpliwości prosimy zgłaszać przy pomocy polecenia /bot_report w tym czacie lub dzwoniąc na infolinię."
-user:	Czy wasz system wymaga zalogowania się, aby móc skorzystać z usług?
-system:	Wygląda na to że już jesteś zalogowanym użytkownikiem, nazwa profilu to 10. Czy chcesz się wylogować z systemu?
-user:	Tak, jeśli jest taka możliwość chciałbym złożyć zamówienie anonimowo.
-system:	Wylogowano Cię z systemu. Obecnie korzystasz z profilu tymczasowego. W czym mogę pomóc?
-user:	…
-system:	Niestety, przez brak odpowiedzi, sesja została zamknięta. Zapraszamy ponownie do skorzystania z usług sieci sklepów “Galaktyczny Skład”
+user:	Cześć, czym zajmuje się wasz system?	hello()&help()
+system:	"Witaj użytkowniku 10. To jest agent dialogowy sklepu ""Galaktyczny Skład"" - jest to sieć sklepów spożywczych w których każdy klient może dokonać zakupów spożywczych, opłacić rachunki za media, odebrać paczkę pocztową oraz skorzystać z usług gsm. Oprócz zakupów w sklepach stacjonarnych, nasi klienci też mogą zamawiać produkty w naszym sklepie internetowym oraz przy pomocy tego bota. W razie pytań proszę pisać to tego bota lub zadzwonić na infolinię pod numerem +48-217-342-069. W danej chwili bot jest w otwartej wersji beta, wszelkie błędy lub wątpliwości prosimy zgłaszać przy pomocy polecenia /bot_report w tym czacie lub dzwoniąc na infolinię."	welcomemsg()&inform(bot_info)
+user:	Czy wasz system wymaga zalogowania się, aby móc skorzystać z usług?	request(authorize, info)
+system:	Wygląda na to że już jesteś zalogowanym użytkownikiem, nazwa profilu to 10. Czy chcesz się wylogować z systemu?	Incl-inf(authorized)
+user:	Tak, jeśli jest taka możliwość chciałbym złożyć zamówienie anonimowo.	request(logout)
+system:	Wylogowano Cię z systemu. Obecnie korzystasz z profilu tymczasowego. W czym mogę pomóc?	affirm(logout)
+user:	…	silence()
+system:	Niestety, przez brak odpowiedzi, sesja została zamknięta. Zapraszamy ponownie do skorzystania z usług sieci sklepów “Galaktyczny Skład”	bye()

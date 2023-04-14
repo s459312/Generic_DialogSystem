@@ -1,18 +1,18 @@
-user:	Dzień dobry
-system:	"Witaj użytkowniku 14 w systemie zakupów sieci sklepów spożywczych ""Galaktyczny Skład"", co chcesz dzisiaj zamówić?"
-user:	Chciałbym jakieś dobre wino
-system:	"Obecnie mamy oferujemy takie wina:     Wina białe:     - Kvazarr 9% (wino z planety Gargantelian) 12,99 cebulionów     - Yqromi 11% (wino z planety C'kalger) 14,59 cebulionów     - Orzeł_13 13% (wino od Gwiezdnej Floty) 25,99 cebulionów Wina czerwone:     - ""Kosmiczny baron"" 15% (wino regionalne) 18,99 cebulionów     - ""Czarna dziura"" 18% (wino regionalne) 35,99 cebulionów     - ""Ciekły Bismor"" 19% (wino z planety Hoxxes IV) 69,99 cebulionów"
-user:	Nie ma nic droższego?
-system:	"Mogę zaproponować artykuł: Bourbon ""Gallactines"" w cenie 75 cebulionów  Obecnie jest promocja na zakup ""Space-Cola"" w zestawie Bourbon ""Gallactines"" + ""Space-Cola"" w cenie 69 cebulionów. Czy chcesz skorzystać z promocji?"
-user:	Tak, bardzo chciałbym skorzystać z tej promocji. Do tego chciałbym jeszcze worek lodu.
-system:	"Do koszyka dodano:  -Bourbon ""Gallactines""  -Space-Cola 1L  -Lód w kostkach 1,5kg     Czy chcesz kontynuować zakupy?"
-user:	Tak, poproszę jeszcze sok pomarańczowy
-system:	Do koszyka dodano:  -Sok pomarańczowy 1L. Czy chcesz dodać kolejny artykuł?
-user:	Nie, to wszystko na teraz. Jak mogę zapłacić za zamówienie?
-system:	Zamówienie można opłacić przy odbiorze lub online. Chcesz przejść do płatności?
-user:	Chciałbym zapłacić przy odbiorze. Jaka wyszła cena za wszystkie produkty?
-system:	Wybrana opcja płatności: płatność przy odbiorze. Zamówienie zostało przyjęte do realizacji. Proszę podać kod sklepu (xxx-xx) w którym chcesz odebrać zamówienie. Suma płatności: 95 cebulionów
-user:	Kod sklepu: 420-69. Kiedy będę mógł odebrać zamówienie?
-system:	Zamówienie można odebrać w ciągu 24h od momentu złożenia (20:07). Czy mogę w czymś jeszcze pomóc?
-user:	Nie, to wszystko. Dziękuję
-system:	"dziekujemy za korzystanie z usług sklepu ""Galaktyczny Skład"""
+user:	Dzień dobry	hello()
+system:	"Witaj użytkowniku 14 w systemie zakupów sieci sklepów spożywczych ""Galaktyczny Skład"", co chcesz dzisiaj zamówić?"	welcomemsg()&reqmore()
+user:	Chciałbym jakieś dobre wino	inform(productcategory=wine)
+system:	"Obecnie mamy oferujemy takie wina:     Wina białe:     - Kvazarr 9% (wino z planety Gargantelian) 12,99 cebulionów     - Yqromi 11% (wino z planety C'kalger) 14,59 cebulionów     - Orzeł_13 13% (wino od Gwiezdnej Floty) 25,99 cebulionów Wina czerwone:     - ""Kosmiczny baron"" 15% (wino regionalne) 18,99 cebulionów     - ""Czarna dziura"" 18% (wino regionalne) 35,99 cebulionów     - ""Ciekły Bismor"" 19% (wino z planety Hoxxes IV) 69,99 cebulionów"	offer(productcategory=wine)&inform(list=wines/prices)&request()
+user:	Nie ma nic droższego?	request()&inform(product_tag=alcohol, pricerange=high)
+system:	"Mogę zaproponować artykuł: Bourbon ""Gallactines"" w cenie 75 cebulionów  Obecnie jest promocja na zakup ""Space-Cola"" w zestawie Bourbon ""Gallactines"" + ""Space-Cola"" w cenie 69 cebulionów. Czy chcesz skorzystać z promocji?"	offer(deal)&inform(productname = bourbon, productname=coke, dealprice)
+user:	Tak, bardzo chciałbym skorzystać z tej promocji. Do tego chciałbym jeszcze worek lodu.	affirm(deal)&inform(productname=ice, amount=1,5)
+system:	"Do koszyka dodano:  -Bourbon ""Gallactines""  -Space-Cola 1L  -Lód w kostkach 1,5kg     Czy chcesz kontynuować zakupy?"	affirm()&inform(productname=bourbon)&inform(productname=coke)&inform(productname=ice)&reqmore(0
+user:	Tak, poproszę jeszcze sok pomarańczowy	inform(productname=orange juice)
+system:	Do koszyka dodano:  -Sok pomarańczowy 1L. Czy chcesz dodać kolejny artykuł?	
+user:	Nie, to wszystko na teraz. Jak mogę zapłacić za zamówienie?	
+system:	Zamówienie można opłacić przy odbiorze lub online. Chcesz przejść do płatności?	
+user:	Chciałbym zapłacić przy odbiorze. Jaka wyszła cena za wszystkie produkty?	
+system:	Wybrana opcja płatności: płatność przy odbiorze. Zamówienie zostało przyjęte do realizacji. Proszę podać kod sklepu (xxx-xx) w którym chcesz odebrać zamówienie. Suma płatności: 95 cebulionów	
+user:	Kod sklepu: 420-69. Kiedy będę mógł odebrać zamówienie?	
+system:	Zamówienie można odebrać w ciągu 24h od momentu złożenia (20:07). Czy mogę w czymś jeszcze pomóc?	
+user:	Nie, to wszystko. Dziękuję	
+system:	"dziekujemy za korzystanie z usług sklepu ""Galaktyczny Skład"""	
