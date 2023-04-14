@@ -1,16 +1,16 @@
-"subject"	"utterance" "annotation"
-user	Hejka, co mog� tutaj zrobi�?
-system	dzie� dobry, jestem systemem obs�ugi sklepu spo�ywczego
-user	Jasne, czy w tym sklepie mog� zam�wi� produkty kuchni azjatyckiej?�
-system	oczywi�cie, mamy w ofercie m.in sos sojowy, srirache, sos rybny, mleczko kokosowe, ocet ryzowy. ry�, makaron ry�owy. makaron udon, makaron ramen. kolendre, pasty miso. pasty curry
-user	Jak dobrze rozumiem pasty z tamarydnowca nie ma w ofercie, czy nie ma go obecnie na stanie. Czy by�aby mo�liwo�� zam�wienia takiego produktu?
-system	Mamy r�wnie� paste z tamaryndowca. Czy doda� j� do koszyka?
-user	Tak poprosz�, razem z sosem rybnym, sojowym, makaronem ry�owym, octem ry�owym i srirach��	
+"subject"	"utterance"
+user	Hejka, co mogę tutaj zrobić?
+system	dzień dobry, jestem systemem obsługi sklepu spożywczego
+user	Jasne, czy w tym sklepie mogę zamówić produkty kuchni azjatyckiej?
+system	oczywiście, mamy w ofercie m.in sos sojowy, srirache, sos rybny, mleczko kokosowe, ocet ryzowy, ryż, makaron ryżowy, makaron udon, makaron ramen, kolendre, pasty miso, pasty curry
+user	Jak dobrze rozumiem pasty z tamarydnowca nie ma w ofercie, czy nie ma go obecnie na stanie. Czy byłaby możliwość zamówienia takiego produktu?
+system	Mamy również paste z tamaryndowca. Czy dodać ją do koszyka?
+user	Tak poproszę, razem z sosem rybnym, sojowym, makaronem ryżowym, octem ryżowym i srirachą
 system	dodaje paste z tamaryndowca, sos rybny, sos sojowy, makaron ryzowy, ocet ryzowy i sos srirache. czy cos jeszcze chcesz kupic?	
-user	Nie, to by by�o wszystko
+user	Nie, to by było wszystko
 system	podaj adres zamowienia
-user	Shire ul. Nizo�kowska 13a, 14-8897
-system	przyjmuje adres zamowienia. Przekierowuje do systemu p�atno�ci. NIe zamykaj okna czatu. Gdy p�atno�� przebiegnie pomy�lnie, poinformuje ci� o tym tutaj. P�atno�� przebieg�a pomyslnie, twoje zamowienie jest w realizacji. Czy cos jeszcze moge dla ciebie zrobi�?
-user	Nie, my�l�, �e to wszystko
+user	Shire ul. Nizołkowska 13a, 14-8897
+system	przyjmuje adres zamowienia. Przekierowuje do systemu płatnołci. Nie zamykaj okna czatu. Gdy płatność przebiegnie pomyślnie, poinformuje cię o tym tutaj. Płatność przebiegła pomyslnie, twoje zamowienie jest w realizacji. Czy cos jeszcze moge dla ciebie zrobić?
+user	Nie, myyślę, że to wszystko
 system	dziekuje, do zobaczenia
 
