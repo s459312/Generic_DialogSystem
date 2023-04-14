@@ -1,16 +1,16 @@
-user:	Dzień dobry, w czym możesz mi pomóc?
-system:	"Witaj użytkowniku 04. To jest agent dialogowy sklepu ""Galaktyczny Skład"" - jest to sieć sklepów spożywczych w których każdy klient może dokonać zakupów spożywczych, opłacić rachunki za media, odebrać paczkę pocztową oraz skorzystać z usług gsm. Oprócz zakupów w sklepach stacjonarnych, nasi klienci też mogą zamawiać produkty w naszym sklepie internetowym oraz przy pomocy tego bota. W razie pytań proszę pisać to tego bota lub zadzwonić na infolinię pod numerem +48-217-342-069. W danej chwili bot jest w otwartej wersji beta, wszelkie błędy lub wątpliwości prosimy zgłaszać przy pomocy polecenia /bot_report w tym czacie lub dzwoniąc na infolinię. W czym mogę dzisiaj pomóc?"
-user:	Chciałbym zakupić kilka warzyw, jakie są dostępne w ofercie?
-system:	"Obecnie mamy takie warzywa:     - Ziemniaki myte luz 2 cebuliony/kg - Ziemniaki świecące na zielono ""Fat Boy"" 69 cebulionów/kg - Papryka czerwona luz 6 cebulionów/kg - Papryka fioletowa luz 20 cebulionów/kg - Pomidory malinowe luz 7 cebulionów/kg - Pomidory penerskie luz 2 cebuliony/kg - Ogórek kosmiczny luz 70 cebulionów/kg - Ogórek gruntowy luz 5 cebulionów/kg - Cebula czerwona luz 7 cebulionów/kg"
-user:	Proszę dodać do zamówienia 2 ziemniaki myte oraz 2 ogórki gruntowe.
-system:	Czy chcesz dodać:     -ziemniaki myte luz 2kg -ogórki myte luz 2kg?
-user:	Tak
-system:	Do twojego koszyka zostały dodane:     - ziemniaki myte luz 2kg - ogórki gruntowe luz 2kg
-user:	To będzie wszystko. Jakie są dostępne formy płatności?
-system:	suma płatności: 14 cebulionów     obecnie możesz zapłacić online lub przy odbiorze (karta/gotówka). [16:31] Yevhenii Poliakov     czy posiadasz kartę klienta?   
-user:	Niestety nie posiadam. Dobrze, chciałbym zapłacić na miejscu kartą
-system:	Zamówienie zostało przyjęte do realizacji. Proszę podać kod sklepu (xxx-xx) w którym chcesz odebrać zamówienie
-user:	633-44
-system:	Twoje zamówienie można będzie odebrać w trakcie 24h od momentu złożenia (16:34). Czy mogę w czymś jeszcze pomóc?
-user:	To wszystko, dziękuję 
-system:	"dziekujemy za korzystanie z usług sklepu ""Galaktyczny Skład"""
+user:	Dzień dobry, w czym możesz mi pomóc?	hello()
+system:	"Witaj użytkowniku 04. To jest agent dialogowy sklepu ""Galaktyczny Skład"" - jest to sieć sklepów spożywczych w których każdy klient może dokonać zakupów spożywczych, opłacić rachunki za media, odebrać paczkę pocztową oraz skorzystać z usług gsm. Oprócz zakupów w sklepach stacjonarnych, nasi klienci też mogą zamawiać produkty w naszym sklepie internetowym oraz przy pomocy tego bota. W razie pytań proszę pisać to tego bota lub zadzwonić na infolinię pod numerem +48-217-342-069. W danej chwili bot jest w otwartej wersji beta, wszelkie błędy lub wątpliwości prosimy zgłaszać przy pomocy polecenia /bot_report w tym czacie lub dzwoniąc na infolinię. W czym mogę dzisiaj pomóc?"	welcomemsg()
+user:	Chciałbym zakupić kilka warzyw, jakie są dostępne w ofercie?	inform(list=vegetables)
+system:	"Obecnie mamy takie warzywa:     - Ziemniaki myte luz 2 cebuliony/kg - Ziemniaki świecące na zielono ""Fat Boy"" 69 cebulionów/kg - Papryka czerwona luz 6 cebulionów/kg - Papryka fioletowa luz 20 cebulionów/kg - Pomidory malinowe luz 7 cebulionów/kg - Pomidory penerskie luz 2 cebuliony/kg - Ogórek kosmiczny luz 70 cebulionów/kg - Ogórek gruntowy luz 5 cebulionów/kg - Cebula czerwona luz 7 cebulionów/kg"	infrom-conf(list=vegetables)&expl-conf(list=vegetables)
+user:	Proszę dodać do zamówienia 2 ziemniaki myte oraz 2 ogórki gruntowe.	inform(productname=ziemniaki_myte, amount=2)&inform(productname=ogorki_gruntowe, amount=2)
+system:	Czy chcesz dodać:     -ziemniaki myte luz 2kg -ogórki myte luz 2kg?	request(productname=ziemniaki_myte, amount=2)&inform(productname=ogorki_gruntowe, amount=2)
+user:	Tak	affirm()
+system:	Do twojego koszyka zostały dodane:     - ziemniaki myte luz 2kg - ogórki gruntowe luz 2kg	expl-conf(shopping_cart)
+user:	To będzie wszystko. Jakie są dostępne formy płatności?	inform(shopping_done)&infrom(payment_options)
+system:	suma płatności: 14 cebulionów     obecnie możesz zapłacić online lub przy odbiorze (karta/gotówka). Czy posiadasz kartę klienta?   	expl-conf(full_price)&expl-conf(payment_options)&request(client_card)
+user:	Niestety nie posiadam. Dobrze, chciałbym zapłacić na miejscu kartą	inform(client_card=false)&inform(payment_option=bank_card, location=on_site)
+system:	Zamówienie zostało przyjęte do realizacji. Proszę podać kod sklepu (xxx-xx) w którym chcesz odebrać zamówienie	affirm()&request(shop_code)
+user:	633-44	infrom(shop_code=633-44)
+system:	Twoje zamówienie można będzie odebrać w trakcie 24h od momentu złożenia (16:34). Czy mogę w czymś jeszcze pomóc?	affrim()&inform(order_takeout_limit=24)&inform(order_placed_time=16:34)&request()
+user:	To wszystko, dziękuję 	bye()
+system:	"dziekujemy za korzystanie z usług sklepu ""Galaktyczny Skład"""	bye()
