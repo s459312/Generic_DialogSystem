@@ -1,16 +1,14 @@
-"subject"	"utterance"
-user	Hejka, co mogę tutaj zrobić?
-system	dzień dobry, jestem systemem obsługi sklepu spożywczego
-user	Jasne, czy w tym sklepie mogę zamówić produkty kuchni azjatyckiej?
-system	oczywiście, mamy w ofercie m.in sos sojowy, srirache, sos rybny, mleczko kokosowe, ocet ryzowy, ryż, makaron ryżowy, makaron udon, makaron ramen, kolendre, pasty miso, pasty curry
-user	Jak dobrze rozumiem pasty z tamarydnowca nie ma w ofercie, czy nie ma go obecnie na stanie. Czy byłaby możliwość zamówienia takiego produktu?
-system	Mamy również paste z tamaryndowca. Czy dodać ją do koszyka?
-user	Tak poproszę, razem z sosem rybnym, sojowym, makaronem ryżowym, octem ryżowym i srirachą
-system	dodaje paste z tamaryndowca, sos rybny, sos sojowy, makaron ryzowy, ocet ryzowy i sos srirache. czy cos jeszcze chcesz kupic?	
-user	Nie, to by było wszystko
-system	podaj adres zamowienia
-user	Shire ul. Nizołkowska 13a, 14-8897
-system	przyjmuje adres zamowienia. Przekierowuje do systemu płatnołci. Nie zamykaj okna czatu. Gdy płatność przebiegnie pomyślnie, poinformuje cię o tym tutaj. Płatność przebiegła pomyslnie, twoje zamowienie jest w realizacji. Czy cos jeszcze moge dla ciebie zrobić?
-user	Nie, myyślę, że to wszystko
-system	dziekuje, do zobaczenia
-
+"subject"	"utterance"	"annotation"
+system	dzień dobry, jestem systemem obsługi sklepu spożywczego	welcomemsg()
+user	Jasne, czy w tym sklepie mogę zamówić produkty kuchni azjatyckiej?	inform(productcategory=kuchnia_azjatycka)
+system	oczywiście, mamy w ofercie m.in sos sojowy, srirache, sos rybny, mleczko kokosowe, ocet ryzowy, ryż, makaron ryżowy, makaron udon, makaron ramen, kolendre, pasty miso, pasty curry	inform(productcategory=kuchnia_azjatycka,count=12)
+user	Jak dobrze rozumiem pasty z tamarydnowca nie ma w ofercie, czy nie ma go obecnie na stanie. Czy byłaby możliwość zamówienia takiego produktu?	inform(productname=pasta_z_tamaryndowca)&request(order)
+system	Mamy również paste z tamaryndowca. Czy dodać ją do koszyka?	inform(productname=pasta_z_tamaryndowca)
+user	Tak poproszę, razem z sosem rybnym, sojowym, makaronem ryżowym, octem ryżowym i srirachą	inform(productname=pasta_tamaryndowca,productname=sos_rybny,productname=sos_sojowy,productname=makaron_ryżowy,productname=ocet_ryżowy,productname=sriracha)
+system	dodaje paste z tamaryndowca, sos rybny, sos sojowy, makaron ryzowy, ocet ryzowy i sos srirache. czy cos jeszcze chcesz kupic?	inform(productname=pasta_tamaryndowca,productname=sos_rybny,productname=sos_sojowy,productname=makaron_ryżowy,productname=ocet_ryżowy,productname=sriracha)
+user	Nie, to by było wszystko	negate()
+system	podaj adres zamowienia	request(adress)
+user	Shire ul. Nizołkowska 13a, 14-8897	inform(adress=Nizołkowska_13a_14-8897_Shire)
+system	przyjmuje adres zamowienia. Przekierowuje do systemu płatnołci. Nie zamykaj okna czatu. Gdy płatność przebiegnie pomyślnie, poinformuje cię o tym tutaj. Płatność przebiegła pomyslnie, twoje zamowienie jest w realizacji. Czy cos jeszcze moge dla ciebie zrobić?	inform(payment)
+user	Nie, myślę, że to wszystko	negate()
+system	dziekuje, do zobaczenia	bye()

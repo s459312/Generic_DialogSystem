@@ -1,22 +1,21 @@
-"subject"	"utterance"
-user	czeœæ, jakim systemem jesteœ?
-system	dzieñ dobry, jestem systemem obs³ugi sklepu spo¿ywczego
-user	okej, to ja bym chcia³ zamówiæ mleko, chleb, ¿ó³ty ser i sok jab³kowy
-system	dodaje do koszyka mleko, chleb, ¿ó³ty ser i sok jab³kowy. Czy chcia³byœ kupiæ coœ jeszcze?
-user	tak, dodaj jeszcze czekoladê mleczn¹	
-system	dodaje czekolade mleczn¹. Akurat dzisiaj mamy specjaln¹ ofertê - po dodaniu dwóch czekolad mlecznych, trzecia dostajesz gratis. Czy dodaæ jeszcze jedna czekolade mleczn¹?	
-user	o super, tak poproszê	
-system	w koszyk znajduj¹ siê teraz trzy czekolady. Czy chcia³byœ zamówiæ coœ jeszcze?	
-user	nie, ile bêd¹ mnie kosztowaæ te zakupy?
-system	kwota twojego koszyka wynosi aktualnie 28,96
-user	trochê sporo, odejmij mi mleko z koszyka
-system	odejmuje mleko, teraz kwota twojego zamowienia wynosi 23,46	
-user	okej, to bêdzie wszystko
-system	przechodzê do finalizacji. podaj adres zamowienia
-user	ul. XYZ 1/23, Poznañ
-system	przyjmuje adres zamowienia. przekierowuje do systemu p³atnoœci. NIe zamykaj okna czatu. gdy p³atnoœæ przebiegnie pomyœlnie, poinformuje ciê o tym tutaj
-user	okej
-system	p³atnoœæ zosta³a zrealizowana. Czy coœ jeszcze mogê dla ciebie zrobiæ?
-user	nie, to wszystko, dziêkujê
-system	dziekuje, do zobaczenia
+"subject"	"utterance"	"annotation"
+system	dzieÅ„ dobry, jestem systemem obsÅ‚ugi sklepu spoÅ¼ywczego	welcomemsg()
+user	okej, to ja bym chciaÅ‚ zamÃ³wiÄ‡ mleko, chleb, Å¼Ã³Å‚ty ser i sok jabÅ‚kowy	inform(productname=mleko, productname=chleb, productname=Å¼Ã³Å‚ty_ser, productname=sok_jabÅ‚kowy)
+system	dodaje do koszyka mleko, chleb, Å¼Ã³Å‚ty ser i sok jabÅ‚kowy. Czy chciaÅ‚byÅ› kupiÄ‡ coÅ› jeszcze?	inform(productname=mleko, productname=chleb, productname=Å¼Ã³Å‚ty_ser, productname=sok_jabÅ‚kowy)
+user	tak, dodaj jeszcze czekoladÄ™ mlecznÄ…	inform(productname=czekolada_mleczna)
+system	dodaje czekolade mlecznÄ…. Akurat dzisiaj mamy specjalnÄ… ofertÄ™ - po dodaniu dwÃ³ch czekolad mlecznych, trzecia dostajesz gratis. Czy dodaï¿½ jeszcze jedna czekolade mlecznï¿½?	offer(specialoffer=czekolada_mleczna)
+user	o super, tak poproszÄ™	affirm()
+system	w koszyk znajduje siÄ™ teraz trzy czekolady. Czy chciaÅ‚byÅ› zamÃ³wiÄ‡ coÅ› jeszcze?	inform(productname=czekolada_mleczna,count=3)
+user	nie, ile bÄ™dÄ… mnie kosztowaÄ‡ te zakupy?	request(price)
+system	kwota twojego koszyka wynosi aktualnie 28,96	inform(price)
+user	trochÄ™ sporo, odejmij mi mleko z koszyka	request(remove=mleko)
+system	odejmuje mleko, teraz kwota twojego zamowienia wynosi 23,46	infomr(price)
+user	okej, to bÄ™dzie wszystko	affirm()
+system	przechodzÄ™ do finalizacji. podaj adres zamowienia	request(adress)
+user	ul. XYZ 1/23, PoznaÅ„	inform(adress=XYZ_1/23_PoznaÅ„)
+system	przyjmuje adres zamowienia. przekierowuje do systemu pÅ‚atnoÅ›ci. Nie zamykaj okna czatu. Gdy pÅ‚atnoÅ›Ä‡ przebiegnie pomyÅ›lnie, poinformuje ciÄ™ o tym tutaj	inform(payment)
+user	okej	affirm()
+system	pÅ‚atnoÅ›Ä‡ zostaÅ‚a zrealizowana. Czy coÅ› jeszcze mogÄ™ dla ciebie zrobiÄ‡?	inform(payment)
+user	nie, to wszystko, dziÄ™kujÄ™	negate()
+system	dziekuje, do zobaczenia	bye()
 

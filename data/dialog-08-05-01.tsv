@@ -1,22 +1,21 @@
-"subject"	"utterance"
-user	Dzie� dobry
-system	Dzie� dobry, jestem systemem obs�ugi sklepu spo�ywczego, w czym moge pomoc?
-user	Chia�bym kupi� jakie� piwo
-system	Mam aktualnie w ofercie: Captain JackPirate Orange x4, Kronenbourg 1664 Blanc330ml butelka, Tyskie 0% 4pak500ml x2, Brooklyn Crisp Lager piwo 500ml 4pak puszka4x500ml x2, Captain JackCuba Libre x4, Captain JackExotic Daiquiri x4, HEINEKEN piwo 0%, ZATECKY piwo, OKOCIM jasne okocimskie 4-pak, HEINEKEN piwo silver 4-pack, HEINEKEN piwo, DESPERADOS 4-pack
-user	Poprosz� ZATECKY 6 szt
-system	Dodaje do koszyka ZATECKY piwo 6 szt. Czy chcia�aby� kupi� co� jeszcze?
-user	To poprosz� czipsy wiejskie ziemniaczki "Mas�o z sol�" 1 opakowanie
-system	Dodaje do koszyka czipsy wiejskie ziemniaczki "Mas�o z sol�" 1 szt. Czy chcia�aby� kupi� co� jeszcze?
-user	na razie to wszystko
-system	czy chcia�by� przej�� do finalizacji zam�wnia?
-user	tak, chc� przej�� do finalizacji zam�wienia
-system	podaj adres dostawy
-user	Hogwarts, dom Hagrida 1
-system	czy masz nasz� kart� lojalno�ciow�?
-user	tak
-system	podaj numer karty lojalno�ciowej
-user	69-2137
-system	karta lojalnosciowa dopisana do zam�wienia. Kwota twojego zam�wienia to 37 z�, przekierowuje do systemu p�atno�ci. Gdy p�atno�� przebiegnie pomyslnie, poinformuje ci�. Nie zamykaj okna chatu.
-system	P�atno�� zosta�a zrealizowana, twoje zamowienie jest w realizacji. Czy co� jeszcze mog� dla Ciebie zrobi�?	
-user	Dzi�kuj�, to wszystko
-system	Dzi�kuj� za odwiedziny w naszym sklepie, zapraszamy ponownie!
+"subject"	"utterance"	"annotation"
+system	Dzie� dobry, jestem systemem obs�ugi sklepu spo�ywczego, w czym moge pomoc?	welcomemsg()
+user	Chiałbym kupić jakie� piwo	inform(productcategory=piwo)
+system	Mam aktualnie w ofercie: Captain JackPirate Orange x4, Kronenbourg 1664 Blanc330ml butelka, Tyskie 0% 4pak500ml x2, Brooklyn Crisp Lager piwo 500ml 4pak puszka4x500ml x2, Captain JackCuba Libre x4, Captain JackExotic Daiquiri x4, HEINEKEN piwo 0%, ZATECKY piwo, OKOCIM jasne okocimskie 4-pak, HEINEKEN piwo silver 4-pack, HEINEKEN piwo, DESPERADOS 4-pack	inform(productcategory=piwo, count=12)
+user	Poprosz� ZATECKY 6 szt	inform(productname=zatecky,count=6)
+system	Dodaje do koszyka ZATECKY piwo 6 szt. Czy chcia�aby� kupi� co� jeszcze?	inform(productname=zatecky,count=6)
+user	To poprosz� czipsy wiejskie ziemniaczki "Mas�o z sol�" 1 opakowanie	inform(productname=czipsy_wiejskie_ziemniaczki, count=1)
+system	Dodaje do koszyka czipsy wiejskie ziemniaczki "Mas�o z sol�" 1 szt. Czy chcia�aby� kupi� co� jeszcze?	inform(productname=czipsy_wiejskie_ziemniaczki, count=1)
+user	na razie to wszystko	negate()
+system	czy chcia�by� przej�� do finalizacji zam�wnia?	request(payment)
+user	tak, chc� przej�� do finalizacji zam�wienia	affirm()
+system	podaj adres dostawy	reques	(adress)
+user	Hogwarts, dom Hagrida 1	inform(adress=dom_Hagrida_1_Hogwarts)
+system	czy masz nasz� kart� lojalno�ciow�?	request(card)
+user	tak	affirm()
+system	podaj numer karty lojalno�ciowej	request(cardnumber)
+user	69-2137	inform(cardnumber=69-2137)
+system	karta lojalnosciowa dopisana do zam�wienia. Kwota twojego zam�wienia to 37 z�, przekierowuje do systemu p�atno�ci. Gdy p�atno�� przebiegnie pomyslnie, poinformuje ci�. Nie zamykaj okna chatu.	inform(payment)
+system	P�atno�� zosta�a zrealizowana, twoje zamowienie jest w realizacji. Czy co� jeszcze mog� dla Ciebie zrobi�?	offer()
+user	Dzi�kuj�, to wszystko	negate()
+system	Dzi�kuj� za odwiedziny w naszym sklepie, zapraszamy ponownie!	bye()
