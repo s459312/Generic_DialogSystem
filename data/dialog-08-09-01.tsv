@@ -1,32 +1,29 @@
-"subject"	"utterance"
-user	Dzien dobry, chcialabym sie zapisac na zajecia
-system	dzieñ dobry, jestem systemem obs³ugi sklepu spo¿ywczego, nie posiadam informacji na temat zajêæ
-user	co moglibyœcie mi zaoferowaæ?
-system	w tym tygodniu mamy tydzieñ w³oski - passaty, spody do pizzy oraz w³oskie sery z specjaln¹ promocj¹ 2+1 za grosz
-user	mam ochotê dzisiaj na coœ greckiego, co byœcie mieli w ofercie?
-system	oczywiœcie, miedzy innymi sery (feta, graviera, metsovone, mizithra, halloumi, kefalotiri, manouri, jogurt grecki), ryby i owoce morza (tuñczyk, okoñ, sardynka, barwena, kalmary, oœmiornice), miêsa do gyrosa, produkty pszenne np pita oraz makarony, warzywa wykorzystywane w kuchni greckiej np. pomidor, ogórek, papryka, cebula, bak³a¿an, cukinia, str¹czki, czosnek, koper w³oski, karczoch, kapusta, szpinak	
-user	o to du¿y wybór, interesowa³ by mnie ser feta, makaron, i warzywa typu pomidor, cebula, cukinia, mo¿e te¿ papryka, poproszê wiêcej informacji o tych produktach
-system	warzywa mamy œwie¿utkie prostu z pola, ser feta idealnie s³ony, a z makaronów mo¿esz wybraæ pomiêdzy pszennym, pe³noziarnistym i ryzowym. Do kuchni greckiej polecam makaron pszenny lub pelnoziarnisty	
-user	super to poprosi³abym pszenny typu penne, macie mo¿e jakieœ promocje na któryœ z tych produktów?
-system	Tak dzisiaj specjalna promocja na makarony pszenne, druga paczka makaronu za pó³ ceny
-user	a jakie s¹ ceny tych produktów?
-system	paczka makaronu kosztuje 4 z³. czy interesuj¹ ciê ceny psozosta³ych produktów?	
-user	tak
-system	ser feta - 11 z³, pomidor 1 szt - 3,50z³, cebula 1 szt - 2 z³, cukinia - 3 z³, papryka - 5z³
-user	poprosi³abym 2 papryki, 2 cukinie, cebule, 4 pomidory i jeden ser feta, a i do tego 2 paczki makaronu. Czy maj¹ pañstwo w ofercie wodê na³êczowiankê niegazowan¹?
-system	dodaje produkty do koszyka. niestety mamy jedynie wode na³êczowianke gazowan¹. Czy coœ jeszcze chcia³byœ kupiæ?
-user	poproszê ¿elki œmiel¿elki kwaœne
-system	dodaje poproszê ¿elki œmiel¿elki kwaœne
-user	œmiej¿elki
-system	w³aœnie one. Czy chcesz kupic cos jeszcze?
-user	nie dziêkujê to by³oby wszystko
-system	przechodzê do finalizacji. Podaj adres zamownia
-user	ul. lasów polnych 8/3
-system	przyjmuje adres zamowienia. przekierowuje do systemu p³atnoœci. Nie zamykaj okna czatu. gdy p³atnoœæ przebiegnie pomyœlnie, poinformuje ciê o tym tutaj
-user	Kraków
-system	p³atnoœæ przebieg³a pomyslnie, twoje zamowienie jest w realizacji. czy cos jeszcze moge dla ciebie zrobiæ?
-user	Dziêkujê to by³oby wszystko
-system	dziêkujê, do zobaczenia
+"subject"	"utterance"	"annotation"
+user	Dzien dobry, chcialabym sie zapisac na zajecia	welcomemsg()
+system	dzieÅ„ dobry, jestem systemem obsÅ‚ugi sklepu spoÅ¼ywczego, nie posiadam informacji na temat zajÄ™Ä‡	welcomemsg()&canthelp(topic=zajÄ™cia)
+user	co moglibyÅ›cie mi zaoferowaÄ‡?	request(offer)
+system	w tym tygodniu mamy tydzieÅ„ wÅ‚oski - passaty, spody do pizzy oraz wÅ‚oskie sery z specjalnÄ… promocjÄ… 2+1 za grosz	offer(productcategory=kuchnia_wÅ‚oska)
+user	mam ochotÄ™ dzisiaj na coÅ› greckiego, co byÅ›cie mieli w ofercie?	request(offer(productcategory=kuchnia_grecka))
+system	oczywiÅ›cie, miedzy innymi sery (feta, graviera, metsovone, mizithra, halloumi, kefalotiri, manouri, jogurt grecki), ryby i owoce morza (tuÅ„czyk, okoÅ„, sardynka, barwena, kalmary, oÅ›miornice), miÄ™sa do gyrosa, produkty pszenne np pita oraz makarony, warzywa wykorzystywane w kuchni greckiej np. pomidor, ogÃ³rek, papryka, cebula, bakÅ‚aÅ¼an, cukinia, strÄ…czki, czosnek, koper wÅ‚oski, karczoch, kapusta, szpinak	inform(productcategory=kuchnia_grecka,count=8)
+user	o to duÅ¼y wybÃ³r, interesowaÅ‚ by mnie ser feta, makaron, i warzywa typu pomidor, cebula, cukinia, moÅ¼e teÅ¼ papryka, poproszÄ™ wiÄ™cej informacji o tych produktach	inform(productname=feta,productcatgory=makaron,productname=pomidor, productname=cebula, productname=cukinia, productname=papryka)&request(information)
+system	warzywa mamy Å›wieÅ¼utkie prostu z pola, ser feta idealnie sÅ‚ony, a z makaronÃ³w moÅ¼esz wybraÄ‡ pomiÄ™dzy pszennym, peÅ‚noziarnistym i ryzowym. Do kuchni greckiej polecam makaron pszenny lub pelnoziarnisty	inform(productcategory=warzywa, productname=feta, productcategory=makaron,count=3)
+user	super to poprosiÅ‚abym pszenny typu penne, macie moÅ¼e jakieÅ› promocje na ktÃ³ryÅ› z tych produktÃ³w?	inform(productname=makaron_pszenny_penne)&request(specialoffer)
+system	Tak dzisiaj specjalna promocja na makarony pszenne, druga paczka makaronu za pÃ³Å‚ ceny	inform(specialoffer)
+user	a jakie sÄ… ceny tych produktÃ³w?	request(price)
+system	paczka makaronu kosztuje 4 zÅ‚. czy interesujÄ… ciÄ™ ceny pozostaÅ‚ych produktÃ³w?	inform(price)
+user	tak	affirm()
+system	ser feta - 11 zÅ‚, pomidor 1 szt - 3,50zÅ‚, cebula 1 szt - 2 zÅ‚, cukinia - 3 zÅ‚, papryka - 5zÅ‚	inform(price)
+user	poprosiÅ‚abym 2 papryki, 2 cukinie, cebule, 4 pomidory i jeden ser feta, a i do tego 2 paczki makaronu. Czy majÄ… paÅ„stwo w ofercie wodÄ™ naÅ‚Ä™czowiankÄ™ niegazowanÄ…?	inform(productname=papryka, count=2,productname=cebula,productname=pomidor,count=4,productname=feta,productname=makaron_pszenny_penne, count=2, productname=naÅ‚Ä™czowianka_niegazowana)
+system	dodaje produkty do koszyka. niestety mamy jedynie wode naÅ‚Ä™czowianke gazowanÄ…. Czy coÅ› jeszcze chciaÅ‚byÅ› kupiÄ‡?	inform((productname=papryka, count=2,productname=cebula,productname=pomidor,count=4,productname=feta,productname=makaron_pszenny_penne, count=2)&negate(naÅ‚Ä™czowianka_niegazowana)
+user	poproszÄ™ Å¼elki Å›mielÅ¼elki kwaÅ›ne	inform(productname=Å¼elki_Å›miejÅ¼elki_kwaÅ›ne)
+system	dodaje poproszÄ™ Å¼elki Å›mielÅ¼elki kwaÅ›ne. Czy chcesz kupic cos jeszcze?	inform(productname=Å¼elki_Å›miejÅ¼elki_kwaÅ›ne)
+user	nie dziÄ™kujÄ™ to byÅ‚oby wszystko	negate()
+system	przechodzÄ™ do finalizacji. Podaj adres zamownia	request(adress)
+user	ul. lasÃ³w polnych 8/3 KrakÃ³w	inform(adress=lasÃ³w polnych_8/3_KrakÃ³w)
+system	przyjmuje adres zamowienia. przekierowuje do systemu pÅ‚atnoÅ›ci. Nie zamykaj okna czatu. gdy pÅ‚atnoÅ›Ä‡ przebiegnie pomyÅ›lnie, poinformuje ciÄ™ o tym tutaj	inform(payment)
+system	pÅ‚atnoÅ›Ä‡ przebiegÅ‚a pomyslnie, twoje zamowienie jest w realizacji. czy cos jeszcze moge dla ciebie zrobiÄ‡?	inform(payment)&reqmore()
+user	DziÄ™kujÄ™ to byÅ‚oby wszystko	negate()
+system	dziÄ™kujÄ™, do zobaczenia	bye()
 
 
 
