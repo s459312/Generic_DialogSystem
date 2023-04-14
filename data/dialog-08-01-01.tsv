@@ -1,27 +1,27 @@
-"subject"	"utterance"
-user	Szukam restauracji z kuchni� etiopsk�
-system	dzie� dobry, jestem systemem obs�ugi sklepu spo�ywczego, nie posiadam informacji na temat restauracji z kuchni� etiopsk�
-user	szukam sk�adnik�w do messer wat
-system  nie posiadam produktu "sk�adniki do messet wat". czy mo�esz sformuowa� to inaczej?
-user	szukam ciekawych mieszanek przypraw. Co macie w swojej ofercie?	
-system	z mieszanek przypraw mamy w ofercie: przyprawa arabska - s�l, kukurydza, pieprz zio�owy (kukurydza, pietruszka, gorczyca, kolendra, kminek, majeranek, cz�ber, tymianek, chilli), papryka s�odka, cukier, kolendra, papryka ostra, kmin rzymski, cynamon, soda, imbir, ziele angielskie, ga�ka muszkato�owa, go�dziki; przyprawa azjatycka - s�l, czosnek, marchew, kukurydza, papryka s�odka, imbir, curry, szczypiorek, chili, papryka ostra, barwnik naturalny-ekstrakt papryki; przyprawa cajun - papryka s�odka, pieprz cayenne, chili, s�l, pieprz czarny, czosnek, cebula, oregano, tymianek, pieprz bia�y; przyprawa chi�ska - s�l, kolendra, imbir, papryka ostra, kozieradka, cynamon, cukier, kukurydza, kurkuma, kminek, koper w�oski, kardamon, pieprz bia�y, papryka chilli, naturalny barwnik- oleorezyna kurkumy; przyprawa "5 Smak�w" - kolendra, s�l, cynamon, ziele angielskie, kukurydza, papryka s�odka, papryka ostra, barwnik naturalny- ekstrakt z papryki.
-user	a posiadacie mieszanki bez soli w sk�adzie?	
-system	posiadamy dwie mieszanki: zio�a zamiast soli - gorczyca, papryka s�odka, kozieradka, kurkuma, cebula, czosnek, kolendra, pieprz czarny, oregano, imbir, pietruszka, papryka chilli, bazylia, lubczyk, majeranek; przyprawa garam masala premium bez soli - kolendra, pieprz czarny, kmin rzymski, cynamon, li�� laurowy, go�dziki, kardamon, imbir, ga�ka muszkato�owa.	
-user	dodaj obie mieszanki do koszyka
-system	dodaje zio�a zamiast soli oraz przyprawa garam masala bez soli. Czy co� jeszcze doda� do koszyka
-user	czy macie napoje z usa w ofercie?
-system	nie posiadam takiej kategorii napoj�w. Z kategorii napoj�w mamy coca-cole, pepsi, sprite oraz soki. czy kt�ry� z tych napoj�w ci� interesuje?	
-user	nie
-system	czy chcesz przej�� do p�atno�ci?
-user	tak
-system	czy posiadasz nasz� kart� lojalno�ciow�?
-user	nie
-system	czy chcia�by� za�o�y� kart� lojalno�ciow�?
-user	nie
-system	podaj adres zamowenia
-user	ul. Uniwersytetu Pozna�skiego 4, Pozna�
-system	przyjmuje adres zamowienia. przekierowuje do systemu p�atno�ci. NIe zamykaj okna czatu. gdy p�atno�� przebiegnie pomy�lnie, poinformuje ci� o tym tutaj
-user	system odrzuca mi platno�� kart�
-system	je�li wyst�puj� problemy z systemem p�atno�ci, skontaktuj si� z operatorem p�atno�ci. Czy co� jeszcze moge dla ciebie zrobi�?
-user	nie
-system	dzi�kuj� i zapraszam ponownie
+"subject"	"utterance"     "annotation"
+user	Szukam restauracji z kuchnią etiopską   inform(food=etiopska)
+system	dzień dobry, jestem systemem obsługi sklepu spożywczego, nie posiadam informacji na temat restauracji z kuchnią etiopską    welcomemsg()&canthelp(food=etiopska)	
+user	szukam składników do messer wat     inform(productname=składniki_do_messer_wat)
+system  nie posiadam produktu "składniki do messet wat". czy możesz sformuować to inaczej? canthelp(productcategory=składniki_do_messer_wat)&request(productname)
+user	szukam ciekawych mieszanek przypraw. Co macie w swojej ofercie?	inform(productname=mieszanka_przypraw)
+system	z mieszanek przypraw mamy w ofercie: przyprawa arabska - sól, kukurydza, pieprz ziołowy, pietruszka, gorczyca, kolendra, kminek, majeranek, cząber, tymianek, chilli, papryka słodka, cukier, kolendra, papryka ostra, kmin rzymski, cynamon, soda, imbir, ziele angielskie, gałka muszkatołowa, goździki; przyprawa azjatycka - sól, czosnek, marchew, kukurydza, papryka słodka, imbir, curry, szczypiorek, chili, papryka ostra, barwnik naturalny-ekstrakt papryki; przyprawa cajun - papryka słodka, pieprz cayenne, chili, sól, pieprz czarny, czosnek, cebula, oregano, tymianek, pieprz biały; przyprawa chińska - sól, kolendra, imbir, papryka ostra, kozieradka, cynamon, cukier, kukurydza, kurkuma, kminek, koper włoski, kardamon, pieprz biały, papryka chilli, naturalny barwnik- oleorezyna kurkumy; przyprawa 5 Smaków - kolendra, sól, cynamon, ziele angielskie, kukurydza, papryka słodka, papryka ostra, barwnik naturalny, ekstrakt z papryki    inform(productcategory=mieszanka_przypraw,count=5)
+user	a posiadacie mieszanki bez soli w składzie? inform(productcategory=mieszanka_przypraw,type=bez_soli)
+system	posiadamy dwie mieszanki: zioła zamiast soli - gorczyca, papryka słodka, kozieradka, kurkuma, cebula, czosnek, kolendra, pieprz czarny, oregano, imbir, pietruszka, papryka chilli, bazylia, lubczyk, majeranek; przyprawa garam masala premium bez soli - kolendra, pieprz czarny, kmin rzymski, cynamon, liść laurowy, goździki, kardamon, imbir, gałka muszkatołowa      inform(productname=mieszanka_przypraw,type=bez_soli,count=2)
+user	dodaj obie mieszanki do koszyka     inform(productcategory=mieszanka_przypraw,type=bez_soli,count=2)
+system	dodaje zioła zamiast soli oraz przyprawa garam masala bez soli. Czy coś jeszcze dodać do koszyka? inform(productname=zioła_zamiast_soli, productname=przyprawa_garam_masala_bez_soli)
+user	czy macie napoje z usa w ofercie? inform(productcategory=napoje, type=usa)
+system	nie posiadam takiej kategorii napojów. Z kategorii napojów mamy coca-cole, pepsi, sprite oraz soki. czy któryś z tych napojów cię interesuje?   canthelp(productcategory=napoje, type=usa)&inform(productcategory=napoje, count=4)
+user	nie negate()
+system	czy chcesz przejść do płatności?    request(payment)
+user	tak affirm()
+system	czy posiadasz naszą kartę lojalnościową? request(card)
+user	nie negate()
+system	czy chciałbyś założyć kartę lojalnościową? offer(cardcreation)
+user	nie negate()
+system	podaj adres zamowenia request(adress)
+user	ul. Uniwersytetu Poznańskiego 4, Poznań inform(adress=Uniwersytetu_Poznańskiego_4_Poznań)
+system	przyjmuje adres zamowienia. przekierowuje do systemu płatności. NIe zamykaj okna czatu. gdy płatność przebiegnie pomyślnie, poinformuje cię o tym tutaj     inform(payment)
+user	system odrzuca mi platność kartą inform(paymentissue)
+system	jeśli występują problemy z systemem płatności, skontaktuj się z operatorem płatności. Czy coś jeszcze moge dla ciebie zrobić? canthelp(paymentissue)&reqmore
+user	nie negate()
+system	dziękuję i zapraszam ponownie bye()
