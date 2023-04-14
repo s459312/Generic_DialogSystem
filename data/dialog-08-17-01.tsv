@@ -1,15 +1,15 @@
-"subject"	"utterance"
-user	Dzieñ dobry
-system	Dzieñ dobry, jestem systemem obs³ugi sklepu spo¿ywczego, w czym moge pomoc?
-user	Chcia³bym z³o¿yæ zamówienie na 50kg ziemniaków, wa¿ne jest te¿ by by³o dostarczone na dziœ wieczór.Dodatkowo chcia³bym zamówiæ 5l mleka 
-system	Dodaje do koszyka 50kg ziemniaków oraz 5l mleka. Dodaje do koszyka wysy³ke ekspresow¹. czy coœ jeszcze chcia³byœ zamówiæ?
-user	Nie to wszystko. Ile ³¹czny koszt wraz z wysy³k¹?
-system	Kwota twojego koszyka to 125 z³. Wysy³ka ekspresowa wyniesie 12 z³. razem 137 z³. czy przejœæ do p³atnoœci?	
-user	Tak	
-system	Podaj adres zamówienia	
-user	Ul. Uniwersytetu Poznañskiego 4, 61-000 Poznañ
-system	Przyjmuje adres zamówienia. Przekierowuje do systemu p³atnoœci. Nie zamykaj okna czatu. gdy p³atnoœæ przebiegnie pomyœlnie, poinformuje ciê o tym tutaj.
-system	P³atnoœæ zosta³a zrealizowana. Czy coœ jeszcze mogê dla Ciebie zrobiæ?	
-user	Nie, to wszystko
-system	Dziêkujê do zobaczenia
+"subject"	"utterance"	"annotation"
+user	DzieÅ„ dobry	welcomemsg()
+system	DzieÅ„ dobry, jestem systemem obsÅ‚ugi sklepu spoÅ¼ywczego, w czym moge pomÃ³c? 	welcomemsg()
+user	ChciaÅ‚bym zÅ‚oÅ¼yÄ‡ zamÃ³wienie na 50kg ziemniakÃ³w, waÅ¼ne jest teÅ¼ by byÅ‚o dostarczone na dziÅ› wieczÃ³r.Dodatkowo chciaÅ‚bym zamÃ³wiÄ‡ 5l mleka	inform(productname=ziemniaki,count=50kg,productname=mleko,count=5l,productname=szybka_dostawa)
+system	Dodaje do koszyka 50kg ziemniakÃ³w oraz 5l mleka. Dodaje do koszyka wysyÅ‚ke ekspresowÄ…. czy coÅ› jeszcze chciaÅ‚byÅ› zamÃ³wiÄ‡?	inform(productname=ziemniaki,count=50kg,productname=mleko,count=5l,productname=szybka_dostawa)
+user	Nie to wszystko. Ile wynosi Å‚Ä…czny koszt wraz z wysyÅ‚kÄ…?	negate()
+system	Kwota twojego koszyka to 125 zÅ‚. WysyÅ‚ka ekspresowa wyniesie 12 zÅ‚. razem 137 zÅ‚. czy przejÅ›Ä‡ do pÅ‚atnoÅ›ci?	infomr(price)&request(payment)
+user	Tak	affirm()
+system	Podaj adres zamÃ³wienia	request(adress)
+user	Ul. Uniwersytetu PoznaÅ„skiego 4, 61-000 PoznaÅ„	inform(adress=uniwersytetu_PoznaÅ„skiego_4_61-000_PoznaÅ„)
+system	Przyjmuje adres zamÃ³wienia. Przekierowuje do systemu pÅ‚atnoÅ›ci. Nie zamykaj okna czatu. gdy pÅ‚atnoÅ›Ä‡ przebiegnie pomyÅ›lnie, poinformuje ciÄ™ o tym tutaj.	inform(payment)
+system	PÅ‚atnoÅ›Ä‡ zostaÅ‚a zrealizowana. Czy coÅ› jeszcze mogÄ™ dla Ciebie zrobiÄ‡?	infomr(payment)
+user	Nie, to wszystko	negate()
+system	DziÄ™kujÄ™, do zobaczenia	bye()
 
