@@ -1,4 +1,14 @@
-NAME = 'ABC'
+import spacy
+import string
+from spacy.lang.pl import Polish
+
+
+
+
+nlp = spacy.load("pl_core_news_md")
+
+
+NAME = 'Ricardo'
 
 class NaturalLanguageUnderstanding():
     def __init__(self, text):
