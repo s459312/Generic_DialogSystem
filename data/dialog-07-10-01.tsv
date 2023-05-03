@@ -1,22 +1,22 @@
-user	Czeœæ, czym zajmuje siê wasz system?	welcomemsg()
-system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"	welcomemsg()
+user	CzeÅ›Ä‡, czym zajmuje siÄ™ wasz system?	welcomemsg()
+system	"DzieÅ„ dobry, witamy w systemie obsÅ‚ugi sklepu spoÅ¼ywczego ""Surykatka"". W czym mogÄ™ pomÃ³c?"	welcomemsg()
 user	Jakiego rodzaju produkty oferujecie?	inform(products)
-system	"Produkty dostêpne dzisiaj w promocji:
+system	"Produkty dostÄ™pne dzisiaj w promocji:
 
- 
+Â 
 
-Goya Oliwki Gordales Z Pestk¹ 358 Ml 7,49z³
-Violife Plastry Smak Wêdzony 100 G 8,29 z³
-Hortex Sok 100% Jab³ko Butelka Apet 300 Ml - 2,79 z³
-Szynka Dojrzewaj¹ca Plastry 100G £uków - 11,29 z³
-Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 z³
-Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
-Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
-Chorizo Sarta Pikantne 200G - 14.99 z³
-Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
-Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"	inform(promotion)
-user	Interesuje mnie g³ównie zakup sk³adników do Fondue	request(productname=Fondue)
-system	Fondue serowe, czekoladowe czy miêsne?	reqmore(productname=Fondue, type)
+Goya Oliwki Gordales Z PestkÄ… 358 Ml 7,49zÅ‚
+Violife Plastry Smak WÄ™dzony 100 G 8,29 zÅ‚
+Hortex Sok 100% JabÅ‚ko Butelka Apet 300 Ml - 2,79 zÅ‚
+Szynka DojrzewajÄ…ca Plastry 100G ÅukÃ³w - 11,29 zÅ‚
+Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 zÅ‚
+Bakoma Ave Vege Banan Z NutÄ… Wanilii 150 G - 4,89 zÅ‚
+Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 zÅ‚
+Chorizo Sarta Pikantne 200G - 14.99 zÅ‚
+Maluta Ser Moja Gouda 45 % TÅ‚ Bez BarwnikÃ³w I KonserwantÃ³w 600g 25,43 zÅ‚
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 zÅ‚"	inform(promotion)
+user	Interesuje mnie gÅ‚Ã³wnie zakup skÅ‚adnikÃ³w do Fondue	request(productname=Fondue)
+system	Fondue serowe, czekoladowe czy miÄ™sne?	reqmore(productname=Fondue, type)
 user	serowe	inform(productname=Fondue, type = serowe)
 system	"Proponujemy:
 
@@ -24,42 +24,42 @@ Ser Ementaler oraz Gruy?re
 
 kirsch
 
-m¹ka ziemniaczana
+mÄ…ka ziemniaczana
 
 czosnek
 
-bia³y pieprz
+biaÅ‚y pieprz
 
-ga³ka muszkato³owa
+gaÅ‚ka muszkatoÅ‚owa
 
 cytryna
 
-bia³e wytrawne wino"	inform(productname=Fondue, ingredients=all)
-user	Z listy wzi¹³bym w takim razie oba sery, po 300g oraz ga³kê muszkato³ow¹. Chcia³bym do tego te¿ Bazyliê oraz dowiedzieæ siê jakie wino proponujecie?	inform(productname=ser, count=2, amount=300g)&inform(productname=ga³ka muszkato³owa)&inform(productname=bazylia)&request(wino)
-system	Dodano do koszyka ser ementaler 300g, ser Gruy?re, ga³ka muszkato³owa, bazylia.	inform(productname=ser, count=2, amount=300g)&inform(productname=ga³ka muszkato³owa)&inform(productname=bazylia)
-system	"Proponujemy wina: 
+biaÅ‚e wytrawne wino"	inform(productname=Fondue, ingredients=all)
+user	Z listy wziÄ…Å‚bym w takim razie oba sery, po 300g oraz gaÅ‚kÄ™ muszkatoÅ‚owÄ…. ChciaÅ‚bym do tego teÅ¼ BazyliÄ™ oraz dowiedzieÄ‡ siÄ™ jakie wino proponujecie?	inform(productname=ser, count=2, amount=300g)&inform(productname=gaÅ‚ka muszkatoÅ‚owa)&inform(productname=bazylia)&request(wino)
+system	Dodano do koszyka ser ementaler 300g, ser Gruy?re, gaÅ‚ka muszkatoÅ‚owa, bazylia.	inform(productname=ser, count=2, amount=300g)&inform(productname=gaÅ‚ka muszkatoÅ‚owa)&inform(productname=bazylia)
+system	"Proponujemy wina:Â 
 
 Chardonnay, Sauvignon Blanc oraz Riesling"	inform(productname=wino)
-user	Mo¿e byæ Chardonnay. To by by³o wszystko dla mnie.	inform(productname=wino, brandname=Chardonnay)&inform(all)
+user	MoÅ¼e byÄ‡ Chardonnay. To by byÅ‚o wszystko dla mnie.	inform(productname=wino, brandname=Chardonnay)&inform(all)
 system	Dodano do koszyka Chardonnay.	inform(productname=wino, brandname=Chardonnay)
-system	"Proszê wybraæ formê dostawy. 
+system	"ProszÄ™ wybraÄ‡ formÄ™ dostawy.Â 
 
 Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiór osobisty"	request(delivery)
+odbiÃ³r osobisty"	request(delivery)
 user	Dostawa do paczkomatu	inform(delivery=Dostawa do paczkomatu)
-system	Proszê wybraæ adres lub numer paczkomatu	request(address)
+system	ProszÄ™ wybraÄ‡ adres lub numer paczkomatu	request(address)
 user	POZ29A	inform(address=POZ29A)
-system	"Proszê o wybranie formy p³atnoœci.
+system	"ProszÄ™ o wybranie formy pÅ‚atnoÅ›ci.
 
-Dostêpne formy p³atnoœci:
+DostÄ™pne formy pÅ‚atnoÅ›ci:
 
--Blik, 
+-Blik,Â 
 -przelew tradycyjny
 
--gotówka przy odbiorze
+-gotÃ³wka przy odbiorze
 
 -PayPal
 
@@ -68,6 +68,6 @@ Dostêpne formy p³atnoœci:
 -dotpay
 
 -Apple Pay/Google Pay"	request(paymentmethod)
-user	Gotówka przy odbiorze	inform(paymentmethod=gotówka)
-system	Zamówienie przyjête, o godzinie odbioru zostanie Pan poinformowany w osobnej wiadomoœci.	bye()
-system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."	bye()
+user	GotÃ³wka przy odbiorze	inform(paymentmethod=gotÃ³wka)
+system	ZamÃ³wienie przyjÄ™te, o godzinie odbioru zostanie Pan poinformowany w osobnej wiadomoÅ›ci.	bye()
+system	"DziÄ™kujemy za skorzystanie z usÅ‚ug sklepu spoÅ¼ywczego ""Surykatka""."	bye()

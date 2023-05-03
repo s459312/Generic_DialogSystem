@@ -1,74 +1,74 @@
-user	dzieñ dobry, czy moge tu kupiæ kota?	welcomemsg()&inform(kot)
-system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". Kot jest niestety niedostêpny, ale proponujê karmê dla kota."	welcomemsg()&canthelp(productname=kot)&offer(productname=karma)
-user	Karmê akurat mam. A jakie jeszcze produkty macie w ofercie?	deny(karma)&inform(promotion)
-system	"Produkty dostêpne dzisiaj w promocji:
+user	dzieÅ„ dobry, czy moge tu kupiÄ‡ kota?	welcomemsg()&inform(kot)
+system	"DzieÅ„ dobry, witamy w systemie obsÅ‚ugi sklepu spoÅ¼ywczego ""Surykatka"". Kot jest niestety niedostÄ™pny, ale proponujÄ™ karmÄ™ dla kota."	welcomemsg()&canthelp(productname=kot)&offer(productname=karma)
+user	KarmÄ™ akurat mam. A jakie jeszcze produkty macie w ofercie?	deny(karma)&inform(promotion)
+system	"Produkty dostÄ™pne dzisiaj w promocji:
 
- 
+Â 
 
-Goya Oliwki Gordales Z Pestk¹ 358 Ml 7,49z³
-Violife Plastry Smak Wêdzony 100 G 8,29 z³
-Hortex Sok 100% Jab³ko Butelka Apet 300 Ml - 2,79 z³
-Szynka Dojrzewaj¹ca Plastry 100G £uków - 11,29 z³
-Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 z³
-Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
-Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
-Chorizo Sarta Pikantne 200G - 14.99 z³
-Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
-Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"	inform(promotion)
-user	a czy macie w ofercie piersi z kurczaka, paprykê, cebulê, kie³ki fasoli mung oraz sos pomidorowy?	"inform(productname=pierœ z kurczaka)&
+Goya Oliwki Gordales Z PestkÄ… 358 Ml 7,49zÅ‚
+Violife Plastry Smak WÄ™dzony 100 G 8,29 zÅ‚
+Hortex Sok 100% JabÅ‚ko Butelka Apet 300 Ml - 2,79 zÅ‚
+Szynka DojrzewajÄ…ca Plastry 100G ÅukÃ³w - 11,29 zÅ‚
+Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 zÅ‚
+Bakoma Ave Vege Banan Z NutÄ… Wanilii 150 G - 4,89 zÅ‚
+Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 zÅ‚
+Chorizo Sarta Pikantne 200G - 14.99 zÅ‚
+Maluta Ser Moja Gouda 45 % TÅ‚ Bez BarwnikÃ³w I KonserwantÃ³w 600g 25,43 zÅ‚
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 zÅ‚"	inform(promotion)
+user	a czy macie w ofercie piersi z kurczaka, paprykÄ™, cebulÄ™, kieÅ‚ki fasoli mung oraz sos pomidorowy?	"inform(productname=pierÅ› z kurczaka)&
 inform(productname=papryka)
-&inform(productname=cebula)&inform(productname=kie³ki fasoli mung)&inform(productname=sos pomidorowy)"
-system	"Niestety piersi z kurczaka oraz kie³ki fasoli mung s¹ niedostêpne. 
+&inform(productname=cebula)&inform(productname=kieÅ‚ki fasoli mung)&inform(productname=sos pomidorowy)"
+system	"Niestety piersi z kurczaka oraz kieÅ‚ki fasoli mung sÄ… niedostÄ™pne.Â 
 
-Dostêpne papryki: anuum (roczne), baccatum (jagodowe), chinense (pochodz¹ce z Chin), frutescens (owocowe) i pubescens (omszone). 
+DostÄ™pne papryki: anuum (roczne), baccatum (jagodowe), chinense (pochodzÄ…ce z Chin), frutescens (owocowe) i pubescens (omszone).Â 
 
-Dostêpne cebule: Bia³a cebula, Czerwona cebula, Cebula dymka. 
+DostÄ™pne cebule: BiaÅ‚a cebula, Czerwona cebula, Cebula dymka.Â 
 
-Sos pomidorowy: £owicz Premium Basillico."	"deny(productname=pierœ z kurczaka)
-&deny(productname=kie³ki fasoli mung)&inform(productname=papryka, count=5)
+Sos pomidorowy: Åowicz Premium Basillico."	"deny(productname=pierÅ› z kurczaka)
+&deny(productname=kieÅ‚ki fasoli mung)&inform(productname=papryka, count=5)
 &inform(productname=cebula, count=3)&inform(productname=sos pomidorowy)"
-user	poproszê cebulê bia³¹ oraz paprykê chinense oraz ten sos pomidorowy. Czy jakieœ inne miêso jest dostêpne w sklepie?	"inform(productname=papryka, brandname=chinense)
-&inform(productname=cebula)&inform(productname=sos pomidorowy, brandname=£owicz Premium Basillico)&reqalts(productname=miêso)"
-system	Dodano do koszyka 1x cebula bia³a, 1x papryka chinense, 1x sos pomidorowy: £owicz Premium Basillico.	"inform(productname=papryka, brandname=chinense)
-&inform(productname=cebula)&inform(productname=sos pomidorowy, brandname=£owicz Premium Basillico)"
-system	"Dostêpne produkty miêsne:
+user	poproszÄ™ cebulÄ™ biaÅ‚Ä… oraz paprykÄ™ chinense oraz ten sos pomidorowy. Czy jakieÅ› inne miÄ™so jest dostÄ™pne w sklepie?	"inform(productname=papryka, brandname=chinense)
+&inform(productname=cebula)&inform(productname=sos pomidorowy, brandname=Åowicz Premium Basillico)&reqalts(productname=miÄ™so)"
+system	Dodano do koszyka 1x cebula biaÅ‚a, 1x papryka chinense, 1x sos pomidorowy: Åowicz Premium Basillico.	"inform(productname=papryka, brandname=chinense)
+&inform(productname=cebula)&inform(productname=sos pomidorowy, brandname=Åowicz Premium Basillico)"
+system	"DostÄ™pne produkty miÄ™sne:
 
 Wieprzownia
 
-Drób
+DrÃ³b
 
-Dziczyzna"	inform(productname=miêso, count=3)
-user	w jakiej postaci mo¿na kupiæ drób?	inform(productname=drób)
-system	Aktualnie dostêpne s¹: P³at trybowany z kurczaka nadbiebrzañskiego oraz Podudzie z kurczaka nadbiebrzañskiego.	inform(productname=drób, count=2)
-user	jakie opakowania podudzia s¹ dostêpne?	reqmore(productname=drób)
+Dziczyzna"	inform(productname=miÄ™so, count=3)
+user	w jakiej postaci moÅ¼na kupiÄ‡ drÃ³b?	inform(productname=drÃ³b)
+system	Aktualnie dostÄ™pne sÄ…: PÅ‚at trybowany z kurczaka nadbiebrzaÅ„skiego oraz Podudzie z kurczaka nadbiebrzaÅ„skiego.	inform(productname=drÃ³b, count=2)
+user	jakie opakowania podudzia sÄ… dostÄ™pne?	reqmore(productname=drÃ³b)
 system	Zafoliowana tacka.	inform(wrapping)
-user	mam na myœli wagê porcji	negate(wrapping)&request(amount)
-system	Podudzie z kurczaka nadbiebrzañskiego, 0.621 kg.	inform(amount)
-user	œwietnie, poprosze o dodanie do zamówienia	affirm()
-system	Dodano do koszyka Podudzie z kurczaka nadbiebrzañskiego, 0.621 kg.	inform(productname=drób, brandname=Podudzie z kurczaka nadbiebrzañskiego, amount=0.621kg)
-system	Chcesz zamówiæ coœ jeszcze?	request(all)
-user	to wszystko, jaka jest cena produktów w koszyku?	request(price)
-system	37.29 z³	inform(price)
-system	"Proszê wybraæ formê dostawy. 
+user	mam na myÅ›li wagÄ™ porcji	negate(wrapping)&request(amount)
+system	Podudzie z kurczaka nadbiebrzaÅ„skiego, 0.621 kg.	inform(amount)
+user	Å›wietnie, poprosze o dodanie do zamÃ³wienia	affirm()
+system	Dodano do koszyka Podudzie z kurczaka nadbiebrzaÅ„skiego, 0.621 kg.	inform(productname=drÃ³b, brandname=Podudzie z kurczaka nadbiebrzaÅ„skiego, amount=0.621kg)
+system	Chcesz zamÃ³wiÄ‡ coÅ› jeszcze?	request(all)
+user	to wszystko, jaka jest cena produktÃ³w w koszyku?	request(price)
+system	37.29 zÅ‚	inform(price)
+system	"ProszÄ™ wybraÄ‡ formÄ™ dostawy.Â 
 
 Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiór osobisty"	request(delivery)
+odbiÃ³r osobisty"	request(delivery)
 user	jaka jest lokalizacja sklepu?	request(location)
-system	Koœcielna 30, Poznañ.	inform(location=Koœcielna 30, Poznañ)
-user	w takim razie mogê odebraæ osobiœcie	inform(delivery=odbiór osobisty)
-user	w jakich godzinach jest to mo¿liwe?	request(opening hours)
+system	KoÅ›cielna 30, PoznaÅ„.	inform(location=KoÅ›cielna 30, PoznaÅ„)
+user	w takim razie mogÄ™ odebraÄ‡ osobiÅ›cie	inform(delivery=odbiÃ³r osobisty)
+user	w jakich godzinach jest to moÅ¼liwe?	request(opening hours)
 system	7:00-21:00	inform(opening hours)
-system	"Proszê o wybranie formy p³atnoœci.
+system	"ProszÄ™ o wybranie formy pÅ‚atnoÅ›ci.
 
-Dostêpne formy p³atnoœci:
+DostÄ™pne formy pÅ‚atnoÅ›ci:
 
--Blik, 
+-Blik,Â 
 -przelew tradycyjny
 
--gotówka przy odbiorze
+-gotÃ³wka przy odbiorze
 
 -PayPal
 
@@ -77,9 +77,9 @@ Dostêpne formy p³atnoœci:
 -dotpay
 
 -Apple Pay/Google Pay"	request(paymentmethod)
-user	gotówka	inform(paymentmethod=gotówka)
-system	Zamówienie przyjête, odbiór osobisty, p³atnoœæ gotówk¹. O dostêpie do odbioru zostanie Pan powiadomiony przez SMS.	inform(summary)
-user	a mój numer zdobêdziecie w jakiœ nielegalny sposób?	null
-system	Przepraszam nast¹pi³a pomy³ka. Powiadomienie otrzyma Pan na aktualnym chacie.	inform(mistake)
-user	ah rozumiem, w porz¹dku	affirm()
-system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."	bye()
+user	gotÃ³wka	inform(paymentmethod=gotÃ³wka)
+system	ZamÃ³wienie przyjÄ™te, odbiÃ³r osobisty, pÅ‚atnoÅ›Ä‡ gotÃ³wkÄ…. O dostÄ™pie do odbioru zostanie Pan powiadomiony przez SMS.	inform(summary)
+user	a mÃ³j numer zdobÄ™dziecie w jakiÅ› nielegalny sposÃ³b?	null
+system	Przepraszam nastÄ…piÅ‚a pomyÅ‚ka. Powiadomienie otrzyma Pan na aktualnym chacie.	inform(mistake)
+user	ah rozumiem, w porzÄ…dku	affirm()
+system	"DziÄ™kujemy za skorzystanie z usÅ‚ug sklepu spoÅ¼ywczego ""Surykatka""."	bye()

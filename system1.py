@@ -33,6 +33,8 @@ class DialogueStateTracker:
             self.state = "told_name"
         if any(item == "inform(rock_n_stone = True)" in user_act["type"] for item in user_act["type"]):
             self.state = "rock_n_stone"
+        if any(item == "null()" in user_act["type"] for item in user_act["type"]):
+            self.state = "unknown"
         
         return self.state
         

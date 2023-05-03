@@ -1,79 +1,79 @@
-user	Dzieñ dobry	welcomemsg()
-system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"	welcomemsg()
-user	Czy sklep realizuje zamówienia z dostaw¹?	request(delivery)
+user	DzieÅ„ dobry	welcomemsg()
+system	"DzieÅ„ dobry, witamy w systemie obsÅ‚ugi sklepu spoÅ¼ywczego ""Surykatka"". W czym mogÄ™ pomÃ³c?"	welcomemsg()
+user	Czy sklep realizuje zamÃ³wienia z dostawÄ…?	request(delivery)
 system	"Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiór osobisty"	inform(delivery)
-user	Czy w ofercie sklepu dostêpna jest karma dla psa?	inform(productname=karma dla psa)
-system	"Dostêpne karmy dla psów: 
+odbiÃ³r osobisty"	inform(delivery)
+user	Czy w ofercie sklepu dostÄ™pna jest karma dla psa?	inform(productname=karma dla psa)
+system	"DostÄ™pne karmy dla psÃ³w:Â 
 
 TASTE OF THE WILD High Prairie 2KG
-59,00 z³
+59,00 zÅ‚
 
- 
+Â 
 
 do koszyka
 TASTE OF THE WILD Southwest Canyon 2KG
-59,00 z³
+59,00 zÅ‚
 
- 
+Â 
 
 do koszyka
 TASTE OF THE WILD Pine Forest 2KG
-59,00 z³
+59,00 zÅ‚
 
- 
+Â 
 
 do koszyka
 Eden Country Cuisine dla kota 1,5kg
-94,99 z³"	inform(productname=karma dla psa, count=4)
+94,99 zÅ‚"	inform(productname=karma dla psa, count=4)
 user	poprosze 2 razy TASTE OF THE WILD High Prairie 2KG	inform(brandname=TASTE OF THE WILD High Prairie 2KG, count =2)
-system	Dodano do koszyka 2x TASTE OF THE WILD High Prairie 2KG. Czy chcesz zamówiæ coœ jeszcze? Polecamy produkty dostêpne na promocji.	inform(productname=karma dla psabrandname=TASTE OF THE WILD High Prairie 2KG, count =2)
-user	Jakie produkty s¹ w promocji	request(promotion)
-system	"Produkty dostêpne dzisiaj w promocji:
+system	Dodano do koszyka 2x TASTE OF THE WILD High Prairie 2KG. Czy chcesz zamÃ³wiÄ‡ coÅ› jeszcze? Polecamy produkty dostÄ™pne na promocji.	inform(productname=karma dla psabrandname=TASTE OF THE WILD High Prairie 2KG, count =2)
+user	Jakie produkty sÄ… w promocji	request(promotion)
+system	"Produkty dostÄ™pne dzisiaj w promocji:
 
- 
+Â 
 
-Goya Oliwki Gordales Z Pestk¹ 358 Ml 7,49z³
-Violife Plastry Smak Wêdzony 100 G 8,29 z³
-Hortex Sok 100% Jab³ko Butelka Apet 300 Ml - 2,79 z³
-Szynka Dojrzewaj¹ca Plastry 100G £uków - 11,29 z³
-Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 z³
-Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
-Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
-Chorizo Sarta Pikantne 200G - 14.99 z³
-Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
-Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"	inform(promotion)
-user	Poproszê podaæ najni¿sz¹ cenê produktów z ostatnich 30 dni zgodnie z dyrektyw¹ omnibusa	null
+Goya Oliwki Gordales Z PestkÄ… 358 Ml 7,49zÅ‚
+Violife Plastry Smak WÄ™dzony 100 G 8,29 zÅ‚
+Hortex Sok 100% JabÅ‚ko Butelka Apet 300 Ml - 2,79 zÅ‚
+Szynka DojrzewajÄ…ca Plastry 100G ÅukÃ³w - 11,29 zÅ‚
+Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 zÅ‚
+Bakoma Ave Vege Banan Z NutÄ… Wanilii 150 G - 4,89 zÅ‚
+Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 zÅ‚
+Chorizo Sarta Pikantne 200G - 14.99 zÅ‚
+Maluta Ser Moja Gouda 45 % TÅ‚ Bez BarwnikÃ³w I KonserwantÃ³w 600g 25,43 zÅ‚
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 zÅ‚"	inform(promotion)
+user	PoproszÄ™ podaÄ‡ najniÅ¼szÄ… cenÄ™ produktÃ³w z ostatnich 30 dni zgodnie z dyrektywÄ… omnibusa	null
 system	Nie mam pozwolenia na takie polecenie.	canthelp()
-user	Bêdê zmuszony zg³osiæ sklep do inspekcji handlowej	reqmore()
-system	Przepraszamy za k³opot. Proponujê skontaktowaæ siê z kierownikiem pod numerem: 213701019	inform(contact)
-user	po rozmowie z kierownikiem ustaliliœmy, ¿e jest pan zmuszony podaæ ceny, aby nie ³amaæ dyrektywy	null
-system	Niestety jestem nowym pracownikiem, o szczegó³y proszê pytaæ kierownika.	canthelp()
+user	BÄ™dÄ™ zmuszony zgÅ‚osiÄ‡ sklep do inspekcji handlowej	reqmore()
+system	Przepraszamy za kÅ‚opot. ProponujÄ™ skontaktowaÄ‡ siÄ™ z kierownikiem pod numerem: 213701019	inform(contact)
+user	po rozmowie z kierownikiem ustaliliÅ›my, Å¼e jest pan zmuszony podaÄ‡ ceny, aby nie Å‚amaÄ‡ dyrektywy	null
+system	Niestety jestem nowym pracownikiem, o szczegÃ³Å‚y proszÄ™ pytaÄ‡ kierownika.	canthelp()
 user	poprosze lejsy	inform(productname=chipsy, brandname= lays)
 system	Jaki smak oraz porcja?	reqmore()
 user	Oven Baked Chantarelles In A Cream Sauce 125 G	inform(taste=Oven Baked Chantarelles In A Cream Sauce, amount=125g
 system	Dodano do koszyka Oven Baked Chantarelles In A Cream Sauce 125 G.	inform(productname=chipsy, brandname= lays, taste=Oven Baked Chantarelles In A Cream Sauce, amount=125g
 system	Czy to wszystko?	request(all)
 user	tak	affirm()
-system	"Proszê wybraæ formê dostawy. 
+system	"ProszÄ™ wybraÄ‡ formÄ™ dostawy.Â 
 
 Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiór osobisty"	request(delivery)
-user	odbiór osobisty	inform(delivery=odbiór osobisty)
-system	"Proszê o wybranie formy p³atnoœci.
+odbiÃ³r osobisty"	request(delivery)
+user	odbiÃ³r osobisty	inform(delivery=odbiÃ³r osobisty)
+system	"ProszÄ™ o wybranie formy pÅ‚atnoÅ›ci.
 
-Dostêpne formy p³atnoœci:
+DostÄ™pne formy pÅ‚atnoÅ›ci:
 
--Blik, 
+-Blik,Â 
 -przelew tradycyjny
 
--gotówka przy odbiorze
+-gotÃ³wka przy odbiorze
 
 -PayPal
 
@@ -83,10 +83,10 @@ Dostêpne formy p³atnoœci:
 
 -Apple Pay/Google Pay"	request(paymentmethod)
 user	blik	inform(paymentmethod=blik)
-system	Proszê podaæ kod BLIK	request(code)
+system	ProszÄ™ podaÄ‡ kod BLIK	request(code)
 user	6.3639E+050	inform(code=6.3639E+050)
-system	Proszê o potwierdzenie w aplikacji.	request(affirm)
-user	potwierdzi³em	affirm()
-system	Zamówienie przyjête, o godzinie odbioru zostanie Pan poinformowany w osobnej wiadomoœci.	inform(summary)
-system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."	bye()
-user	dziekujê, do widzenia	bye()
+system	ProszÄ™ o potwierdzenie w aplikacji.	request(affirm)
+user	potwierdziÅ‚em	affirm()
+system	ZamÃ³wienie przyjÄ™te, o godzinie odbioru zostanie Pan poinformowany w osobnej wiadomoÅ›ci.	inform(summary)
+system	"DziÄ™kujemy za skorzystanie z usÅ‚ug sklepu spoÅ¼ywczego ""Surykatka""."	bye()
+user	dziekujÄ™, do widzenia	bye()

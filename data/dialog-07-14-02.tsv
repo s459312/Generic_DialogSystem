@@ -1,115 +1,115 @@
-user	DzieÒ dobry	welcomemsg()
-system	"DzieÒ dobry, witamy w systemie obs≥ugi sklepu spoøywczego ""Surykatka"". W czym mogÍ pomÛc?"	welcomemsg()
-user	Chcia≥bym kupiÊ mleko, chleb, jakieú wino.	inform(productname=mleko)&inform(productname=chleb)&inform(productname=wino)
-system	"Mleko z laktozπ czy bez?†
+user	Dzie≈Ñ dobry	welcomemsg()
+system	"Dzie≈Ñ dobry, witamy w systemie obs≈Çugi sklepu spo≈ºywczego ""Surykatka"". W czym mogƒô pom√≥c?"	welcomemsg()
+user	Chcia≈Çbym kupiƒá mleko, chleb, jakie≈õ wino.	inform(productname=mleko)&inform(productname=chleb)&inform(productname=wino)
+system	"Mleko z laktozƒÖ czy bez?¬†
 
-Aktualnie dostÍpne chleby: Chleb razowy, Chleb jasny, Chleb pszenny, Chleb øytni.†
+Aktualnie dostƒôpne chleby: Chleb razowy, Chleb jasny, Chleb pszenny, Chleb ≈ºytni.¬†
 
 Karta win: FRANZ ANTON MAYER | LITER GRUNER VELTLINER | WAGRAM, AUSTRIA
 Cytrusowy, zwiewny i zbalansowany 23 PLN
-2020††† CHATELAIN DESJACQUES | SAUVIGNON BLANC IGP | DOLINA LOARY, FRANCJA
-PrzystÍpne, úwieøe i rzeúkie 23 PLN
-2020††† BODEGA LAS VIRTUDES | ARCABUCERO BLANCO DO | ALICANTE, HISZPANIA
-£agodne, owocowe i orzeüwiajπce 14 PLN
-2021††† MARTÕN C”DAX | ALBA MARTÕN ALBARI?O DO | RÕAS BAIXAS, HISZPANIA
-Rzeúkie, zwiewne i mineralne††† 30 PLN
-2021††† LEITZ | EINS ZWEI ZERO RIESLING | DOLINA RENU, NIEMCY (BEZALKOHOLOWE)
-Bezalkoholowe, úwieøe i przyjemne"	reqmore(productname=mleko, ingredient)&reqmore(productname=chleb, type)&reqmore(productname=wino, type)
-user	Mleko zwyk≥e, chleb øytni. Sπ jakieú droøsze wina?	inform(productname=mleko)&inform(productname=chleb, type=øythni)&reqmore(productname=wino, price=expensive)
-system	"Szampany oraz wina musujπce ekskluzywne:†
+2020¬†¬†¬† CHATELAIN DESJACQUES | SAUVIGNON BLANC IGP | DOLINA LOARY, FRANCJA
+Przystƒôpne, ≈õwie≈ºe i rze≈õkie 23 PLN
+2020¬†¬†¬† BODEGA LAS VIRTUDES | ARCABUCERO BLANCO DO | ALICANTE, HISZPANIA
+≈Åagodne, owocowe i orze≈∫wiajƒÖce 14 PLN
+2021¬†¬†¬† MART√çN C√ìDAX | ALBA MART√çN ALBARI?O DO | R√çAS BAIXAS, HISZPANIA
+Rze≈õkie, zwiewne i mineralne¬†¬†¬† 30 PLN
+2021¬†¬†¬† LEITZ | EINS ZWEI ZERO RIESLING | DOLINA RENU, NIEMCY (BEZALKOHOLOWE)
+Bezalkoholowe, ≈õwie≈ºe i przyjemne"	reqmore(productname=mleko, ingredient)&reqmore(productname=chleb, type)&reqmore(productname=wino, type)
+user	Mleko zwyk≈Çe, chleb ≈ºytni. SƒÖ jakie≈õ dro≈ºsze wina?	inform(productname=mleko)&inform(productname=chleb, type=≈ºythni)&reqmore(productname=wino, price=expensive)
+system	"Szampany oraz wina musujƒÖce ekskluzywne:¬†
 
-2012††† MOET & CHANDON | DOM PERIGNON BRUT I SZAMPANIA, FRANCJA††
-Z≥oøony, elegancki i klasyczny 2288 PLN
-2012††† POL ROGER | SIR WINSTON CHURCHILL | SZAMPANIA, FRANCJA
-Bogaty, aromatyczny i dojrza≥y 2008 PLN
-NV††† BERNARD PERTOIS | BRUT TRADITION BLANC DE BLANCS | SZAMPANIA, FRANCJA
-Øywy, elegancki i zbalansowany 398 PLN
-NV††† BERNARD PERTOIS | DEMI SEC TRADITION BLANC DE BLANCS | SZAMPANIA, FRANCJA
-Obfity, kremowy i pÛ≥wytrawny398 PLN
-NV††† BERNARD PERTOIS | CUV…E FLAVIE BRUT ROS… | SZAMPANIA, FRANCJA
-Aromatyczny, elegancki i z≥oøony 508 PLN
-NV††† POL ROGER | BRUT | SZAMPANIA, FRANCJA
-Klasyczny, úwieøy i aromatyczny 598 PLN
-2013††† POL ROGER | BRUT BLANC DE BLANCS | SZAMPANIA, FRANCJA
-Elegancki, z≥oøony i efektowny 888 PLN
-2015††† POL ROGER | BRUT ROSE | SZAMPANIA, FRANCJA
-Aromatyczny, úwieøy i treúciwy 858 PLN
-NV††† TAITTINGER | BRUT | SZAMPANIA, FRANCJA
+2012¬†¬†¬† MOET & CHANDON | DOM PERIGNON BRUT I SZAMPANIA, FRANCJA¬†¬†
+Z≈Ço≈ºony, elegancki i klasyczny 2288 PLN
+2012¬†¬†¬† POL ROGER | SIR WINSTON CHURCHILL | SZAMPANIA, FRANCJA
+Bogaty, aromatyczny i dojrza≈Çy 2008 PLN
+NV¬†¬†¬† BERNARD PERTOIS | BRUT TRADITION BLANC DE BLANCS | SZAMPANIA, FRANCJA
+≈ªywy, elegancki i zbalansowany 398 PLN
+NV¬†¬†¬† BERNARD PERTOIS | DEMI SEC TRADITION BLANC DE BLANCS | SZAMPANIA, FRANCJA
+Obfity, kremowy i p√≥≈Çwytrawny398 PLN
+NV¬†¬†¬† BERNARD PERTOIS | CUV√âE FLAVIE BRUT ROS√â | SZAMPANIA, FRANCJA
+Aromatyczny, elegancki i z≈Ço≈ºony 508 PLN
+NV¬†¬†¬† POL ROGER | BRUT | SZAMPANIA, FRANCJA
+Klasyczny, ≈õwie≈ºy i aromatyczny 598 PLN
+2013¬†¬†¬† POL ROGER | BRUT BLANC DE BLANCS | SZAMPANIA, FRANCJA
+Elegancki, z≈Ço≈ºony i efektowny 888 PLN
+2015¬†¬†¬† POL ROGER | BRUT ROSE | SZAMPANIA, FRANCJA
+Aromatyczny, ≈õwie≈ºy i tre≈õciwy 858 PLN
+NV¬†¬†¬† TAITTINGER | BRUT | SZAMPANIA, FRANCJA
 Owocowy, harmonijny i aromatyczny 648 PLN
-NV††† TAITTINGER | DEMI-SEC | SZAMPANIA, FRANCJA
-PÛ≥wytrawny, owocowy i delikatny 598 PLN
-NV††† TAITTINGER | PRESTIGE ROSE | SZAMPANIA, FRANCJA
-Elegancki, z≥oøony i aromatyczny 708 PLN
-NV††† HENRI CHAMPLIAU | CR…MANT DE BOURGOGNE | BRUT AUTHENTIQUE | BURGUNDIA, FRANCJA
+NV¬†¬†¬† TAITTINGER | DEMI-SEC | SZAMPANIA, FRANCJA
+P√≥≈Çwytrawny, owocowy i delikatny 598 PLN
+NV¬†¬†¬† TAITTINGER | PRESTIGE ROSE | SZAMPANIA, FRANCJA
+Elegancki, z≈Ço≈ºony i aromatyczny 708 PLN
+NV¬†¬†¬† HENRI CHAMPLIAU | CR√âMANT DE BOURGOGNE | BRUT AUTHENTIQUE | BURGUNDIA, FRANCJA
 Owocowy, strukturalny i wytrawny 238 PLN
-NV††† HENRY CHAMPLIAU | P…TRONE 68 | BLANC DE BLANCS BRUT | BURGUNDIA, FRANCJA
-Soczysty, úwieøy i aromatyczny 148 PLN
-2021††† SOLIGO | PROSECCO MILLESIMATO ROSE DOC | TREVISO, W£OCHY
-Aromatyczne, owocowe i rÛøowe 138 PLN
-NV††† EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY
-Przyjemny úwieøy i bezalkoholowy 178 PLN
-2018††† 2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA
-Klasyczny, úwieøy i aromatyczny 178 PLN
-2020††† TORELL” | CORPINNAT BRUT ROS… RESERVA | PENED?S, HISZPANIA
-Intrygujπcy, owocowy i wytrawny 218 PLN
-NV††† EMILIANA | SANTA EMILIANA BRUT | CASABLANCA VALLEY, CHILE
-Aromatyczny, úwieøy i treúciwy 198 PLN
-NV††† HENNERS | BRUT | EAST SUSSEX, ANGLIA
-Powúciπgliwy, delikatny i aromatyczny 378 PLN"	inform(productname=wino, price=expensive)
-user	To ja chcia≥bym to za 178pln	inform(productname=wino, price=178pln)
-system	Dodano do koszyka Mleko zwyk≥e, chleb øytni, 2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA. Czy chcesz zamÛwiÊ coú jeszcze?	inform(productname=mleko)&inform(productname=chleb, type=øythni)&inform(productname=wino, price=178pln)&request(all)
+NV¬†¬†¬† HENRY CHAMPLIAU | P√âTRONE 68 | BLANC DE BLANCS BRUT | BURGUNDIA, FRANCJA
+Soczysty, ≈õwie≈ºy i aromatyczny 148 PLN
+2021¬†¬†¬† SOLIGO | PROSECCO MILLESIMATO ROSE DOC | TREVISO, W≈ÅOCHY
+Aromatyczne, owocowe i r√≥≈ºowe 138 PLN
+NV¬†¬†¬† EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY
+Przyjemny ≈õwie≈ºy i bezalkoholowy 178 PLN
+2018¬†¬†¬† 2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA
+Klasyczny, ≈õwie≈ºy i aromatyczny 178 PLN
+2020¬†¬†¬† TORELL√ì | CORPINNAT BRUT ROS√â RESERVA | PENED?S, HISZPANIA
+IntrygujƒÖcy, owocowy i wytrawny 218 PLN
+NV¬†¬†¬† EMILIANA | SANTA EMILIANA BRUT | CASABLANCA VALLEY, CHILE
+Aromatyczny, ≈õwie≈ºy i tre≈õciwy 198 PLN
+NV¬†¬†¬† HENNERS | BRUT | EAST SUSSEX, ANGLIA
+Pow≈õciƒÖgliwy, delikatny i aromatyczny 378 PLN"	inform(productname=wino, price=expensive)
+user	To ja chcia≈Çbym to za 178pln	inform(productname=wino, price=178pln)
+system	Dodano do koszyka Mleko zwyk≈Çe, chleb ≈ºytni, 2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA. Czy chcesz zam√≥wiƒá co≈õ jeszcze?	inform(productname=mleko)&inform(productname=chleb, type=≈ºythni)&inform(productname=wino, price=178pln)&request(all)
 user	Nie to, to drugie za 178pln	inform(productname=wino, price=178pln, brandname=EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY)
-system	UsuniÍto z koszyka 2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA.	inform(productname=wino, price=178pln,brandname=2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA)
+system	Usuniƒôto z koszyka 2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA.	inform(productname=wino, price=178pln,brandname=2018 MAS XAROT | MONASTRELL | GRAN RESERVA CAVA BRUT | KATALONIA, HISZPANIA)
 system	Dodano do koszyka EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY.	inform(productname=wino, price=178pln, brandname=EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY)
-system	Polecamy rÛwnieø produkty dostÍpne w promocji.	offer(promotion)
-system	Czy chcesz zamÛwiÊ coú jeszcze?	request(all)
+system	Polecamy r√≥wnie≈º produkty dostƒôpne w promocji.	offer(promotion)
+system	Czy chcesz zam√≥wiƒá co≈õ jeszcze?	request(all)
 user	A co jest w promocji?	request(promotion)
-system	"Goya Oliwki Gordales Z Pestkπ 358 Ml 7,49z≥
-Violife Plastry Smak WÍdzony 100 G 8,29 z≥
-Hortex Sok 100% Jab≥ko Butelka Apet 300 Ml - 2,79 z≥
-Szynka Dojrzewajπca Plastry 100G £ukÛw - 11,29 z≥
-Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 z≥
-Bakoma Ave Vege Banan Z Nutπ Wanilii 150 G - 4,89 z≥
-Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z≥
-Chorizo Sarta Pikantne 200G - 14.99 z≥
-Maluta Ser Moja Gouda 45 % T≥ Bez BarwnikÛw I KonserwantÛw 600g 25,43 z≥
-Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z≥"	inform(promotion)
-user	ChcÍ szynkÍ dojrzewajπcπ jeszcze. Macie otwieracz do wina?	inform(productname=szynka)&inform(productname=otwieracz do wina)
-system	Dodano do koszyka Szynka Dojrzewajπca Plastry 100G £ukÛw.	inform(productname=szynka)
-system	Aktualnie dostÍpne sπ: Prosty korkociπg rÍczny, korkociπg automatyczny.	inform(productname=otwieracz do wina, count=2)
-user	Tak, chcÍ korkociπg automatyczny, ile kosztuje?	request(productname=otwieracz do wina, type=automatyczny, price)
-system	Cena korkociπgu automatycznego: 39,99 z≥.	inform(price)
-user	PoproszÍ spakowaÊ, co mam w koszyku aktualnie ?	request(cart)
+system	"Goya Oliwki Gordales Z PestkƒÖ 358 Ml 7,49z≈Ç
+Violife Plastry Smak Wƒôdzony 100 G 8,29 z≈Ç
+Hortex Sok 100% Jab≈Çko Butelka Apet 300 Ml - 2,79 z≈Ç
+Szynka DojrzewajƒÖca Plastry 100G ≈Åuk√≥w - 11,29 z≈Ç
+Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 z≈Ç
+Bakoma Ave Vege Banan Z NutƒÖ Wanilii 150 G - 4,89 z≈Ç
+Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z≈Ç
+Chorizo Sarta Pikantne 200G - 14.99 z≈Ç
+Maluta Ser Moja Gouda 45 % T≈Ç Bez Barwnik√≥w I Konserwant√≥w 600g 25,43 z≈Ç
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z≈Ç"	inform(promotion)
+user	Chcƒô szynkƒô dojrzewajƒÖcƒÖ jeszcze. Macie otwieracz do wina?	inform(productname=szynka)&inform(productname=otwieracz do wina)
+system	Dodano do koszyka Szynka DojrzewajƒÖca Plastry 100G ≈Åuk√≥w.	inform(productname=szynka)
+system	Aktualnie dostƒôpne sƒÖ: Prosty korkociƒÖg rƒôczny, korkociƒÖg automatyczny.	inform(productname=otwieracz do wina, count=2)
+user	Tak, chcƒô korkociƒÖg automatyczny, ile kosztuje?	request(productname=otwieracz do wina, type=automatyczny, price)
+system	Cena korkociƒÖgu automatycznego: 39,99 z≈Ç.	inform(price)
+user	Poproszƒô spakowaƒá, co mam w koszyku aktualnie ?	request(cart)
 system	"Produkty dodane do koszyka:
 
--Mleko zwyk≥e,†
+-Mleko zwyk≈Çe,¬†
 
--chleb øytni,†
+-chleb ≈ºytni,¬†
 
 -EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY.
 
--Szynka Dojrzewajπca Plastry 100G £ukÛw
+-Szynka DojrzewajƒÖca Plastry 100G ≈Åuk√≥w
 
--korkociπg automatyczny."	inform(cart)
-user	I ile to wysz≥o?	request(cartprice)
-system	Cena produktÛw w koszyku: 213,79 z≥. Czy chcesz przejúÊ do kasy?	inform(cartprice)&request(payment)
-user	Tak, czy przywozicie zamÛwienia na adres?	affirm()&inform(delivery)
+-korkociƒÖg automatyczny."	inform(cart)
+user	I ile to wysz≈Ço?	request(cartprice)
+system	Cena produkt√≥w w koszyku: 213,79 z≈Ç. Czy chcesz przej≈õƒá do kasy?	inform(cartprice)&request(payment)
+user	Tak, czy przywozicie zam√≥wienia na adres?	affirm()&inform(delivery)
 system	"Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiÛr osobisty"	inform(delivery)
-user	To ja chcÍ dostawÍ do domu, i chcÍ 2 butelki tego wina z mojego koszyka jednak	inform(delivery=dostawa do domu)&inform(productname=wino, price=178pln, brandname=EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY)
+odbi√≥r osobisty"	inform(delivery)
+user	To ja chcƒô dostawƒô do domu, i chcƒô 2 butelki tego wina z mojego koszyka jednak	inform(delivery=dostawa do domu)&inform(productname=wino, price=178pln, brandname=EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY)
 system	Dodano do koszyka EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY.	inform(productname=wino, price=178pln, brandname=EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY)
-system	Cena produktÛw w koszyku: 393,79 z≥. ProszÍ podaÊ adres dostawy	inform(cartprice)&request(address)
-user	ul. Banananana 69 PoznaÒ	inform(address=ul. Banananana 69 PoznaÒ)
-user	Moøna p≥aciÊ online?	request(payment)
-system	"DostÍpne formy p≥atnoúci:
+system	Cena produkt√≥w w koszyku: 393,79 z≈Ç. Proszƒô podaƒá adres dostawy	inform(cartprice)&request(address)
+user	ul. Banananana 69 Pozna≈Ñ	inform(address=ul. Banananana 69 Pozna≈Ñ)
+user	Mo≈ºna p≈Çaciƒá online?	request(payment)
+system	"Dostƒôpne formy p≈Çatno≈õci:
 
--Blik,†
+-Blik,¬†
 -przelew tradycyjny
 
--gotÛwka przy odbiorze
+-got√≥wka przy odbiorze
 
 -PayPal
 
@@ -118,25 +118,25 @@ system	"DostÍpne formy p≥atnoúci:
 -dotpay
 
 -Apple Pay/Google Pay"	request(paymentmethod)
-user	To zap≥acÍ gotÛwkπ przy odbiorze. Kiedy bÍdzie dostawa?	inform(paymentmethod=gotÛwka)&request(delivery, time)
-system	Dostawa na adres: ul. Banananana 69 PoznaÒ zostanie dostarczona w okolicach godz. 11:05 - 11:15.	inform(delivery, time)
-system	ZamÛwienie przyjÍte, proszÍ przygotowaÊ 393,79 z≥ w gotÛwce przy odbiorze.	inform(summary)
-user	Wtedy mnie nie bÍdzie w domu. Moøe byÊ po 12:00?	inform(delivery, time=12:00)
+user	To zap≈Çacƒô got√≥wkƒÖ przy odbiorze. Kiedy bƒôdzie dostawa?	inform(paymentmethod=got√≥wka)&request(delivery, time)
+system	Dostawa na adres: ul. Banananana 69 Pozna≈Ñ zostanie dostarczona w okolicach godz. 11:05 - 11:15.	inform(delivery, time)
+system	Zam√≥wienie przyjƒôte, proszƒô przygotowaƒá 393,79 z≈Ç w got√≥wce przy odbiorze.	inform(summary)
+user	Wtedy mnie nie bƒôdzie w domu. Mo≈ºe byƒá po 12:00?	inform(delivery, time=12:00)
 system	Zmiana godziny dostawy na godz. 12:00.	inform(delivery, time=12:00)
-user	Super, dziÍkujÍ	bye()
-system	"DziÍkujemy za skorzystanie z us≥ug sklepu spoøywczego ""Surykatka""."	bye()
-user	Chcia≥bym anulowaÊ zamÛwienie	inform(delivery, flag = cancel)
-system	Czy na pewno chcesz anulowaÊ ca≥e zamÛwienie?	request(affirm)
-user	W sumie to nie, chcia≥bym tylko zostawiÊ wino z mojego koszyka	negate()&inform(cart, flag = reset)&inform(productname=wino, price=178pln, brandname=EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY, count=2)
-system	"UsuniÍto z koszyka†
+user	Super, dziƒôkujƒô	bye()
+system	"Dziƒôkujemy za skorzystanie z us≈Çug sklepu spo≈ºywczego ""Surykatka""."	bye()
+user	Chcia≈Çbym anulowaƒá zam√≥wienie	inform(delivery, flag = cancel)
+system	Czy na pewno chcesz anulowaƒá ca≈Çe zam√≥wienie?	request(affirm)
+user	W sumie to nie, chcia≈Çbym tylko zostawiƒá wino z mojego koszyka	negate()&inform(cart, flag = reset)&inform(productname=wino, price=178pln, brandname=EINS ZWEI ZERO | SPARKLING RIESLING 0% | DOLINA RENU, NIEMCY, count=2)
+system	"Usuniƒôto z koszyka¬†
 
--Mleko zwyk≥e,†
+-Mleko zwyk≈Çe,¬†
 
--chleb øytni,†
+-chleb ≈ºytni,¬†
 
--Szynka Dojrzewajπca Plastry 100G £ukÛw
+-Szynka DojrzewajƒÖca Plastry 100G ≈Åuk√≥w
 
--korkociπg automatyczny."	inform(cart)
-system	Dostawa zostanie dostarczona o godzinie 12:00. Forma p≥atnoúci: gotÛwka przy odbiorze.	inform(summary)
-user	Oki, dziÍkujÍ	bye()
-system	"DziÍkujemy za skorzystanie z us≥ug sklepu spoøywczego ""Surykatka""."	bye()
+-korkociƒÖg automatyczny."	inform(cart)
+system	Dostawa zostanie dostarczona o godzinie 12:00. Forma p≈Çatno≈õci: got√≥wka przy odbiorze.	inform(summary)
+user	Oki, dziƒôkujƒô	bye()
+system	"Dziƒôkujemy za skorzystanie z us≈Çug sklepu spo≈ºywczego ""Surykatka""."	bye()
