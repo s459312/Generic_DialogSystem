@@ -1,47 +1,47 @@
-user	Dzieñ dobry, w czym mo¿esz mi pomóc?	welcomemsg()
-system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"	welcomemsg()
-user	Chcia³bym zakupiæ kilka warzyw, jakie s¹ dostêpne w ofercie?	inform(produtcategory=warzywa)
-system	"Warzywa dostêpne dzisiaj w promocji:
+user	DzieÅ„ dobry, w czym moÅ¼esz mi pomÃ³c?	welcomemsg()
+system	"DzieÅ„ dobry, witamy w systemie obsÅ‚ugi sklepu spoÅ¼ywczego ""Surykatka"". W czym mogÄ™ pomÃ³c?"	welcomemsg()
+user	ChciaÅ‚bym zakupiÄ‡ kilka warzyw, jakie sÄ… dostÄ™pne w ofercie?	inform(produtcategory=warzywa)
+system	"Warzywa dostÄ™pne dzisiaj w promocji:
 
- 
+Â 
 
 Papryka
-17,99 z³
+17,99 zÅ‚
 
- 
+Â 
 
 Rzodkiewki
-1,99 z³
+1,99 zÅ‚
 
- 
+Â 
 
-Ogórek
-2,99 z³
+OgÃ³rek
+2,99 zÅ‚
 
- 
+Â 
 
 Pomidory
-9,99 z³
+9,99 zÅ‚
 
- 
+Â 
 
 Cukinia
-9,99 z³
+9,99 zÅ‚
 
- 
+Â 
 
 Marchew
-3,99 z³"	inform(produtcategory=warzywa, count=6)
-user	Proszê dodaæ do zamówienia 2 pomidory oraz 2 ogórki	inform(productname=pomidor, count=2)&inform(productname=ogórek,count=2)
-system	Dodano do koszyka 2x pomidor, 2x ogórek.	inform(productname=pomidor, count=2)&inform(productname=ogórek,count=2)
+3,99 zÅ‚"	inform(produtcategory=warzywa, count=6)
+user	ProszÄ™ dodaÄ‡ do zamÃ³wienia 2 pomidory oraz 2 ogÃ³rki	inform(productname=pomidor, count=2)&inform(productname=ogÃ³rek,count=2)
+system	Dodano do koszyka 2x pomidor, 2x ogÃ³rek.	inform(productname=pomidor, count=2)&inform(productname=ogÃ³rek,count=2)
 system	Czy to wszystko?	request(all)
-user	Tak, czy mo¿na p³aciæ kart¹?	affirm()&inform(paymentmethod=karta)
-system	"Dostêpne formy p³atnoœci:
+user	Tak, czy moÅ¼na pÅ‚aciÄ‡ kartÄ…?	affirm()&inform(paymentmethod=karta)
+system	"DostÄ™pne formy pÅ‚atnoÅ›ci:
 
--Blik, 
+-Blik,Â 
 -przelew tradycyjny
 
--gotówka przy odbiorze
+-gotÃ³wka przy odbiorze
 
 -PayPal
 
@@ -51,18 +51,18 @@ system	"Dostêpne formy p³atnoœci:
 
 -Apple Pay/Google Pay"	request(paymentmethod)
 user	W takim razie Blikiem	inform(paymentmethod=Blik)
-system	"Proszê wybraæ sposób dostawy. 
+system	"ProszÄ™ wybraÄ‡ sposÃ³b dostawy.Â 
 
 Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiór osobisty"	request(delivery)
-user	Odbiór osobisty	inform(delivery=odbiór osobisty)
-system	Proszê podaæ kod BLIK.	request(code)
+odbiÃ³r osobisty"	request(delivery)
+user	OdbiÃ³r osobisty	inform(delivery=odbiÃ³r osobisty)
+system	ProszÄ™ podaÄ‡ kod BLIK.	request(code)
 user	177 771	inform(code=177771)
-system	Proszê potwierdziæ p³atnoœæ w aplikacji.	request(affirm)
+system	ProszÄ™ potwierdziÄ‡ pÅ‚atnoÅ›Ä‡ w aplikacji.	request(affirm)
 user	Potwierdzone	affirm()
-system	Zamówienie: 2x pomidor, 2x ogórek bêdzie gotowe do odbioru o godz 11:30.	inform(summary)
-system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."	bye()
-user	Dobrze, dziêkujê	bye()
+system	ZamÃ³wienie: 2x pomidor, 2x ogÃ³rek bÄ™dzie gotowe do odbioru o godz 11:30.	inform(summary)
+system	"DziÄ™kujemy za skorzystanie z usÅ‚ug sklepu spoÅ¼ywczego ""Surykatka""."	bye()
+user	Dobrze, dziÄ™kujÄ™	bye()

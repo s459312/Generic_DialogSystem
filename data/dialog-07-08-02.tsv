@@ -1,45 +1,45 @@
-user	dzieñ dobry, jak piêknie dziœ pada œnieg	welcomemsg()
-system	"Dzieñ dobry, muszê uwierzyæ na s³owo. Jestem tylko zwyk³ym szarym robotem. Witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"", w czym mogê pomóc?"	welcomemsg()
-user	œwietnie, poniewa¿ chcia³abym zjeœæ œniadanie. Czy macie mo¿e jajka, avokado oraz œwie¿e bu³ki?	inform(productname=jajka)&inform(productname=avokado)&inform(productname=bu³ki)
-system	Pewnie, jajka kurze, perlicze, gêsie, kacze, przepiórcze czy strusie? 	inform(productname=jajka, count=6)
-system	Dostêpne bu³ki: Kajzerka, Bagietka, Ciabatta, Grahamka, Bu³ka pe³noziarnista, Brioszka.	inform(productname=bu³ki, count=6)
-user	poproszê 10 jaj przepiórczych i œwie¿utk¹ bagietkê 	request(productname=jajka, type = przepiórcze, count=10)&request(productname=bu³ki, type=bagietka)
-system	Dodano do koszyka 10 jaj przepiórczych oraz Bagietkê. Czy chcesz zamówiæ coœ jeszcze? Polecamy produkty dostêpne na promocji.	inform(productname=jajka, type = przepiórcze, count=10)&inform(productname=bu³ki, type=bagietka)&offer(promotion)
+user	dzieÅ„ dobry, jak piÄ™knie dziÅ› pada Å›nieg	welcomemsg()
+system	"DzieÅ„ dobry, muszÄ™ uwierzyÄ‡ na sÅ‚owo. Jestem tylko zwykÅ‚ym szarym robotem. Witamy w systemie obsÅ‚ugi sklepu spoÅ¼ywczego ""Surykatka"", w czym mogÄ™ pomÃ³c?"	welcomemsg()
+user	Å›wietnie, poniewaÅ¼ chciaÅ‚abym zjeÅ›Ä‡ Å›niadanie. Czy macie moÅ¼e jajka, avokado oraz Å›wieÅ¼e buÅ‚ki?	inform(productname=jajka)&inform(productname=avokado)&inform(productname=buÅ‚ki)
+system	Pewnie, jajka kurze, perlicze, gÄ™sie, kacze, przepiÃ³rcze czy strusie?Â 	inform(productname=jajka, count=6)
+system	DostÄ™pne buÅ‚ki: Kajzerka, Bagietka, Ciabatta, Grahamka, BuÅ‚ka peÅ‚noziarnista, Brioszka.	inform(productname=buÅ‚ki, count=6)
+user	poproszÄ™ 10 jaj przepiÃ³rczych i Å›wieÅ¼utkÄ… bagietkÄ™Â 	request(productname=jajka, type = przepiÃ³rcze, count=10)&request(productname=buÅ‚ki, type=bagietka)
+system	Dodano do koszyka 10 jaj przepiÃ³rczych oraz BagietkÄ™. Czy chcesz zamÃ³wiÄ‡ coÅ› jeszcze? Polecamy produkty dostÄ™pne na promocji.	inform(productname=jajka, type = przepiÃ³rcze, count=10)&inform(productname=buÅ‚ki, type=bagietka)&offer(promotion)
 user	a co jest dzisiaj na promocji?	request(promotion)
-system	"Goya Oliwki Gordales Z Pestk¹ 358 Ml 7,49z³
-Violife Plastry Smak Wêdzony 100 G 8,29 z³
-Hortex Sok 100% Jab³ko Butelka Apet 300 Ml - 2,79 z³
-Szynka Dojrzewaj¹ca Plastry 100G £uków - 11,29 z³
-Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 z³
-Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
-Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
-Chorizo Sarta Pikantne 200G - 14.99 z³
-Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
-Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"	inform(promotion)
-user	w takim razie poproszê jeszcze szynkê dojrzewaj¹ca	request(productname=szynka)
-user	i mase³ko!	request(productname=mas³o)
-system	Dodano do koszyka Szynka Dojrzewaj¹ca Plastry 100G £uków - 11,29 z³.	inform(productname=szynka, amount=100g, price=11,29z³)
-system	Mas³o ekstra, wyborowe, delikatesowe, sto³owe czy œmietankowe?	reqmore(productname=mas³o, type)
-user	poproszê mas³o wyborowe	inform(productname=mas³o, type=wyborowe)
-system	Dodano do koszyka mas³o wyborowe. Czy to wszystko?	inform(productname=mas³o, type=wyborowe)&request(all)
+system	"Goya Oliwki Gordales Z PestkÄ… 358 Ml 7,49zÅ‚
+Violife Plastry Smak WÄ™dzony 100 G 8,29 zÅ‚
+Hortex Sok 100% JabÅ‚ko Butelka Apet 300 Ml - 2,79 zÅ‚
+Szynka DojrzewajÄ…ca Plastry 100G ÅukÃ³w - 11,29 zÅ‚
+Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 zÅ‚
+Bakoma Ave Vege Banan Z NutÄ… Wanilii 150 G - 4,89 zÅ‚
+Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 zÅ‚
+Chorizo Sarta Pikantne 200G - 14.99 zÅ‚
+Maluta Ser Moja Gouda 45 % TÅ‚ Bez BarwnikÃ³w I KonserwantÃ³w 600g 25,43 zÅ‚
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 zÅ‚"	inform(promotion)
+user	w takim razie poproszÄ™ jeszcze szynkÄ™ dojrzewajÄ…ca	request(productname=szynka)
+user	i maseÅ‚ko!	request(productname=masÅ‚o)
+system	Dodano do koszyka Szynka DojrzewajÄ…ca Plastry 100G ÅukÃ³w - 11,29 zÅ‚.	inform(productname=szynka, amount=100g, price=11,29zÅ‚)
+system	MasÅ‚o ekstra, wyborowe, delikatesowe, stoÅ‚owe czy Å›mietankowe?	reqmore(productname=masÅ‚o, type)
+user	poproszÄ™ masÅ‚o wyborowe	inform(productname=masÅ‚o, type=wyborowe)
+system	Dodano do koszyka masÅ‚o wyborowe. Czy to wszystko?	inform(productname=masÅ‚o, type=wyborowe)&request(all)
 user	tak to wszystko	affirm()
-system	"Produkty dodane do koszyka: 
+system	"Produkty dodane do koszyka:Â 
 
-10 jaj przepiórczych 
+10 jaj przepiÃ³rczychÂ 
 
 Bagietka
 
-Szynka Dojrzewaj¹ca Plastry 100G £uków
+Szynka DojrzewajÄ…ca Plastry 100G ÅukÃ³w
 
-mas³o wyborowe"	inform(cart)
-system	Czy chcesz przejœæ do p³atnoœci?	request(payment)
+masÅ‚o wyborowe"	inform(cart)
+system	Czy chcesz przejÅ›Ä‡ do pÅ‚atnoÅ›ci?	request(payment)
 user	tak	affirm()
-system	"Dostêpne formy p³atnoœci:
+system	"DostÄ™pne formy pÅ‚atnoÅ›ci:
 
--Blik, 
+-Blik,Â 
 -przelew tradycyjny
 
--gotówka przy odbiorze
+-gotÃ³wka przy odbiorze
 
 -PayPal
 
@@ -48,21 +48,21 @@ system	"Dostêpne formy p³atnoœci:
 -dotpay
 
 -Apple Pay/Google Pay"	request(paymentmethod)
-user	zap³acê blikiem	inform(paymentmethod=blik)
-system	"Proszê wybraæ formê dostawy. 
+user	zapÅ‚acÄ™ blikiem	inform(paymentmethod=blik)
+system	"ProszÄ™ wybraÄ‡ formÄ™ dostawy.Â 
 
 Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiór osobisty"	request(delivery)
-user	odbiorê osobiœcie	inform(delivery=odbiór osobisty)
-system	Proszê podaæ kod BLIK.	request(code)
+odbiÃ³r osobisty"	request(delivery)
+user	odbiorÄ™ osobiÅ›cie	inform(delivery=odbiÃ³r osobisty)
+system	ProszÄ™ podaÄ‡ kod BLIK.	request(code)
 user	123 456	inform(code=123456)
-system	Proszê potwierdziæ p³atnoœæ w aplikacji.	request(affirm)
+system	ProszÄ™ potwierdziÄ‡ pÅ‚atnoÅ›Ä‡ w aplikacji.	request(affirm)
 user	potwierdzam	affirm()
-system	Zamówienie przyjête. Gotowe do odbioru o godz 11:25. 	inform(summary)
-system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."	bye()
-user	wspaniale, dziêkujê	bye()
-user	¿ycze mi³ego dzionka i smacznej kawusi	bye()
+system	ZamÃ³wienie przyjÄ™te. Gotowe do odbioru o godz 11:25.Â 	inform(summary)
+system	"DziÄ™kujemy za skorzystanie z usÅ‚ug sklepu spoÅ¼ywczego ""Surykatka""."	bye()
+user	wspaniale, dziÄ™kujÄ™	bye()
+user	Å¼ycze miÅ‚ego dzionka i smacznej kawusi	bye()
 system	Wzajemnie.	bye()

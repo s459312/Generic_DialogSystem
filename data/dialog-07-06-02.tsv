@@ -1,94 +1,94 @@
-user	Dzieñ dobry, z jakich us³ug mo¿na w tym miejscu skorzystaæ?	welcomemsg()
-system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". Jakie produkty Pana/Pani¹ interesuj¹?"	welcomemsg()
-user	Chcia³bym zamówiæ 2 litry mleka oraz chipsy lays zielona cebulka	inform(productname=chipsy, brandname=lays, taste=zielona cebulka)&inform(productname=mleko)
-system	Mleko krowie, kozie, owcze czy kokosowe? 	reqmore(productname=mleko, type, count=4)
-user	mleko krowie by³oby idealne	inform(productname=mleko, type=krowie)
-system	Z laktoz¹ czy bez?	reqmore(ingredient)
-user	mo¿e byæ z laktoz¹	inform(ingredient=laktoza)
-system	Dodano do koszyka mleko krowie z laktoz¹ 2L, chipsy lays smak zielona cebulka 140g. Czy chcia³byœ zamówiæ coœ jeszcze? Polecam produkty dostêpne w promocji.	inform(productname=mleko, type=krowie, ingredient=laktoza)&inform(productname=chipsy, brandname=lays, taste=zielona cebulka)&offer(promotion)
+user	DzieÅ„ dobry, z jakich usÅ‚ug moÅ¼na w tym miejscu skorzystaÄ‡?	welcomemsg()
+system	"DzieÅ„ dobry, witamy w systemie obsÅ‚ugi sklepu spoÅ¼ywczego ""Surykatka"". Jakie produkty Pana/PaniÄ… interesujÄ…?"	welcomemsg()
+user	ChciaÅ‚bym zamÃ³wiÄ‡ 2 litry mleka oraz chipsy lays zielona cebulka	inform(productname=chipsy, brandname=lays, taste=zielona cebulka)&inform(productname=mleko)
+system	Mleko krowie, kozie, owcze czy kokosowe?Â 	reqmore(productname=mleko, type, count=4)
+user	mleko krowie byÅ‚oby idealne	inform(productname=mleko, type=krowie)
+system	Z laktozÄ… czy bez?	reqmore(ingredient)
+user	moÅ¼e byÄ‡ z laktozÄ…	inform(ingredient=laktoza)
+system	Dodano do koszyka mleko krowie z laktozÄ… 2L, chipsy lays smak zielona cebulka 140g. Czy chciaÅ‚byÅ› zamÃ³wiÄ‡ coÅ› jeszcze? Polecam produkty dostÄ™pne w promocji.	inform(productname=mleko, type=krowie, ingredient=laktoza)&inform(productname=chipsy, brandname=lays, taste=zielona cebulka)&offer(promotion)
 user	Promocja? Brzmi ciekawie... Co macie na promocji w tym momencie?	request(promotion
-system	"Goya Oliwki Gordales Z Pestk¹ 358 Ml 7,49z³
-Violife Plastry Smak Wêdzony 100 G 8,29 z³
-Hortex Sok 100% Jab³ko Butelka Apet 300 Ml - 2,79 z³
-Szynka Dojrzewaj¹ca Plastry 100G £uków - 11,29 z³
-Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 z³
-Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
-Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
-Chorizo Sarta Pikantne 200G - 14.99 z³
-Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
-Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"	inform(promotion)
-user	Ta szynka brzmi jak produkt który chcia³bym posiadaæ	inform(productname=szynka)
-system	Dodano do koszyka Szynka Dojrzewaj¹ca Plastry 100G £uków	inform(productname=szynka, brandname=£uków, amount=100g)
-system	Czy chcesz zamówiæ coœ jeszcze?	request(all)
-user	Myœlê ¿e do mleka idealne by³by jakieœ p³atki, jakie p³atki do mleka macie w ofercie?	inform(productname=p³atki)
-system	"Lubella Catering P³atki kukurydziane 1 kg
+system	"Goya Oliwki Gordales Z PestkÄ… 358 Ml 7,49zÅ‚
+Violife Plastry Smak WÄ™dzony 100 G 8,29 zÅ‚
+Hortex Sok 100% JabÅ‚ko Butelka Apet 300 Ml - 2,79 zÅ‚
+Szynka DojrzewajÄ…ca Plastry 100G ÅukÃ³w - 11,29 zÅ‚
+Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 zÅ‚
+Bakoma Ave Vege Banan Z NutÄ… Wanilii 150 G - 4,89 zÅ‚
+Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 zÅ‚
+Chorizo Sarta Pikantne 200G - 14.99 zÅ‚
+Maluta Ser Moja Gouda 45 % TÅ‚ Bez BarwnikÃ³w I KonserwantÃ³w 600g 25,43 zÅ‚
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 zÅ‚"	inform(promotion)
+user	Ta szynka brzmi jak produkt ktÃ³ry chciaÅ‚bym posiadaÄ‡	inform(productname=szynka)
+system	Dodano do koszyka Szynka DojrzewajÄ…ca Plastry 100G ÅukÃ³w	inform(productname=szynka, brandname=ÅukÃ³w, amount=100g)
+system	Czy chcesz zamÃ³wiÄ‡ coÅ› jeszcze?	request(all)
+user	MyÅ›lÄ™ Å¼e do mleka idealne byÅ‚by jakieÅ› pÅ‚atki, jakie pÅ‚atki do mleka macie w ofercie?	inform(productname=pÅ‚atki)
+system	"Lubella Catering PÅ‚atki kukurydziane 1 kg
 Lubella
-18,39z³
+18,39zÅ‚
 NesVita Owsianka truskawkowa 45 g - Nesvita
 45g
 NesVita Owsianka truskawkowa 45 g
 Nesvita
-3,19z³
-Kupiec Coœ na z¹b Owsianka malina i ¿urawina 50 g - Kupiec
+3,19zÅ‚
+Kupiec CoÅ› na zÄ…b Owsianka malina i Å¼urawina 50 g - Kupiec
 
- 
+Â 
 
 50g
-Kupiec Coœ na z¹b Owsianka malina i ¿urawina 50 g
+Kupiec CoÅ› na zÄ…b Owsianka malina i Å¼urawina 50 g
 Kupiec
-2,59z³
-Nestlé Corn Flakes Choco P³atki œniadaniowe o smaku czekoladowym 250 g - Corn Flakes
+2,59zÅ‚
+NestlÃ© Corn Flakes Choco PÅ‚atki Å›niadaniowe o smaku czekoladowym 250 g - Corn Flakes
 450g
-Nestlé Corn Flakes Choco P³atki œniadaniowe o smaku czekoladowym 250 g
+NestlÃ© Corn Flakes Choco PÅ‚atki Å›niadaniowe o smaku czekoladowym 250 g
 Corn Flakes
-9,29z³
-Nestlé Corn Flakes P³atki kukurydziane 600 g - Nestlé
+9,29zÅ‚
+NestlÃ© Corn Flakes PÅ‚atki kukurydziane 600 g - NestlÃ©
 600g
-Nestlé Corn Flakes P³atki kukurydziane 600 g
-Nestlé
-14,69z³
-Nestlé Frutina Owoce i B³onnik P³atki œniadaniowe 250 g - Nestlé
+NestlÃ© Corn Flakes PÅ‚atki kukurydziane 600 g
+NestlÃ©
+14,69zÅ‚
+NestlÃ© Frutina Owoce i BÅ‚onnik PÅ‚atki Å›niadaniowe 250 g - NestlÃ©
 250g
-Nestlé Frutina Owoce i B³onnik P³atki œniadaniowe 250 g
-Nestlé
-9,39z³
+NestlÃ© Frutina Owoce i BÅ‚onnik PÅ‚atki Å›niadaniowe 250 g
+NestlÃ©
+9,39zÅ‚
 NesVita Owsianka malinowa 45 g - Nesvita
 45g
 NesVita Owsianka malinowa 45 g
 Nesvita
-3,19z³
-NesVita Owsianka wiœniowa 45 g - Nesvita
+3,19zÅ‚
+NesVita Owsianka wiÅ›niowa 45 g - Nesvita
 45g
-NesVita Owsianka wiœniowa 45 g
+NesVita Owsianka wiÅ›niowa 45 g
 Nesvita
-3,19z³
-Nestlé Lion WildCrush P³atki œniadaniowe 350 g - Lion
+3,19zÅ‚
+NestlÃ© Lion WildCrush PÅ‚atki Å›niadaniowe 350 g - Lion
 350g
-Nestlé Lion WildCrush P³atki œniadaniowe 350 g
+NestlÃ© Lion WildCrush PÅ‚atki Å›niadaniowe 350 g
 Lion
-14,39z³
-Lubella Mleko³aki Choco Kulki Zbo¿owe kulki o smaku czekoladowym 500 g - Lubella
+14,39zÅ‚
+Lubella MlekoÅ‚aki Choco Kulki ZboÅ¼owe kulki o smaku czekoladowym 500 g - Lubella
 500g
-Lubella Mleko³aki Choco Kulki Zbo¿owe kulki o smaku czekoladowym 500 g
+Lubella MlekoÅ‚aki Choco Kulki ZboÅ¼owe kulki o smaku czekoladowym 500 g
 Lubella
-10,79z³"	inform(productname=p³atki, count=10)
-user	Chcia³bym te lajonki	request(brandname=lion)
-system	Dodano do koszyka Nestlé Lion WildCrush P³atki œniadaniowe 350 g - Lion.	inform(productname=p³atki, brandname=lion, amount=350g)
-user	Myœlê ¿e to wszystko, jakie formy dostawy s¹ dostêpne?	request(delivery)
-system	Dostawa do domu, do paczkomatu oraz odbiór osobisty.	inform(delivery)
-user	dostawa do domu by³aby najbardziej optymalna	inform(delivery=dostawa do domu)
-system	Proszê podaæ adres dostawy.	request(address)
+10,79zÅ‚"	inform(productname=pÅ‚atki, count=10)
+user	ChciaÅ‚bym te lajonki	request(brandname=lion)
+system	Dodano do koszyka NestlÃ© Lion WildCrush PÅ‚atki Å›niadaniowe 350 g - Lion.	inform(productname=pÅ‚atki, brandname=lion, amount=350g)
+user	MyÅ›lÄ™ Å¼e to wszystko, jakie formy dostawy sÄ… dostÄ™pne?	request(delivery)
+system	Dostawa do domu, do paczkomatu oraz odbiÃ³r osobisty.	inform(delivery)
+user	dostawa do domu byÅ‚aby najbardziej optymalna	inform(delivery=dostawa do domu)
+system	ProszÄ™ podaÄ‡ adres dostawy.	request(address)
 user	ul. wojska M.A.U. 21/13	inform(address=ul. Wojska M.A.U 21/13)
-user	Stargard Szczeciñski	inform(address=ul. Wojska M.A.U 21/13 Stargard Szczeciñski)
-user	73 - 102	inform(address=ul. Wojska M.A.U 21/13 Stargard Szczeciñski 73-102)
-system	Czy chcesz przejœæ do p³atnoœci?	request(payment)
+user	Stargard SzczeciÅ„ski	inform(address=ul. Wojska M.A.U 21/13 Stargard SzczeciÅ„ski)
+user	73 - 102	inform(address=ul. Wojska M.A.U 21/13 Stargard SzczeciÅ„ski 73-102)
+system	Czy chcesz przejÅ›Ä‡ do pÅ‚atnoÅ›ci?	request(payment)
 user	Tak	affirm()
-system	"Dostêpne formy p³atnoœci:
+system	"DostÄ™pne formy pÅ‚atnoÅ›ci:
 
--Blik, 
+-Blik,Â 
 -przelew tradycyjny
 
--gotówka przy odbiorze
+-gotÃ³wka przy odbiorze
 
 -PayPal
 
@@ -97,12 +97,12 @@ system	"Dostêpne formy p³atnoœci:
 -dotpay
 
 -Apple Pay/Google Pay"	request(paymentmethod)
-user	bêdzie blik	inform(paymentmethod=blik)
-system	Proszê podaæ kod BLIK.	request(code)
+user	bÄ™dzie blik	inform(paymentmethod=blik)
+system	ProszÄ™ podaÄ‡ kod BLIK.	request(code)
 user	6969	inform(code=6969)
-system	Proszê potwierdziæ p³atnoœæ w aplikacji.	request(affirm)
+system	ProszÄ™ potwierdziÄ‡ pÅ‚atnoÅ›Ä‡ w aplikacji.	request(affirm)
 user	potwiedzam intensywnie	affirm()
-system	"Zamówienie przyjête.
+system	"ZamÃ³wienie przyjÄ™te.
 
-Dostawa na adres : ul. wojska M.A.U. 21/13, Stargard Szczeciñski, 73 - 102. Dostawca przyjedzie w okolicach godz 11:15-11:25. Dziêkujemy za skorzystanie z us³ug sklepu ""Surykatka""."	bye()
-user	Dziêkuje i do widzenia	bye()
+Dostawa na adres : ul. wojska M.A.U. 21/13, Stargard SzczeciÅ„ski, 73 - 102. Dostawca przyjedzie w okolicach godz 11:15-11:25. DziÄ™kujemy za skorzystanie z usÅ‚ug sklepu ""Surykatka""."	bye()
+user	DziÄ™kuje i do widzenia	bye()

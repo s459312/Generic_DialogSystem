@@ -1,50 +1,50 @@
-user	Dzieñ dobry, jakie us³ugi œwiadczy ten system?	welcomemsg()
-system	"Dzieñ dobry, witamy w systemie obs³ugi sklepu spo¿ywczego ""Surykatka"". W czym mogê pomóc?"	welcomemsg()
+user	DzieÅ„ dobry, jakie usÅ‚ugi Å›wiadczy ten system?	welcomemsg()
+system	"DzieÅ„ dobry, witamy w systemie obsÅ‚ugi sklepu spoÅ¼ywczego ""Surykatka"". W czym mogÄ™ pomÃ³c?"	welcomemsg()
 user	chcialbym kupic karme dla kota, mleko i pepsi	inform(productname=karma dla kota)&inform(productname=mleko)&inform(productname=pepsi)
-system	"Karma dla kota mokra, sucha czy pó³wilgotna?
+system	"Karma dla kota mokra, sucha czy pÃ³Å‚wilgotna?
 
 Pepsi 0.5L czy 1L?
 
-Mleko z laktoz¹ czy bez?"	reqmore(productname=karma dla kota, type)&reqmore(productname=pepsi, amount)&reqmore(productname=mleko, ingredient)
-user	karma dla kota pó³wilgotna, pepsi 1l 3szt mleko bez laktozy 10l	inform(productname=karma dla kota, type=pó³wilgotna)&inform(productname=mleko, ingredient=bez laktozy, count=3, amount=10l)&inform(productname=pepsi, amount=1l)
-system	Dodano do koszyka: karma dla kota pó³wilgotna, pepsi 1l, 3x mleko bez laktozy 10l. 	inform(productname=karma dla kota, type=pó³wilgotna)&inform(productname=mleko, ingredient=bez laktozy, count=3, amount=10l)&inform(productname=pepsi, amount=1l)
+Mleko z laktozÄ… czy bez?"	reqmore(productname=karma dla kota, type)&reqmore(productname=pepsi, amount)&reqmore(productname=mleko, ingredient)
+user	karma dla kota pÃ³Å‚wilgotna, pepsi 1l 3szt mleko bez laktozy 10l	inform(productname=karma dla kota, type=pÃ³Å‚wilgotna)&inform(productname=mleko, ingredient=bez laktozy, count=3, amount=10l)&inform(productname=pepsi, amount=1l)
+system	Dodano do koszyka: karma dla kota pÃ³Å‚wilgotna, pepsi 1l, 3x mleko bez laktozy 10l.Â 	inform(productname=karma dla kota, type=pÃ³Å‚wilgotna)&inform(productname=mleko, ingredient=bez laktozy, count=3, amount=10l)&inform(productname=pepsi, amount=1l)
 system	Czy to wszystko?	request(all)
-user	Macie jakieœ owoce w promocji?	inform(promotion, productcategory=owoce)
-system	"Produkty dostêpne dzisiaj w promocji:
+user	Macie jakieÅ› owoce w promocji?	inform(promotion, productcategory=owoce)
+system	"Produkty dostÄ™pne dzisiaj w promocji:
 
- 
+Â 
 
-Goya Oliwki Gordales Z Pestk¹ 358 Ml 7,49z³
-Violife Plastry Smak Wêdzony 100 G 8,29 z³
-Hortex Sok 100% Jab³ko Butelka Apet 300 Ml - 2,79 z³
-Szynka Dojrzewaj¹ca Plastry 100G £uków - 11,29 z³
-Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 z³
-Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G - 4,89 z³
-Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 z³
-Chorizo Sarta Pikantne 200G - 14.99 z³
-Maluta Ser Moja Gouda 45 % T³ Bez Barwników I Konserwantów 600g 25,43 z³
-Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 z³"	inform(promotion)
-user	poproszê Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G	inform(productname=jogurt, brandname=Bakoma, taste=banan z nut¹ wanilii, amount=150g)
-system	Dodano do koszyka Bakoma Ave Vege Banan Z Nut¹ Wanilii 150 G.	inform(productname=jogurt, brandname=Bakoma, taste=banan z nut¹ wanilii, amount=150g)
-system	Czy chcesz zamówiæ coœ jeszcze?	request(all)
-user	Nie dziêkujê	affirm()
-system	"Proszê wybraæ formê dostawy. 
+Goya Oliwki Gordales Z PestkÄ… 358 Ml 7,49zÅ‚
+Violife Plastry Smak WÄ™dzony 100 G 8,29 zÅ‚
+Hortex Sok 100% JabÅ‚ko Butelka Apet 300 Ml - 2,79 zÅ‚
+Szynka DojrzewajÄ…ca Plastry 100G ÅukÃ³w - 11,29 zÅ‚
+Pomidory suszone w oleju 4,1kg Helcom - Helcom 114,49 zÅ‚
+Bakoma Ave Vege Banan Z NutÄ… Wanilii 150 G - 4,89 zÅ‚
+Malina Z Sokiem Cytrynowym 225 Ml 4Tea - 8,79 zÅ‚
+Chorizo Sarta Pikantne 200G - 14.99 zÅ‚
+Maluta Ser Moja Gouda 45 % TÅ‚ Bez BarwnikÃ³w I KonserwantÃ³w 600g 25,43 zÅ‚
+Lay'S Oven Baked Chantarelles In A Cream Sauce 125 G 8,39 zÅ‚"	inform(promotion)
+user	poproszÄ™ Bakoma Ave Vege Banan Z NutÄ… Wanilii 150 G	inform(productname=jogurt, brandname=Bakoma, taste=banan z nutÄ… wanilii, amount=150g)
+system	Dodano do koszyka Bakoma Ave Vege Banan Z NutÄ… Wanilii 150 G.	inform(productname=jogurt, brandname=Bakoma, taste=banan z nutÄ… wanilii, amount=150g)
+system	Czy chcesz zamÃ³wiÄ‡ coÅ› jeszcze?	request(all)
+user	Nie dziÄ™kujÄ™	affirm()
+system	"ProszÄ™ wybraÄ‡ formÄ™ dostawy.Â 
 
 Formy dostawy:
 
 dostawa do domu
 dostawa do paczkomatu
-odbiór osobisty"	request(delivery)
+odbiÃ³r osobisty"	request(delivery)
 user	Dostawa do paczkomatu	inform(delivery=dostawa do paczkomatu)
 user	POZ230M	inform(address=POZ230M)
-system	"Proszê wybraæ sposób p³atnoœci. 
+system	"ProszÄ™ wybraÄ‡ sposÃ³b pÅ‚atnoÅ›ci.Â 
 
-Dostêpne formy p³atnoœci:
+DostÄ™pne formy pÅ‚atnoÅ›ci:
 
--Blik, 
+-Blik,Â 
 -przelew tradycyjny
 
--gotówka przy odbiorze
+-gotÃ³wka przy odbiorze
 
 -PayPal
 
@@ -54,10 +54,10 @@ Dostêpne formy p³atnoœci:
 
 -Apple Pay/Google Pay"	request(paymentmethod)
 user	BLIK	inform(paymentmethod=blik)
-system	Proszê podaæ kod BLIK.	request(code)
+system	ProszÄ™ podaÄ‡ kod BLIK.	request(code)
 user	666666	inform(code=666666)
-system	Proszê potwierdziæ w aplikacji.	request(affirm)
+system	ProszÄ™ potwierdziÄ‡ w aplikacji.	request(affirm)
 user	potwierdzam	affirm()
-system	Zamówienie otrzymane. Dostawa do paczkomatu POZ230M. Œledz paczkê w aplikacji.	inform(summary)
-system	"Dziêkujemy za skorzystanie z us³ug sklepu spo¿ywczego ""Surykatka""."	bye()
-user	Dziêkujê!	bye()
+system	ZamÃ³wienie otrzymane. Dostawa do paczkomatu POZ230M. Åšledz paczkÄ™ w aplikacji.	inform(summary)
+system	"DziÄ™kujemy za skorzystanie z usÅ‚ug sklepu spoÅ¼ywczego ""Surykatka""."	bye()
+user	DziÄ™kujÄ™!	bye()
