@@ -1,0 +1,61 @@
+#JSGF V1.0;
+
+grammar generalStore;
+
+public <command> = <buyCommand> | <cartCommand> | <filterCommand> | <searchCommand> | <helpCommand> | <accountCommand> | <paymentCommand> | <shippingCommand> | <returnCommand> | <promoCommand> | <storeCommand> | <serviceCommand>;
+
+<buyCommand> = (buy | purchase) <quantity> <product>;
+
+<cartCommand> = (add | remove | edit | update | view | cancel | confirm) <itemAction> <item> in my cart;
+
+<itemAction> = (item | items);
+
+<item> = <quantity> <product>;
+
+<quantity> = (a | an | two | three | four | five | six | seven | eight | nine);
+
+<product> = <grocery> | <beverage> | <personalCare> | <cleaning> | <homeGoods> | <electronics>;
+
+<grocery> = (bread | cereal | pasta | rice | beans | soup | canned food | snacks | cookies | candy | chocolate | condiments | spices);
+
+<beverage> = (water | soda | juice | coffee | tea | energy drink | sports drink | beer | wine);
+
+<personalCare> = (toothbrush | toothpaste | floss | mouthwash | soap | shampoo | conditioner | body wash | lotion | deodorant | razor | shaving cream | feminine hygiene | diapers | baby wipes);
+
+<cleaning> = (laundry detergent | dish soap | all-purpose cleaner | glass cleaner | disinfectant | bleach | cleaning wipes | scrub brush | mop | broom | dustpan);
+
+<homeGoods> = (towels | bedding | curtains | rugs | storage | hangers | trash bags | batteries | light bulbs | candles | pet food | cat litter);
+
+<electronics> = (cell phone | tablet | laptop | headphones | speaker | charging cable | batteries | memory card);
+
+<filterCommand> = filter by <filterType>;
+
+<filterType> = (price low | price high | brand <brandName> | color <colorName> | size <sizeType> | rating <ratingType> | available);
+
+<brandName> = (Coca-Cola | Pepsi | Tide | Kellogg's | Nestle | L'Oreal | Procter & Gamble | Samsung | Apple | Sony);
+
+<colorName> = (red | blue | green | yellow | black | white | pink | purple | gray);
+
+<sizeType> = (small | medium | large | extra large | XXL);
+
+<ratingType> = (one star | two stars | three stars | four stars | five stars);
+
+<searchCommand> = (search | find) <product>;
+
+<helpCommand> = help me with <helpType>;
+
+<helpType> = (my payment information | my order status | my account | my shipping information | my returns);
+
+<accountCommand> = (manage my account | login to my account | sign in to my account | create an account);
+
+<paymentCommand> = (manage my payment information | update my credit card information);
+
+<shippingCommand> = (manage my shipping information | track my shipment | update my shipping address);
+
+<returnCommand> = (check my return status | return an item);
+
+<promoCommand> = (apply a promotion | redeem a gift card | use a coupon code);
+
+<storeCommand> = (find a store near me | check store hours)
+
+<serviceCommand> = (get customer service support | ask for help | report an issue | provide feedback | request a refund | contact us);
