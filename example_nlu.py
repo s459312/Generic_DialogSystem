@@ -35,10 +35,10 @@ def nlu(utterance):
 
 
 
-utterance = 'dzień dobry chcę kupić mięso wołowe'
+utterance = 'Cześć dodaj ser'
 matched = book_grammar.find_matching_rules(utterance)
 matched
 
-nlu('dzień dobry chcę kupić mięso wołowe')
+nlu('Cześć dodaj ser')
 
 get_dialog_act(matched[0])

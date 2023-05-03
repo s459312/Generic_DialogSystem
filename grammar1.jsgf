@@ -1,59 +1,39 @@
 #JSGF V1.0 UTF-8 pl;
 
-grammar online_shopping;
+grammar shopping;
 
 public <command> = (dodaj | usuń | zaktualizuj | przeczytaj | kontynuuj | przejdź_do | sprawdź | zakończ);
 
-public <products> = (jajka | chleb | mleko | ser | woda | cukier | sól | mięso_wołowe | mięso_kurczak | mięso_indyk | mięso_wieprzowe | bułka_tarta | kajzerka);
+<products> = (jajka | chleb | mleko | ser | woda | cukier | sól | mięso_wołowe | mięso_kurczak | mięso_indyk | mięso_wieprzowe | bułka_tarta | kajzerka);
 
-public <all_products> = (<products>);
+<all_products> = (<products>);
 
-public <meat_types> = (mięso_wołowe | mięso_kurczak | mięso_indyk | mięso_wieprzowe);
+<meat_types> = (mięso_wołowe | mięso_kurczak | mięso_indyk | mięso_wieprzowe);
 
-public <units> = (kg | dag | g | sztuki);
+<units> = (kg | dag | g | sztuki);
 
-public <cart_command> = (dodaj | usuń | zaktualizuj | przeczytaj | kontynuuj | przejdź_do | sprawdź | pusty_koszyk);
+<cart_command> = (dodaj | usuń | zaktualizuj | przeczytaj | kontynuuj | przejdź_do | sprawdź | pusty_koszyk);
 
-public <question> = (jaka_jest_cena | kiedy_mogę_odebrać | jakie_są_dostępne_produkty | jakie_jest_cena | jaki_jest_stan_magazynowy | czy_chcę_zapłacić_online | jakie_są_opłaty | jakie_są_promocje | jakie_są_godziny_otwarcia);
+<question> = (jaka_jest_cena | kiedy_mogę_odebrać | jakie_są_dostępne_produkty | jaki_jest_stan_magazynowy | czy_chcę_zapłacić_online | jakie_są_opłaty | jakie_są_promocje | jakie_są_godziny_otwarcia);
 
-public <welcome> = (Witaj użytkowniku <number> w systemie zakupów sieci sklepów spożywczych "Galaktyczny Skład".);
+<greeting> = (Dzień dobry | Cześć | Witaj);
 
-public <greeting> = (Dzień dobry | Cześć | Witaj);
+<list> = (<products> | <meat_types> | <units>);
 
-public <all_questions> = (<question>)+;
+<all_questions> = (<question>);
 
-public <all_cart_commands> = (<cart_command>)+;
+<all_cart_commands> = (<cart_command>);
 
-public <dialog> = <welcome> <greeting> <command> (<products> | <meat_types> | <units> | koszyk | żadne | <all_cart_commands> | <all_questions>)+;
+public <dialog> = <greeting> <command> (<products> | <meat_types> | <units> | koszyk | żadne | <all_cart_commands> | <all_questions>);
 
-public <request> = (dla jakiego rodzaju sklepów działa system |
-chcę kupić |
-zamówienie |
-potrzebuję zakupów |
-jakie sklepy oferuje system);
+<request> = dla jakiego rodzaju sklepów działa system | chcę kupić | zamówienie | potrzebuję zakupów | jakie sklepy oferuje system ;
 
-public <list> = {(<products> | <meat_types> | <units>)+};
+<inform> = w naszej ofercie znajdują się produkty spożywcze | dodano <list> do koszyka | karta lojalnościowa założona pomyślnie | na numer telefonu zostanie wysłany sms z informacją gdy zakupy będą gotowe do odbioru | dziękujemy za skorzystanie ze sklepu Surykatka ;
 
-public <inform> = (w naszej ofercie znajdują się produkty spożywcze |
-dodano <list> do koszyka |
-karta lojalnościowa założona pomyślnie |
-na numer telefonu zostanie wysłany sms z informacją gdy zakupy będą gotowe do odbioru |
-dziękujemy za skorzystanie ze sklepu {<shopname>});
+<deny> = nie | nie ten | zmień | nie chcę | nie teraz | nie tak |  cofnij | usuń <productname> <brandname> z listy;
 
-public <deny> = (nie |
-nie ten |
-zmień |
-nie chcę |
-nie teraz |
-nie tak |
-cofnij |
-usuń <productname> <brandname> z listy);
+<reqalts> = ale może coś innego | czy jest jakaś inna opcja ;
 
-public <add_to_list> = (dodaj do listy zakupów <brandname>);
+<affirm> = tak | zgoda | oczywiście | dokładnie | pewnie | jasne | dobrze | właśnie tak | ok | rozumiem ;
 
-public <reqalts> = (ale może coś innego |
-czy jest jakaś inna opcja);
-
-public <affirm> = (tak |
-zgoda |
-oczywiście);
+<bye> = do widzenia | dziękuję | miłego dnia | do zobaczenia ;
