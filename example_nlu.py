@@ -1,6 +1,10 @@
 import jsgf
+from pathlib import Path
+import os
 
-book_grammar = jsgf.parse_grammar_file('grammar1.jsgf')
+__location__ = Path().resolve()
+
+book_grammar = jsgf.parse_grammar_file(os.path.join(__location__, "grammar1.jsgf"))
 book_grammar
 
 
@@ -31,10 +35,10 @@ def nlu(utterance):
 
 
 
-utterance = 'chciałbym zarezerwować stolik na jutro na godzinę dwunastą trzydzieści na pięć osób'
+utterance = 'dzień dobry chcę kupić mięso wołowe'
 matched = book_grammar.find_matching_rules(utterance)
 matched
 
-nlu('chciałbym zarezerwować stolik na jutro na godzinę dziesiątą dla trzech osób')
+nlu('dzień dobry chcę kupić mięso wołowe')
 
 get_dialog_act(matched[0])
