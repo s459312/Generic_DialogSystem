@@ -16,7 +16,7 @@ public <command> = [<greeting> {hello}] [<polite>] <commandType>{commandType} <i
 
 <bye> = (do widzenia | cześć | pa);
 
-<cartCommand> = (dodaj | usuń | edutuj | zaktualizuj | zobacz | anuluj | potwierdź);
+<cartCommand> = (dodaj | usuń | edytuj | zaktualizuj | zobacz | anuluj | potwierdź);
 
 <itemAction> = (artykuł | artykuły | składnik | składników | cena | ceny | cenę);
 
@@ -30,19 +30,19 @@ public <command> = [<greeting> {hello}] [<polite>] <commandType>{commandType} <i
 
 <beverage> = ((woda | wody) | (napoje gazowane) | sok | kawa | herbata | napoje energetyczne | napoje izotoniczne | piwo | wino);
 
-<personalCare> = (szczoteczka do zebow | pasta do zebow | nitki dentystyczne | plyny do plukania ust | mydło | szampon | odżywka | żel do kąpieli | balsam do ciała | dezodorant | maszynka do golenia | krem do golenia | podpaski | pieluchy | (perfumy | perfum) | cygaro);
+<personalCare> = (szczoteczka do zebow | pasta do zębów | nitki dentystyczne | płyny do płukania ust | mydło | szampon | odżywka | żel do kąpieli | balsam do ciała | dezodorant | maszynka do golenia | krem do golenia | podpaski | pieluchy | (perfumy | perfum) | cygaro);
 
-<cleaning> = (proszek do prania | plyny do mycia naczyn | uniwersalny srodek czyszczacy | plyny do czyszczenia szyb | srodek dezynfekujacy | wybielacz | chusteczki czyszczace | szczotka do czyszczenia | mop | miotla | szufelka);
+<cleaning> = (proszek do prania | płyny do mycia naczyn | uniwersalny środek czyszczący | płyny do czyszczenia szyb | środek dezynfekujący | wybielacz | chusteczki czyszczące | szczotka do czyszczenia | mop | miotła | szufelka);
 
-<homeGoods> = (ręczniki | pościel | zasłony | dywany | pojemniki na przechowywanie | wieszaki | worki na śmieci | baterie | zarowki | swiece | jedzenie dla zwierzat | zageszczacz kociego piasku);
+<homeGoods> = (ręczniki | pościel | zasłony | dywany | pojemniki na przechowywanie | wieszaki | worki na śmieci | baterie | żarówki | świece | jedzenie dla zwierzat | zagęszczacz kociego piasku);
 
 <electronics> = (telefon komórkowy | tablet | laptop | słuchawki | głośniki | ładowarki | baterie | karty pamięci);
 
 <filterCommand> = filtruj według <filterType>;
 
-<filterType> = (ceny rosnącą | ceny malejąco | (marka | marek) [<brandName>] | kolor <colorName> | rozmiar <sizeType> | ranking <ratingType> | dostępność | produkt | produktów);
+<filterType> = (ceny rosnąco | ceny malejąco | (marka | marek) [<brandName>] | kolor <colorName> | rozmiar <sizeType> | ranking <ratingType> | dostępność | produkt | produktów);
 
-<colorName> = (czerwony | niebieski | zielony | żółty | czartny | biały | różowy | fioletowy | szary);
+<colorName> = (czerwony | niebieski | zielony | żółty | czarny | biały | różowy | fioletowy | szary);
 
 <brandName> = (Samsung | Apple | Sony);
 
@@ -62,7 +62,7 @@ public <command> = [<greeting> {hello}] [<polite>] <commandType>{commandType} <i
 
 <accountCommand> = (ustawienia konta | zaloguj | zarejestruj się | załóż konto);
 
-<paymentCommand> = (metody płatności | edytuj karte kredytową );
+<paymentCommand> = (metody płatności | edytuj kartę kredytową );
 
 <shippingCommand> = (edytuj informacje o dostawie | śledź moje zamówienie | aktualizuj mój adres);
 
@@ -72,4 +72,4 @@ public <command> = [<greeting> {hello}] [<polite>] <commandType>{commandType} <i
 
 <storeCommand> = (znajdź sklep obok mnie | sprawdź godziny otwarcia sklepu);
 
-<serviceCommand> = (obsługa klienta | zapytać pomoc | zgłosić problem | podzielić się opinią | ządać zwrotu | skontaktować się);
+<serviceCommand> = (obsługa klienta | zapytać pomoc | zgłosić problem | podzielić się opinią | żądać zwrotu | skontaktować się);
