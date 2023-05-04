@@ -16,7 +16,7 @@ public <command> = (dodaj | usuń | zaktualizuj | przeczytaj | kontynuuj | przej
 
 <question> = (jaka_jest_cena | kiedy_mogę_odebrać | jakie_są_dostępne_produkty | jaki_jest_stan_magazynowy | czy_chcę_zapłacić_online | jakie_są_opłaty | jakie_są_promocje | jakie_są_godziny_otwarcia);
 
-<greeting> = (Dzień dobry | Cześć | Witaj);
+<greeting> = (dzień dobry | cześć | witaj);
 
 <list> = (<products> | <meat_types> | <units>);
 

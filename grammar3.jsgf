@@ -1,48 +1,60 @@
-#JSGF V1.0;
-grammar zakupyOnline;
-@charset "UTF-8";
+#JSGF V1.0 UTF-8 pl;
 
 grammar zakupyOnline;
 
-public <command> = <buyCommand> | <cartCommand> | <filterCommand> | <searchCommand> | <helpCommand> | <accountCommand> | <paymentCommand> | <shippingCommand> | <returnCommand> | <promoCommand> | <storeCommand> | <serviceCommand>;
+public <command> = [<greeting> {hello}] [<polite>] <commandType>{commandType} <item>{product} [<rest> {rest}] [<bye> {bye}];
 
-<buyCommand> = (kup | zakup) <quantity> <product>;
+<commandType> = (<buyCommand> | <cartCommand> | <filterCommand> | <questionCommand> | <searchCommand> | <helpCommand> | <accountCommand> | <paymentCommand> | <shippingCommand> | <returnCommand> | <promoCommand> | <storeCommand> | <serviceCommand> | <affOrNegCommand>);
 
-<cartCommand> = (dodaj | usuń | edutuj | zaktualizuj | zobacz | anuluj | potwierdź) <itemAction> <item> w moim koszyku;
+<buyCommand> = (kup | zakup | kupić | zamówić | zamów);
 
-<itemAction> = (artykuł | artykuły);
+<affOrNegCommand> = (nie | tak) [<polite>];
 
-<item> = <quantity> <product>;
+<polite> = (proszę | poproszę | chcę | chciałbym);
 
-<quantity> = (jeden | dwa | trzy | cztery | pięć | sześć | siedem | osiem | dziewięć | dziesięć);
+<greeting> = (dzień dobry | cześć | witaj);
 
-<product> = <grocery> | <beverage> | <personalCare> | <cleaning> | <homeGoods> | <electronics>;
+<bye> = (do widzenia | cześć | pa);
 
-<grocery> = (chleb | płatki śniadaniowe | makaron | ryż | fasola | zupa | konserwy | przekąski | ciastka | cukierki | czekolada | przyprawy);
+<cartCommand> = (dodaj | usuń | edutuj | zaktualizuj | zobacz | anuluj | potwierdź);
 
-<beverage> = (woda | napoje gazowane | sok | kawa | herbata | napoje energetyczne | napoje izotoniczne | piwo | wino);
+<itemAction> = (artykuł | artykuły | składnik | składników | cena | ceny | cenę);
 
-<personalCare> = (szczoteczka do zebow | pasta do zebow | nitki dentystyczne | plyny do plukania ust | mydlo | szampon | odzywka | zel do kapieli | balsam do ciala | dezodorant | maszynka do golenia | krem do golenia | podpaski | pieluchy);
+<item> = ([i | oraz] [<quantity>] [<itemAction>] [tych | do | na] <product>)*;
+
+<quantity> = [(jeden | dwa | trzy | cztery | pięć | sześć | siedem | osiem | dziewięć | dziesięć)] [(kilo | kilogramów | kg | deko | dag | dekagramów | l | litrów | litry | litr)];
+
+<product> = (<grocery> | <beverage> | <personalCare> | <cleaning> | <homeGoods> | <electronics> | <filterType>);
+
+<grocery> = ((chleb | chleba) | ((płatki | płatków) [śniadaniowe | śniadaniowych]) | makaron | ryż | fasola | (zupa | zupy) | konserwy | mąkę tortową | przekąski | ciastka | cukierki | czekolada | przyprawy | (mleko | mleka) | messer wat | jajka | (parówki | parówek));
+
+<beverage> = ((woda | wody) | (napoje gazowane) | sok | kawa | herbata | napoje energetyczne | napoje izotoniczne | piwo | wino);
+
+<personalCare> = (szczoteczka do zebow | pasta do zebow | nitki dentystyczne | plyny do plukania ust | mydło | szampon | odżywka | żel do kąpieli | balsam do ciała | dezodorant | maszynka do golenia | krem do golenia | podpaski | pieluchy | (perfumy | perfum) | cygaro);
 
 <cleaning> = (proszek do prania | plyny do mycia naczyn | uniwersalny srodek czyszczacy | plyny do czyszczenia szyb | srodek dezynfekujacy | wybielacz | chusteczki czyszczace | szczotka do czyszczenia | mop | miotla | szufelka);
 
-<homeGoods> = (reczniki | posciel | zaslony | dywany | pojemniki na przechowywanie | wieszaki | worki na smieci | baterie | zarowki | swiece | jedzenie dla zwierzat | zageszczacz kociego piasku);
+<homeGoods> = (ręczniki | pościel | zasłony | dywany | pojemniki na przechowywanie | wieszaki | worki na śmieci | baterie | zarowki | swiece | jedzenie dla zwierzat | zageszczacz kociego piasku);
 
 <electronics> = (telefon komórkowy | tablet | laptop | słuchawki | głośniki | ładowarki | baterie | karty pamięci);
 
 <filterCommand> = filtruj według <filterType>;
 
-<filterType> = (ceny rosnącą | ceny malejąco | marka <brandName> | kolor <colorName> | rozmiar <sizeType> | ranking <ratingType> | dostępność);
+<filterType> = (ceny rosnącą | ceny malejąco | (marka | marek) [<brandName>] | kolor <colorName> | rozmiar <sizeType> | ranking <ratingType> | dostępność | produkt | produktów);
 
-<brandName> = (Coca-Cola | Pepsi | Dr. Pepper | Tiger | Milka | L'Oreal | Procter & Gamble | Samsung | Apple | Sony);
+<colorName> = (czerwony | niebieski | zielony | żółty | czartny | biały | różowy | fioletowy | szary);
 
-<colorName> = (czerwony | niebieski | zielony | zółty | czartny | biały | różowy | fioletowy | szary);
+<brandName> = (Samsung | Apple | Sony);
 
 <sizeType> = (mały | średni | duży | bardzo duży | XXL);
 
 <ratingType> = (jedna gwiazdka | dwie gwiazdki | trzy gwiazdki | cztery gwiazdki | pięć gwiazdek);
 
-<searchCommand> = (szukaj | znajdź) <product>;
+<searchCommand> = (szukaj | szukam | znajdź);
+
+<questionCommand> = (jakie | jaki | czy | są) [(macie | mamy | masz | to | możesz | mógłbyś)] [podać | w] [(nazwa | nazwy)];
+
+<rest> = (swojej ofercie | są dostępne);
 
 <helpCommand> = (pomóż mi z | pomóż mi) <helpType>;
 

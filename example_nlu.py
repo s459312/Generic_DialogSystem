@@ -4,7 +4,7 @@ import os
 
 __location__ = Path().resolve()
 
-book_grammar = jsgf.parse_grammar_file(os.path.join(__location__, "grammar1.jsgf"))
+book_grammar = jsgf.parse_grammar_file(os.path.join(__location__, "grammar3.jsgf"))
 book_grammar
 
 
@@ -34,11 +34,11 @@ def nlu(utterance):
 
 
 
-
-utterance = 'Cześć dodaj ser'
+utterance = 'jakie napoje gazowane'.lower()
 matched = book_grammar.find_matching_rules(utterance)
-matched
 
-nlu('Cześć dodaj ser')
+print(matched)
 
-get_dialog_act(matched[0])
+nlu(utterance)
+
+print(get_dialog_act(matched[0]))
