@@ -42,6 +42,7 @@ for i in utterance:
     if i in punctuation:
         utterance = utterance.replace(i, "")
         
+        
 matched = book_grammar.find_matching_rules(utterance)
 
 print(matched)
