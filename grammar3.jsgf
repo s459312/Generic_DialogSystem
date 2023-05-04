@@ -6,29 +6,31 @@ public <command> = [<greeting> {hello}] [<polite>] [<commandType>{commandType}] 
 
 <commandType> = (<buyCommand> | <cartCommand> | <filterCommand> | <questionCommand> | <searchCommand> | <helpCommand> | <accountCommand> | <paymentCommand> | <shippingCommand> | <returnCommand> | <promoCommand> | <storeCommand> | <serviceCommand> | <affOrNegCommand>);
 
-<buyCommand> = (kup | zakup | kupić | zamówić | zamów | dodać);
+<buyCommand> = (kup | zakup | kupić | zakupić | zamówić | zamów | podać);
 
 <affOrNegCommand> = (nie | tak) [<polite>];
 
-<polite> = (proszę | poproszę | chcę | chciałbym);
+<polite> = (proszę | poproszę | chcę | chciałbym | dziękuję | dziekuje | dziękuje | dziekuję | dzięki | dzieki);
 
 <greeting> = (dzień dobry | cześć | witaj);
 
-<bye> = (do widzenia | cześć | pa | dziekuję);
+<bye> = (do widzenia | cześć | pa | dziękuję | dziekuje | dziękuje | dziekuję| dzięki | dzieki | czesc | cześc| czesć);
 
-<cartCommand> = (dodaj | usuń | edytuj | zaktualizuj | zobacz | anuluj | potwierdź);
+<cartCommand> = (dodaj | usuń | edytuj | zaktualizuj | zobacz | anuluj | potwierdź | zapłacę | zapłacić | usunąć | edytować | zaktualizować | zobaczyć | anulować | dodać | potwierdzić);
 
 <itemAction> = (artykuł | artykuły | składnik | składników | cena | ceny | cenę);
 
-<item> = ([i | oraz] [<quantity>] [<itemAction>] [tych | do] <product>)*;
+<item> = ([i | oraz] [<quantity>] [<itemAction>] [tych | do [zamówienia | koszyka] | jakiś | jakieś] [<quality>] [<quantityN>] <product>)*;
 
-<quantity> = [(jeden | dwa | trzy | cztery | pięć | sześć | siedem | osiem | dziewięć | dziesięć)] [(kilo | kilogramów | kg | deko | dag | dekagramów | l | litrów | litry | litr)];
+<quantity> = [(jeden | dwa | trzy | cztery | pięć | sześć | siedem | osiem | dziewięć | dziesięć)] [<quantityN>] [(kilka | kilo | kilogramów | kg | deko | dag | dekagramów | l | litrów | litry | litr | sztuk | pojemnik | pojemniki | opakowanie | opakowania | paczki | paczkę)];
+
+<quality> = [(dobre | smaczne | pyszne | ładne | piękne | świeże | wyśmienite | niesamowite | epickie | wspaniałe)];
 
 <product> = (<grocery> | <beverage> | <personalCare> | <cleaning> | <homeGoods> | <electronics> | <filterType>);
 
-<grocery> = ((chleb | chleba) | ((płatki | płatków) [śniadaniowe | śniadaniowych]) | makaron | ryż | fasola | (zupa | zupy) | konserwy | mąkę tortową | przekąski | ciastka | cukierki | czekolada | przyprawy | (mleko | mleka) | [na] messer wat | jajka | (parówki | parówek) | ser);
+<grocery> = (ogórki [gruntowe] | ziemniaki [myte] | warzywa | warzyw | owoce | owoców | (chleb | chleba) | ((płatki | płatków) [śniadaniowe | śniadaniowych]) | makaron | ryż | fasola | (zupa | zupy) | konserwy | mąkę tortową | przekąski | ciastka | cukierki | czekolada | przyprawy | (mleka | mleko [zagęszczone słodzone]) | [na] messer wat | jajka | (parówki | parówek) | ser);
 
-<beverage> = ((woda | wody) | (napoje gazowane) | sok | kawa | herbata | napoje energetyczne | napoje izotoniczne | piwo | wino);
+<beverage> = ((woda | wody) | (napoje gazowane) | sok | kawa | herbata | napoje energetyczne | napoje izotoniczne | piwo | wino | cola | polo cola);
 
 <personalCare> = (szczoteczka do zebow | pasta do zębów | nitki dentystyczne | płyny do płukania ust | mydło | szampon | odżywka | żel do kąpieli | balsam do ciała | dezodorant | maszynka do golenia | krem do golenia | podpaski | pieluchy | (perfumy | perfum) | cygaro);
 
@@ -52,9 +54,9 @@ public <command> = [<greeting> {hello}] [<polite>] [<commandType>{commandType}] 
 
 <searchCommand> = (szukaj | szukam | znajdź);
 
-<questionCommand> = (jakie | jaki | czy | są) [(macie | mamy | masz | to | możesz | mógłbyś)] [podać | w] [(nazwa | nazwy)];
+<questionCommand> = (jakie | jaki | czy | są) [(macie [dostępne] | mamy | masz | to | możesz | mógłbyś)] [podać | w] [(nazwa | nazwy)];
 
-<rest> = (swojej ofercie | są dostępne);
+<rest> = (swojej ofercie | są dostępne | [to] [będzie] wszystko | <NULL>);
 
 <helpCommand> = (pomóż mi z | pomóż mi) <helpType>;
 
@@ -62,14 +64,17 @@ public <command> = [<greeting> {hello}] [<polite>] [<commandType>{commandType}] 
 
 <accountCommand> = (ustawienia konta | zaloguj | zarejestruj się | załóż konto);
 
-<paymentCommand> = (metody płatności | edytuj kartę kredytową );
+<paymentCommand> = (metody płatności | edytuj kartę kredytową | przejść [do] [płatności] | przejdź [do] [płatności]);
 
 <shippingCommand> = (edytuj informacje o dostawie | śledź moje zamówienie | aktualizuj mój adres);
 
 <returnCommand> = (sprawdź stan zwrotu | zwróć artykuł);
 
-<promoCommand> = [użyj] (zniżki | karty podarunkowej | kuponu);
+<promoCommand> = [użyć | skorzystać] (zniżki | karty podarunkowej | kuponu);
 
 <storeCommand> = (znajdź sklep obok mnie | sprawdź godziny otwarcia sklepu);
 
 <serviceCommand> = (obsługa klienta | zapytać pomoc | zgłosić problem | podzielić się opinią | żądać zwrotu | skontaktować się);
+
+<quantityN> = [(1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9)*];
+

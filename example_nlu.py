@@ -35,7 +35,7 @@ def nlu(utterance):
 
 def predict(utterance):
     utterance = utterance.lower()
-    punctuation = '''!;:/?,.'''
+    punctuation = '''!;:/?,.*'''
 
     for i in utterance:
         if i in punctuation:
