@@ -41,3 +41,5 @@ if __name__ == "__main__":
             good += 1
 
     print(f'Accuracy: {good/len(rows)*100}%')
+
+en.predict('rock and stone')

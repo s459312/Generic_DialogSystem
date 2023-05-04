@@ -2,7 +2,7 @@
 
 grammar zakupyOnline;
 
-public <command> = [<greeting> {hello}] [<polite>] [<commandType>{commandType}] [<item>{product}] [<rest> {rest}] [<bye> {bye}];
+public <command> = [<greeting> {hello}] [<dwarfGreeting> {rocknstone}] [<polite>] [<commandType>{commandType}] [<item>{product}] [<rest> {rest}] [<bye> {bye}];
 
 <commandType> = (<buyCommand> | <cartCommand> | <filterCommand> | <questionCommand> | <searchCommand> | <helpCommand> | <accountCommand> | <paymentCommand> | <shippingCommand> | <returnCommand> | <promoCommand> | <storeCommand> | <serviceCommand> | <affOrNegCommand>);
 
@@ -23,6 +23,8 @@ public <command> = [<greeting> {hello}] [<polite>] [<commandType>{commandType}] 
 <polite> = (proszę | poproszę | chcę | chciałbym | chcialbym | dziękuję | dziekuje | dziękuje | dziekuję | dzięki | dzieki | super | wspaniale);
 
 <greeting> = (dzień dobry | cześć | witaj);
+
+<dwarfGreeting> = (rock and stone | rock and stone to the bone | rockity rock and stone | for karl | by the beard | yeah yeah rock and stone | if you dont rock and stone you aint coming home | stone and rock oh wait | did i hear a rock and stone);
 
 <bye> = (do widzenia | cześć | pa | dziękuję | dziekuje | dziękuje | dziekuję | dzięki | dzieki | czesc | cześc| czesć | oki | okej | do zobaczenia | (to [byłoby] wszystko) | (to będzie wszystko))*;
 
