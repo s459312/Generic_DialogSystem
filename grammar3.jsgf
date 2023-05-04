@@ -1,6 +1,4 @@
-#JSGF V1.0;
-grammar zakupyOnline;
-@charset "UTF-8";
+#JSGF V1.0 UTF-8;
 
 grammar zakupyOnline;
 
@@ -32,7 +30,7 @@ public <command> = <buyCommand> | <cartCommand> | <filterCommand> | <searchComma
 
 <filterCommand> = filtruj według <filterType>;
 
-<filterType> = (ceny rosnącą | ceny malejąco | marka <brandName> | kolor <colorName> | rozmiar <sizeType> | ranking <ratingType> | dostępność);
+<filterType> = (ceny rosnąco | ceny malejąco | dostępność | marka <brandName> | kolor <colorName> | rozmiar <sizeType> | ranking <ratingType>);
 
 <brandName> = (Coca-Cola | Pepsi | Dr. Pepper | Tiger | Milka | L'Oreal | Procter & Gamble | Samsung | Apple | Sony);
 
