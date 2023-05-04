@@ -34,7 +34,14 @@ def nlu(utterance):
 
 
 
-utterance = 'jakie napoje gazowane'.lower()
+utterance = 'jakie, napoje gazowane'.lower()
+
+punctuation = '''!;:/?,.'''
+
+for i in utterance:
+    if i in punctuation:
+        utterance = utterance.replace(i, "")
+        
 matched = book_grammar.find_matching_rules(utterance)
 
 print(matched)
