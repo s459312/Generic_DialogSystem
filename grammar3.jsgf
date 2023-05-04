@@ -28,7 +28,7 @@ public <command> = [<greeting> {hello}] [<polite>] <commandType>{commandType} <i
 
 <grocery> = ((chleb | chleba) | ((płatki | płatków) [śniadaniowe | śniadaniowych]) | makaron | ryż | fasola | (zupa | zupy) | konserwy | mąkę tortową | przekąski | ciastka | cukierki | czekolada | przyprawy | (mleko | mleka) | [na] messer wat | jajka | (parówki | parówek) | ser);
 
-<beverage> = ((woda | wody) | napoje [gazowane | gazowane | izotoniczne] | sok | kawa | herbata | piwo | wino);
+<beverage> = ((woda | wody) | napoje [gazowane | niegazowane | izotoniczne] | sok | kawa | herbata | piwo | wino);
 
 <personalCare> = (szczoteczka do zebow | pasta do zębów | nitki dentystyczne | płyny do płukania ust | mydło | szampon | odżywka | żel do kąpieli | balsam do ciała | dezodorant | maszynka do golenia | krem do golenia | podpaski | pieluchy | (perfumy | perfum) | cygaro);
 
