@@ -6,7 +6,7 @@ public <command> = [<greeting> {hello}] [<polite>] <commandType>{commandType} <i
 
 <commandType> = (<buyCommand> | <cartCommand> | <filterCommand> | <questionCommand> | <searchCommand> | <helpCommand> | <accountCommand> | <paymentCommand> | <shippingCommand> | <returnCommand> | <promoCommand> | <storeCommand> | <serviceCommand> | <affOrNegCommand>);
 
-<buyCommand> = (kup | zakup | kupić | zamówić | zamów);
+<buyCommand> = (kup | zakup | kupić | zamówić | zamów | dodaj);
 
 <affOrNegCommand> = (nie | tak) [<polite>];
 
@@ -20,15 +20,15 @@ public <command> = [<greeting> {hello}] [<polite>] <commandType>{commandType} <i
 
 <itemAction> = (artykuł | artykuły | składnik | składników | cena | ceny | cenę);
 
-<item> = ([i | oraz] [<quantity>] [<itemAction>] [tych | do | na] <product>)*;
+<item> = ([i | oraz] [<quantity>] [<itemAction>] [tych | do] <product>)*;
 
 <quantity> = [(jeden | dwa | trzy | cztery | pięć | sześć | siedem | osiem | dziewięć | dziesięć)] [(kilo | kilogramów | kg | deko | dag | dekagramów | l | litrów | litry | litr)];
 
 <product> = (<grocery> | <beverage> | <personalCare> | <cleaning> | <homeGoods> | <electronics> | <filterType>);
 
-<grocery> = ((chleb | chleba) | ((płatki | płatków) [śniadaniowe | śniadaniowych]) | makaron | ryż | fasola | (zupa | zupy) | konserwy | mąkę tortową | przekąski | ciastka | cukierki | czekolada | przyprawy | (mleko | mleka) | messer wat | jajka | (parówki | parówek));
+<grocery> = ((chleb | chleba) | ((płatki | płatków) [śniadaniowe | śniadaniowych]) | makaron | ryż | fasola | (zupa | zupy) | konserwy | mąkę tortową | przekąski | ciastka | cukierki | czekolada | przyprawy | (mleko | mleka) | [na] messer wat | jajka | (parówki | parówek) | ser);
 
-<beverage> = ((woda | wody) | (napoje gazowane) | sok | kawa | herbata | napoje energetyczne | napoje izotoniczne | piwo | wino);
+<beverage> = ((woda | wody) | napoje [gazowane | gazowane | izotoniczne] | sok | kawa | herbata | piwo | wino);
 
 <personalCare> = (szczoteczka do zebow | pasta do zębów | nitki dentystyczne | płyny do płukania ust | mydło | szampon | odżywka | żel do kąpieli | balsam do ciała | dezodorant | maszynka do golenia | krem do golenia | podpaski | pieluchy | (perfumy | perfum) | cygaro);
 

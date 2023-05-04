@@ -34,7 +34,7 @@ def nlu(utterance):
 
 
 
-utterance = 'jakie napoje gazowane'.lower()
+utterance = 'szukam składników na messer wat'.lower()
 matched = book_grammar.find_matching_rules(utterance)
 
 print(matched)
