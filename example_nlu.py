@@ -33,20 +33,21 @@ def nlu(utterance):
         return {'act': 'null', 'slots': []}
 
 
+def predict(utterance):
+    utterance = utterance.lower()
+    punctuation = '''!;:/?,.'''
 
-utterance = 'jakie, napoje gazowane'.lower()
-
-punctuation = '''!;:/?,.'''
-
-for i in utterance:
-    if i in punctuation:
-        utterance = utterance.replace(i, "")
+    for i in utterance:
+        if i in punctuation:
+            utterance = utterance.replace(i, "")
         
         
-matched = book_grammar.find_matching_rules(utterance)
+    matched = book_grammar.find_matching_rules(utterance)
+    nlu(utterance)
 
-print(matched)
+    try:
+        print(get_dialog_act(matched[0]))
+    except:
+        pass
 
-nlu(utterance)
-
-print(get_dialog_act(matched[0]))
+    return matched

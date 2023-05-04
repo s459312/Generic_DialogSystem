@@ -2,7 +2,7 @@
 
 grammar zakupyOnline;
 
-public <command> = [<greeting> {hello}] [<polite>] <commandType>{commandType} <item>{product} [<rest> {rest}] [<bye> {bye}];
+public <command> = [<greeting> {hello}] [<polite>] <commandType>{commandType} [<item>{product}] [<rest> {rest}] [<bye> {bye}];
 
 <commandType> = (<buyCommand> | <cartCommand> | <filterCommand> | <questionCommand> | <searchCommand> | <helpCommand> | <accountCommand> | <paymentCommand> | <shippingCommand> | <returnCommand> | <promoCommand> | <storeCommand> | <serviceCommand> | <affOrNegCommand>);
 
@@ -14,7 +14,7 @@ public <command> = [<greeting> {hello}] [<polite>] <commandType>{commandType} <i
 
 <greeting> = (dzień dobry | cześć | witaj);
 
-<bye> = (do widzenia | cześć | pa);
+<bye> = (do widzenia | cześć | pa | dziekuję);
 
 <cartCommand> = (dodaj | usuń | edytuj | zaktualizuj | zobacz | anuluj | potwierdź);
 
