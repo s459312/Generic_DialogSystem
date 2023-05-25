@@ -1,0 +1,35 @@
+{
+    "user_act":[
+
+    ],
+    "system_act":[
+
+    ],
+    "belief_state":{
+        "payment":{
+            "type":"",
+            "amount":"",
+            "loyalty_card":""
+        },
+        "delivery":{
+            "type":"",
+            "address":"",
+            "time":""
+        },
+        "product":{
+            "name":"",
+            "type":"",
+            "brand":"",
+            "price":"",
+            "quantity":"",
+            "quality":""
+        }
+    },
+    "request_state":{
+        
+    },
+    "terminated":false,
+    "history":[
+
+    ]
+}

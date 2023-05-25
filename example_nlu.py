@@ -4,7 +4,7 @@ import os
 
 __location__ = Path().resolve()
 
-book_grammar = jsgf.parse_grammar_file(os.path.join(__location__, "grammar1.jsgf"))
+book_grammar = jsgf.parse_grammar_file(os.path.join(__location__, "grammar3.jsgf"))
 book_grammar
 
 
@@ -33,12 +33,21 @@ def nlu(utterance):
         return {'act': 'null', 'slots': []}
 
 
+def predict(utterance):
+    utterance = utterance.lower()
+    punctuation = '''!;:/?,.*'''
 
+    for i in utterance:
+        if i in punctuation:
+            utterance = utterance.replace(i, "")
+        
+        
+    matched = book_grammar.find_matching_rules(utterance)
+    nlu(utterance)
 
-utterance = 'dzień dobry chcę kupić mięso wołowe'
-matched = book_grammar.find_matching_rules(utterance)
-matched
+    try:
+        print(get_dialog_act(matched[0]))
+    except:
+        pass
 
-nlu('dzień dobry chcę kupić mięso wołowe')
-
-get_dialog_act(matched[0])
+    return matched
