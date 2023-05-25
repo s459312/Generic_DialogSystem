@@ -1,0 +1,26 @@
+[
+    {
+        "name":"banan",
+        "type":"owoc",
+        "brand":"banpol",
+        "price":"21.37",
+        "quantity":"1 kg",
+        "quality":"premium"
+    },
+    {
+        "name":"iPhone",
+        "type":"telefon",
+        "brand":"Ejpl",
+        "price":"420",
+        "quantity":"1 szt",
+        "quality":"premium"
+    },
+    {
+        "name":"RedBull",
+        "type":"energol",
+        "brand":"RedBull",
+        "price":"0.69",
+        "quantity":"330ml",
+        "quality":"exquisite"
+    }
+]
