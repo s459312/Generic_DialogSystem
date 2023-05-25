@@ -9,6 +9,34 @@
                 "quantity":"1 kg",
                 "quality":"premium"
             },
+
+            {
+                "name":"pomarańcza",
+                "type":"owoc",
+                "brand":"pomarańpol",
+                "price":"24.37",
+                "quantity":"1 kg",
+                "quality":"premium"
+            },
+
+            {
+                "name":"pomidor",
+                "type":"warzywo",
+                "brand":"warzywpol",
+                "price":"15.37",
+                "quantity":"1 kg",
+                "quality":"premium"
+            },
+
+            {
+                "name":"papryka",
+                "type":"warzywo",
+                "brand":"warzywpol",
+                "price":"15.37",
+                "quantity":"1 kg",
+                "quality":"premium"
+            },
+
             {
                 "name":"iPhone",
                 "type":"telefon",
@@ -17,6 +45,16 @@
                 "quantity":"1 szt",
                 "quality":"premium"
             },
+
+            {
+                "name":"Galaxy s23",
+                "type":"telefon",
+                "brand":"Samsung",
+                "price":"600",
+                "quantity":"1 szt",
+                "quality":"premium"
+            },
+
             {
                 "name":"RedBull",
                 "type":"energol",
@@ -24,9 +62,48 @@
                 "price":"0.69",
                 "quantity":"330ml",
                 "quality":"exquisite"
+            },
+
+            {
+                "name":"Tiger",
+                "type":"energol",
+                "brand":"Tiger",
+                "price":"0.79",
+                "quantity":"330ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Sok pomarańczowy",
+                "type":"napój",
+                "brand":"Sokpol",
+                "price_range":"drogi",
+                "price":"4,56",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Sok jabłkowy",
+                "type":"napój",
+                "brand":"Sokpol",
+                "price_range":"drogi",
+                "price":"10,56",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+            
+            {
+                "name":"Sok multiwitamina",
+                "type":"napój",
+                "brand":"Sokpol",
+                "price_range":"tani",
+                "price":"5,78",
+                "quantity":"500ml",
+                "quality":"exquisite"
             }
+
         ]
-        
 
     }
 }
