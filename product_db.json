@@ -23,15 +23,17 @@
                 "name":"pomidor",
                 "type":"warzywo",
                 "brand":"warzywpol",
+                "price_range":"tani",
                 "price":"15.37",
                 "quantity":"1 kg",
-                "quality":"premium"
+                "quality":"exquisite"
             },
 
             {
                 "name":"papryka",
                 "type":"warzywo",
                 "brand":"warzywpol",
+                "price_range":"tani",
                 "price":"15.37",
                 "quantity":"1 kg",
                 "quality":"premium"
