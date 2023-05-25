@@ -1,19 +1,5 @@
 {
     "database":{
-        "payment":[
-            {
-                "type":"karta",
-                "amount":"21 zł",
-                "loyalty_card":"23232323"
-            }
-        ],
-        "delivery":[
-            {
-                "type":"paczkomat",
-                "address":"Aleje",
-                "time":"15:30"
-            }
-        ],
         "product":[
             {
                 "name":"banan",
