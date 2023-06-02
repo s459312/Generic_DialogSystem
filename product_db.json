@@ -6,8 +6,9 @@
                 "type":"owoc",
                 "brand":"banpol",
                 "price":"21.37",
+                "price_range": "tani",
                 "quantity":"1 kg",
-                "quality":"premium"
+                "quality":"exquisite"
             },
 
             {
@@ -15,6 +16,7 @@
                 "type":"owoc",
                 "brand":"pomarańpol",
                 "price":"24.37",
+                "price_range": "drogi",
                 "quantity":"1 kg",
                 "quality":"premium"
             },
