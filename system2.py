@@ -37,6 +37,9 @@ class DST():
                     self.state['request_state'][domain] = {}
                 if slot not in self.state['request_state'][domain]:
                     self.state['request_state'][domain][slot] = 0
+            
+            elif intent == 'hello':
+                pass
                     
         self.state['user_act'] = user_act
         return self.state
@@ -220,10 +223,11 @@ def predict(utterance):
 
     try:
         print(get_dialog_act(matched[0]))
+        get_dialog_act(matched[0])
     except:
         pass
 
-    return matched
+    return get_dialog_act(matched[0])
 
 
 
