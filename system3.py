@@ -59,7 +59,7 @@ def find_product_type(product):
 
     return None, None
 
-text = "Cześć, chciałbym kupić mleko"
+text = "Cześć, chciałbym kupić mleko, sok oraz chleb"
 acts = extract_acts_and_slots(text)
 for act in acts:
     print(f"Type: {act.act_type}")
