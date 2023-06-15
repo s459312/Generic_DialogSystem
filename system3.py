@@ -1,4 +1,5 @@
 import spacy
+import random
 
 nlp = spacy.load("pl_core_news_md")
 
@@ -22,13 +23,38 @@ class DialogManager:
 
             # Logika dialogu
             if not acts:
-                response = "Przepraszam, nie rozumiem. Czym mogę Ci pomóc?"
+                r = random.randint(1, 4)
+                if r == 1:
+                    response = "Przepraszam, nie rozumiem. W czym mogę Ci pomóc?"
+                elif r == 2:
+                    response = "Czy mógłbyś powtórzyć?"
+                elif r == 3:
+                    response = "Nie rozumiem. Mógłbyś powtórzyć?"
+                elif r == 4:
+                    response = "Nie umiem na to odpowiedzieć."
             elif "hello" in acts[0].act_type:
-                response = "Witaj! W czym mogę Ci pomóc?"
+                r = random.randint(1, 4)
+                if r == 1:
+                    response = "Witaj! W czym mogę Ci pomóc?"
+                elif r == 2:
+                    response = "Dzień dobry! W czym mogę Ci pomóc?"
+                elif r == 3:
+                    response = "Witaj! W czym mogę służyć?"
+                elif r == 4:
+                    response = "Dzień dobry! Czego potrzebujesz?"
             elif "inform" in acts[0].act_type:
                 response = self.generate_response(dialog_state)
             elif "bye" in acts[0].act_type:
-                response = "Dziękuję za rozmowę. Miłego dnia!"
+                r = random.randint(1, 4)
+                if r == 1:
+                    response = "Dziękuję za rozmowę. Miłego dnia!"
+                elif r == 2:
+                    response = "Dziękuję. Miłego dnia!"
+                elif r == 3:
+                    response = "Miłego dnia i do zobaczenia!"
+                elif r == 4:
+                    response = "Dziękuję i do zobaczenia!"
+                print("Agent:", response)
                 break
             else:
                 response = "Nie rozumiem. Czym mogę Ci pomóc?"
@@ -39,7 +65,15 @@ class DialogManager:
         # Logika generowania odpowiedzi na podstawie stanu dialogowego
         # Możesz dostosować tę logikę do swoich potrzeb
         # Przykład: generowanie odpowiedzi na podstawie aktualnego stanu dialogowego
-        response = "Rozumiem, potrzebujesz"
+        r = random.randint(1, 4)
+        if r == 1:
+            response = "Rozumiem, potrzebujesz"
+        elif r == 2:
+            response = "Znalazłem produkt"
+        elif r == 3:
+            response = "Posiadamy"
+        elif r == 4:
+            response = "Wybieram"
 
         if "product type" in dialog_state and "product" in dialog_state:
             product_type = dialog_state["product type"]
@@ -51,7 +85,15 @@ class DialogManager:
         else:
             response += " informacji o twoich potrzebach"
 
-        response += ". Jak mogę Ci jeszcze pomóc?"
+        r = random.randint(1, 4)
+        if r == 1:
+            response += ". Jak mogę Ci jeszcze pomóc?"
+        elif r == 2:
+            response += ". Co mogę jeszcze dla Ciebie zrobić?"
+        elif r == 3:
+            response += ". W czym mogę jeszcze pomóc?"
+        elif r == 4:
+            response += ". Czy potrzebujesz czegoś jeszcze?"
 
         return response
 
@@ -85,12 +127,12 @@ product_type_rules = {
     "produkty mrożone": ["lody", "frytki", "pierogi mrożone", "nuggetsy"],
     "słodycze": ["czekolada", "ciastko", "lizak", "guma do żucia"],
     "przyprawy": ["sól", "pieprz", "oregano", "cynamon"],
-    "napoje": ["woda", "sok", "herbata", "kawa"],
+    "napoje": ["woda", "sok", "herbata", "kawa", "energetyk"],
     "napoje alkoholowe": ["piwo", "wino", "wódka", "whisky"],
     "higiena": ["pasta do zębów", "mydło", "szampon", "papier toaletowy"],
     "chemia gospodarcza": ["płyn do naczyń", "proszek do prania", "odświeżacz powietrza"],
     "inne": ["długopis", "baterie", "śrubokręt", "nożyczki"],
-    "nabiał": ["mleko"]
+    "nabiał": ["mleko", "ser", "śmietana"]
 }
 
 class DialogAct:
@@ -107,9 +149,9 @@ class NLU:
         acts = []
 
         for token in doc:
-            if token.lower_ == "cześć":
+            if token.lower_ == "cześć" or token.lower_ == "witaj":
                 acts.append(DialogAct("hello"))
-            elif token.lower_ == "do widzenia":
+            elif token.lower_ == "widzenia" or token.lower_ == "żegnaj":
                 acts.append(DialogAct("bye"))
             elif token.lower_ == "dziękuję":
                 acts.append(DialogAct("thankyou"))
@@ -138,27 +180,9 @@ class NLU:
 
         return None, None
 
-text = "Cześć, chciałbym kupić mleko, płatki oraz owoce"
 nlu = NLU()
-acts = nlu.extract_acts_and_slots(text)
-for act in acts:
-    print(f"Type: {act.act_type}")
-    print(f"Slots: {act.slots}")
-    print()
-
 
 dst = DialogStateTracker()
 
-text = "Cześć, chciałbym kupić mleko, płatki oraz owoce"
-acts = nlu.extract_acts_and_slots(text)
-
-
-dst.update_state(acts)
-
-
-dialog_state = dst.get_state()
-
-print("Dialog State:")
-print(dialog_state)
 dm = DialogManager(nlu ,dst)
 dm.start_dialog()
