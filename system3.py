@@ -8,8 +8,22 @@ class DialogManager:
         self.nlu_module = nlu_module
         self.dst_module = dst_module
 
+    def promotion(self):
+        r = random.randint(1, 4)
+        if r == 1:
+            promotion = "Mamy dzisiaj w promocji ser!"
+        elif r == 2:
+            promotion = "Aktualnie w promocji mamy jabłka!"
+        elif r == 2:
+            promotion = "Mleko w super cenie! Tylko dzisiaj!"
+        elif r == 2:
+            promotion = "Chipsy na imprezę w promocji!"
+        return promotion
+
     def start_dialog(self):
         self.dst_module.update_state([])  # Zerowanie stanu dialogowego
+
+        i = 0
 
         while True:
             user_input = input("Użytkownik: ")
@@ -60,6 +74,9 @@ class DialogManager:
                 response = "Nie rozumiem. Czym mogę Ci pomóc?"
 
             print("Agent:", response)
+            i += 1
+            if i % 5 == 0:
+                print("Agent:", self.promotion())
 
     def generate_response(self, dialog_state):
         # Logika generowania odpowiedzi na podstawie stanu dialogowego
@@ -122,12 +139,12 @@ class DialogStateTracker:
 product_type_rules = {
     "pieczywo": ["chleb", "bułka", "bulka",  "bułki", "bulki", "rogaliki", "rogalika", "bagietka", "bagietkę", "bagietke", "bagietki"],
     "owoce": ["jabłko", "jablko", "banana", "gruszkę", "gruszke", "pomarańczę","pomarancze"],
-    "warzywa": ["marchewkę", "marchewke", "ziemniaki", "cebulę", "cebule", "pomidory", "pomidora"],
+    "warzywa": ["marchewkę", "marchewke", "ziemniak", "cebulę", "cebule", "pomidory", "pomidora"],
     "mięso": ["kurczaka", "wołowinę", "wolowine", "wieprzowinę", "wieprzowine", "indyka"],
     "produkty mrożone": ["lody", "frytki", "pierogi", "nuggetsy"],
-    "słodycze": ["czekoladę", "czekolade","czekolady", "ciastko", "lizaka", "gumę do żucia", "gume do zucia"],
+    "słodycze": ["czekoladę", "czekolade","czekolady", "ciastko", "lizaka", "gumę do żucia", "gume do zucia", "chipsy"],
     "przyprawy": ["sól", "sol", "pieprz", "oregano", "cynamon"],
-    "napoje": ["wodę", "wode", "sok", "herbatę", "herbate", "kawę", "kawe", "napój energetyczny", "napoj energetyczny"],
+    "napoje": ["wodę", "wode", "sok", "herbatę", "herbate", "kawę", "kawe", "energetyka"],
     "napoje alkoholowe": ["piwo", "wino", "wódkę","wodke", "whisky"],
     "higiena": ["pastę do zębów", "paste do zebow", "mydło", "mydlo", "szampon", "papier toaletowy"],
     "chemia gospodarcza": ["płyn do naczyń", "plyn do naczyn", "proszek do prania", "odświeżacz powietrza", "odswiezacz powietrza"],
@@ -166,6 +183,7 @@ class NLU:
             elif token.lower_ in ["nie", "nie chcę"]:
                 acts.append(DialogAct("deny"))
             elif token.pos_ == "NOUN":
+                print(token.lemma_)
                 product_type, product = self.find_product_type(token.lemma_)
                 if product_type and product:
                     act = DialogAct("inform", {"product type": product_type, "product": product})
