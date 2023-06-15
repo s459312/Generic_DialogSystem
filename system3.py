@@ -102,7 +102,7 @@ class NLU:
     def __init__(self):
         pass
 
-    def extract_acts_and_slots(text):
+    def extract_acts_and_slots(self, text):
         doc = nlp(text)
         acts = []
 
@@ -131,14 +131,14 @@ class NLU:
 
         return acts
 
-    def find_product_type(product):
+    def find_product_type(self, product):
         for product_type, products in product_type_rules.items():
             if product in products:
                 return product_type, product
 
         return None, None
 
-text = "Cześć, chciałbym kupić mleko, sok oraz chleb"
+text = "Cześć, chciałbym kupić mleko, płatki oraz owoce"
 nlu = NLU()
 acts = nlu.extract_acts_and_slots(text)
 for act in acts:
@@ -149,7 +149,7 @@ for act in acts:
 
 dst = DialogStateTracker()
 
-text = "Cześć, chciałbym kupić mleko, sok oraz chleb"
+text = "Cześć, chciałbym kupić mleko, płatki oraz owoce"
 acts = nlu.extract_acts_and_slots(text)
 
 
@@ -160,3 +160,5 @@ dialog_state = dst.get_state()
 
 print("Dialog State:")
 print(dialog_state)
+dm = DialogManager(nlu ,dst)
+dm.start_dialog()
