@@ -14,9 +14,9 @@ class DialogManager:
             promotion = "Mamy dzisiaj w promocji ser!"
         elif r == 2:
             promotion = "Aktualnie w promocji mamy jabłka!"
-        elif r == 2:
+        elif r == 3:
             promotion = "Mleko w super cenie! Tylko dzisiaj!"
-        elif r == 2:
+        elif r == 4:
             promotion = "Chipsy na imprezę w promocji!"
         return promotion
 
@@ -70,6 +70,20 @@ class DialogManager:
                     response = "Dziękuję i do zobaczenia!"
                 print("Agent:", response)
                 break
+            elif "thankyou" in acts[0].act_type:
+                r = random.randint(1, 4)
+                if r == 1:
+                    response = "Cieszę się, że mogę pomóc."
+                elif r == 2:
+                    response = "Nie ma za problemu."
+                elif r == 3:
+                    response = "Przyjemność po mojej stronie."
+                elif r == 4:
+                    response = "Czy mógłbym pomóc w czymś jeszcze?"
+            elif "affirm" in acts[0].act_type:
+                response = "Czy mógłbym pomóc w czymś jeszcze?"
+            elif "deny" in acts[0].act_type:
+                response = "Czy mógłbym pomóc w czymś jeszcze?"
             else:
                 response = "Nie rozumiem. Czym mogę Ci pomóc?"
 
@@ -137,19 +151,20 @@ class DialogStateTracker:
 
 
 product_type_rules = {
-    "pieczywo": ["chleb", "bułka", "bulka",  "bułki", "bulki", "rogaliki", "rogalika", "bagietka", "bagietkę", "bagietke", "bagietki"],
-    "owoce": ["jabłko", "jablko", "banana", "gruszkę", "gruszke", "pomarańczę","pomarancze"],
-    "warzywa": ["marchewkę", "marchewke", "ziemniak", "cebulę", "cebule", "pomidory", "pomidora"],
-    "mięso": ["kurczaka", "wołowinę", "wolowine", "wieprzowinę", "wieprzowine", "indyka"],
+    "pieczywo": ["chleb", "bułka", "bulka", "bulki", "rogalik", "rogalika", "bagietka", "bagietke"],
+    "owoce": ["jabłko", "jablko", "banan", "gruszka", "gruszke", "pomarańcza","pomarancze"],
+    "warzywa": ["marchewka", "ziemniak", "cebula", "cebule", "pomidor", "pomidora"],
+    "mięso": ["kurczak", "wołowina", "wolowine", "wieprzowina", "wieprzowine", "indyk"],
     "produkty mrożone": ["lody", "frytki", "pierogi", "nuggetsy"],
-    "słodycze": ["czekoladę", "czekolade","czekolady", "ciastko", "lizaka", "gumę do żucia", "gume do zucia", "chipsy"],
+    "słodycze": ["czekolada", "czekolade","czekolady", "ciastko", "lizak", "guma do żucia", "gume do zucia"],
+    "przekąski": ["talarki", "paluszki","orzeszki", "chipsy"],
     "przyprawy": ["sól", "sol", "pieprz", "oregano", "cynamon"],
-    "napoje": ["wodę", "wode", "sok", "herbatę", "herbate", "kawę", "kawe", "energetyka"],
-    "napoje alkoholowe": ["piwo", "wino", "wódkę","wodke", "whisky"],
-    "higiena": ["pastę do zębów", "paste do zebow", "mydło", "mydlo", "szampon", "papier toaletowy"],
+    "napoje": ["woda", "wode", "sok", "herbata", "herbate", "kawa", "kawe", "energetyk"],
+    "napoje alkoholowe": ["piwo", "wino", "wódka","wodke", "whisky"],
+    "higiena": ["pasta do zębów", "paste do zebow", "mydło", "mydlo", "szampon", "papier toaletowy"],
     "chemia gospodarcza": ["płyn do naczyń", "plyn do naczyn", "proszek do prania", "odświeżacz powietrza", "odswiezacz powietrza"],
-    "inne": ["długopis", "baterie", "śrubokręt", "nożyczki"],
-    "nabiał": ["mleko", "ser", "śmietanę","smietane"]
+    "inne": ["długopis", "dlugopis", "baterie", "srubokret", "śrubokręt", "nożyczki", "nozyczki"],
+    "nabiał": ["mleko", "ser", "śmietana","smietane"]
 }
 
 class DialogAct:
@@ -166,11 +181,11 @@ class NLU:
         acts = []
 
         for token in doc:
-            if token.lower_ == "cześć" or token.lower_ == "witaj":
+            if token.lower_ == "cześć" or token.lower_ == "witaj" or token.lower_ == "hej" or token.lower_ == "siema" or token.lower_ == "witam" or token.lower_ == "dzień":
                 acts.append(DialogAct("hello"))
-            elif token.lower_ == "widzenia" or token.lower_ == "żegnaj":
+            elif token.lower_ == "widzenia" or token.lower_ == "żegnaj" or token.lower_ == "zobaczenia" or token.lower_ == "wszystko":
                 acts.append(DialogAct("bye"))
-            elif token.lower_ == "dziękuję":
+            elif token.lower_ == "dziękuję" or token.lower_ == "dzięki" or token.lower_ == "podziękowania" or token.lower_ == "bóg":
                 acts.append(DialogAct("thankyou"))
             elif token.lower_ == "proszę":
                 acts.append(DialogAct("request"))
@@ -182,8 +197,7 @@ class NLU:
                 acts.append(DialogAct("affirm"))
             elif token.lower_ in ["nie", "nie chcę"]:
                 acts.append(DialogAct("deny"))
-            elif token.pos_ == "NOUN":
-                print(token.lemma_)
+            elif token.pos_ == "NOUN":  
                 product_type, product = self.find_product_type(token.lemma_)
                 if product_type and product:
                     act = DialogAct("inform", {"product type": product_type, "product": product})
