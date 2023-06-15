@@ -120,19 +120,19 @@ class DialogStateTracker:
 
 
 product_type_rules = {
-    "pieczywo": ["chleb", "bułka", "rogalik", "bagietka"],
-    "owoce": ["jabłko", "banan", "gruszka", "pomarańcza"],
-    "warzywa": ["marchew", "ziemniak", "cebula", "pomidor"],
-    "mięso": ["kurczak", "wołowina", "wieprzowina", "indyk"],
-    "produkty mrożone": ["lody", "frytki", "pierogi mrożone", "nuggetsy"],
-    "słodycze": ["czekolada", "ciastko", "lizak", "guma do żucia"],
-    "przyprawy": ["sól", "pieprz", "oregano", "cynamon"],
-    "napoje": ["woda", "sok", "herbata", "kawa", "energetyk"],
-    "napoje alkoholowe": ["piwo", "wino", "wódka", "whisky"],
-    "higiena": ["pasta do zębów", "mydło", "szampon", "papier toaletowy"],
-    "chemia gospodarcza": ["płyn do naczyń", "proszek do prania", "odświeżacz powietrza"],
+    "pieczywo": ["chleb", "bułka", "bulka",  "bułki", "bulki", "rogaliki", "rogalika", "bagietka", "bagietkę", "bagietke", "bagietki"],
+    "owoce": ["jabłko", "jablko", "banana", "gruszkę", "gruszke", "pomarańczę","pomarancze"],
+    "warzywa": ["marchewkę", "marchewke", "ziemniaki", "cebulę", "cebule", "pomidory", "pomidora"],
+    "mięso": ["kurczaka", "wołowinę", "wolowine", "wieprzowinę", "wieprzowine", "indyka"],
+    "produkty mrożone": ["lody", "frytki", "pierogi", "nuggetsy"],
+    "słodycze": ["czekoladę", "czekolade","czekolady", "ciastko", "lizaka", "gumę do żucia", "gume do zucia"],
+    "przyprawy": ["sól", "sol", "pieprz", "oregano", "cynamon"],
+    "napoje": ["wodę", "wode", "sok", "herbatę", "herbate", "kawę", "kawe", "napój energetyczny", "napoj energetyczny"],
+    "napoje alkoholowe": ["piwo", "wino", "wódkę","wodke", "whisky"],
+    "higiena": ["pastę do zębów", "paste do zebow", "mydło", "mydlo", "szampon", "papier toaletowy"],
+    "chemia gospodarcza": ["płyn do naczyń", "plyn do naczyn", "proszek do prania", "odświeżacz powietrza", "odswiezacz powietrza"],
     "inne": ["długopis", "baterie", "śrubokręt", "nożyczki"],
-    "nabiał": ["mleko", "ser", "śmietana"]
+    "nabiał": ["mleko", "ser", "śmietanę","smietane"]
 }
 
 class DialogAct:
