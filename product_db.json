@@ -5,7 +5,7 @@
                 "name":"banan",
                 "type":"owoc",
                 "brand":"banpol",
-                "price":"21.37",
+                "price":"9.37",
                 "price_range": "tani",
                 "quantity":"1 kg",
                 "quality":"exquisite"
@@ -22,6 +22,16 @@
             },
 
             {
+                "name":"avokado",
+                "type":"owoc",
+                "brand":"avokadpol",
+                "price":"21.37",
+                "price_range": "drogi",
+                "quantity":"1szt",
+                "quality":"premium"
+            },
+
+            {
                 "name":"pomidor",
                 "type":"warzywo",
                 "brand":"warzywpol",
@@ -32,11 +42,61 @@
             },
 
             {
+                "name":"cukinia",
+                "type":"warzywo",
+                "brand":"warzywpol",
+                "price_range":"tani",
+                "price":"8.37",
+                "quantity":"1 kg",
+                "quality":"exquisite"
+            },
+            
+            {
+                "name":"ogórek",
+                "type":"warzywo",
+                "brand":"warzywpol",
+                "price_range":"tani",
+                "price":"11.37",
+                "quantity":"1 kg",
+                "quality":"exquisite"
+            },
+            
+            {
                 "name":"papryka",
                 "type":"warzywo",
                 "brand":"warzywpol",
                 "price_range":"tani",
                 "price":"15.37",
+                "quantity":"1 kg",
+                "quality":"premium"
+            },
+
+            {
+                "name":"ziemniak",
+                "type":"warzywo",
+                "brand":"warzywpol",
+                "price_range":"tani",
+                "price":"15.37",
+                "quantity":"1 kg",
+                "quality":"premium"
+            },
+
+            {
+                "name":"cebula",
+                "type":"warzywo",
+                "brand":"warzywpol",
+                "price_range":"tani",
+                "price":"2.37",
+                "quantity":"1 kg",
+                "quality":"premium"
+            },
+
+            {
+                "name":"lód",
+                "type":"produkty mrożone",
+                "brand":"lodowa",
+                "price_range":"tani",
+                "price":"2.37",
                 "quantity":"1 kg",
                 "quality":"premium"
             },
@@ -105,7 +165,684 @@
                 "price":"5,78",
                 "quantity":"500ml",
                 "quality":"exquisite"
+            },
+
+            {
+                "name":"napój aloesowy",
+                "type":"napój",
+                "brand":"Sokpol",
+                "price_range":"tani",
+                "price":"8,78",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+
+            {
+                "name":"cziperki zielona cebulka",
+                "type":"przekąski",
+                "brand":"lays",
+                "price_range":"drogi",
+                "price":"8,78",
+                "quantity":"300g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"chipsy",
+                "type":"przekąski",
+                "brand":"lays",
+                "price_range":"drogi",
+                "price":"8,78",
+                "quantity":"300g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"cziperki papryka",
+                "type":"przekąski",
+                "brand":"lays",
+                "price_range":"drogi",
+                "price":"8,78",
+                "quantity":"300g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"6-down",
+                "type":"napój gazowany",
+                "brand":"nappol",
+                "price_range":"tani",
+                "price":"7,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Bourbon Gallactines",
+                "type":"alkohol",
+                "brand":"Planeta alkoholi",
+                "price_range":"drogi",
+                "price":"75,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"piwo",
+                "type":"alkohol",
+                "brand":"Planeta alkoholi",
+                "price_range":"drogi",
+                "price":"5,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Kvazarr 9% (wino z planety Gargantelian) ",
+                "type":"wino białe",
+                "brand":"Planeta alkoholi",
+                "price_range":"drogi",
+                "price":"12,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Yqromi 11% (wino z planety C'kalger)",
+                "type":"wino białe",
+                "brand":"Planeta alkoholi",
+                "price_range":"drogi",
+                "price":"14,59",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Orzeł_13 13% (wino od Gwiezdnej Floty)",
+                "type":"wino białe",
+                "brand":"Planeta alkoholi",
+                "price_range":"drogi",
+                "price":"25,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+
+            {
+                "name":"Kosmiczny baron 15% (wino regionalne)",
+                "type":"wino czerwone",
+                "brand":"Planeta alkoholi",
+                "price_range":"drogi",
+                "price":"18,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Czarna dziura 18% (wino regionalne)",
+                "type":"wino czerwone",
+                "brand":"Planeta alkoholi",
+                "price_range":"drogi",
+                "price":"35,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Ciekły Bismor 19% (wino z planety Hoxxes IV)",
+                "type":"wino czerwone",
+                "brand":"Planeta alkoholi",
+                "price_range":"drogi",
+                "price":"69,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"cola",
+                "type":"napój gazowany",
+                "brand":"nappol",
+                "price_range":"tani",
+                "price":"4,99",
+                "quantity":"330ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"cola light",
+                "type":"napój gazowany",
+                "brand":"nappol",
+                "price_range":"tani",
+                "price":"4,99",
+                "quantity":"330ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"cola",
+                "type":"napój gazowany",
+                "brand":"nappol",
+                "price_range":"tani",
+                "price":"9,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"cola light",
+                "type":"napój gazowany",
+                "brand":"nappol",
+                "price_range":"tani",
+                "price":"9,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"słoneczny wiatrak",
+                "type":"napój gazowany",
+                "brand":"nappol",
+                "price_range":"tani",
+                "price":"5,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"masło",
+                "type":"nabiał",
+                "brand":"nabiałpol",
+                "price_range":"drogi",
+                "price":"8,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"ser żółty gołda",
+                "type":"nabiał",
+                "brand":"nabiałpol",
+                "price_range":"drogi",
+                "price":"8,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"ser feta",
+                "type":"nabiał",
+                "brand":"nabiałpol",
+                "price_range":"drogi",
+                "price":"8,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"ser pleśniowy",
+                "type":"nabiał",
+                "brand":"nabiałpol",
+                "price_range":"drogi",
+                "price":"10,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"mleko",
+                "type":"nabiał",
+                "brand":"nabiałpol",
+                "price_range":"drogi",
+                "price":"4,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"jogurt",
+                "type":"nabiał",
+                "brand":"nabiałpol",
+                "price_range":"tani",
+                "price":"3,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"mleko zagęszczone",
+                "type":"nabiał",
+                "brand":"nabiałpol",
+                "price_range":"drogi",
+                "price":"4,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"jaja",
+                "type":"nabiał",
+                "brand":"nabiałpol",
+                "price_range":"drogi",
+                "price":"8,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+
+            {
+                "name":"mleko migdałowe",
+                "type":"napoje roślinne",
+                "brand":"nabiałpol",
+                "price_range":"drogi",
+                "price":"9,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Cyberwizor Pandemonic",
+                "type":"RTV",
+                "brand":"Cyberwizor RTV",
+                "price_range":"drogi",
+                "price":"2222,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Cyberwizor Pandemonic",
+                "type":"RTV",
+                "brand":"Cyberwizor RTV",
+                "price_range":"drogi",
+                "price":"2222,99",
+                "quantity":"500ml",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"pizza Gallarita",
+                "type":"pizza",
+                "brand":"Galaktyczna Flota",
+                "price_range":"tani",
+                "price":"8,78",
+                "quantity":"360g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"pizza Kosmita",
+                "type":"pizza",
+                "brand":"Galaktyczna Flota",
+                "price_range":"tani",
+                "price":"8,78",
+                "quantity":"360g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"pizza Meteoryt",
+                "type":"pizza",
+                "brand":"Galaktyczna Flota",
+                "price_range":"tani",
+                "price":"8,78",
+                "quantity":"360g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"pizza Hawajska Dla Wszystkich",
+                "type":"pizza",
+                "brand":"Galaktyczna Flota",
+                "price_range":"tani",
+                "price":"8,78",
+                "quantity":"360g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"karma dla papug",
+                "type":"karma",
+                "brand":"Galaktyczna Flota",
+                "price_range":"tani",
+                "price":"8,78",
+                "quantity":"360g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"karma dla kota",
+                "type":"karma",
+                "brand":"Galaktyczna Flota",
+                "price_range":"tani",
+                "price":"12,78",
+                "quantity":"360g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"mięso mielone",
+                "type":"mięso",
+                "brand":"miespol",
+                "price_range":"tani",
+                "price":"10,78",
+                "quantity":"400g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"mięso wołowe",
+                "type":"mięso",
+                "brand":"miespol",
+                "price_range":"tani",
+                "price":"12,78",
+                "quantity":"400g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"parówki",
+                "type":"mięso",
+                "brand":"miespol",
+                "price_range":"tani",
+                "price":"6,78",
+                "quantity":"400g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"kiełbasa",
+                "type":"mięso",
+                "brand":"miespol",
+                "price_range":"tani",
+                "price":"9,78",
+                "quantity":"400g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"szynka",
+                "type":"mięso",
+                "brand":"miespol",
+                "price_range":"tani",
+                "price":"7,78",
+                "quantity":"400g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"mięso z kurczaka",
+                "type":"mięso",
+                "brand":"miespol",
+                "price_range":"tani",
+                "price":"6,78",
+                "quantity":"400g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"mięso z indyka",
+                "type":"mięso",
+                "brand":"miespol",
+                "price_range":"tani",
+                "price":"12,78",
+                "quantity":"400g",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"bułka tarta",
+                "type":"mąki",
+                "brand":"chlebpol",
+                "price_range":"tani",
+                "price":"2,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"płatki owsiane",
+                "type":"płatki",
+                "brand":"chlebpol",
+                "price_range":"tani",
+                "price":"4,78",
+                "quantity":"1kg",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"płatki śniadaniowe",
+                "type":"płatki",
+                "brand":"chlebpol",
+                "price_range":"tani",
+                "price":"6,78",
+                "quantity":"1kg",
+                "quality":"exquisite"
+            },
+
+
+            {
+                "name":"mąka tortowa",
+                "type":"mąki",
+                "brand":"chlebpol",
+                "price_range":"tani",
+                "price":"2,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"bułka kajzerka",
+                "type":"pieczywo",
+                "brand":"chlebpol",
+                "price_range":"tani",
+                "price":"0,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"chleb",
+                "type":"pieczywo",
+                "brand":"chlebpol",
+                "price_range":"tani",
+                "price":"3,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+
+            {
+                "name":"bagietka",
+                "type":"pieczywo",
+                "brand":"chlebpol",
+                "price_range":"tani",
+                "price":"2,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"makaron",
+                "type":"produkty pszenne",
+                "brand":"chlebpol",
+                "price_range":"tani",
+                "price":"5,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"garam masala",
+                "type":"przyprawy",
+                "brand":"przyprawpol",
+                "price_range":"tani",
+                "price":"3,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"sos sojowy",
+                "type":"przyprawy",
+                "brand":"przyprawpol",
+                "price_range":"tani",
+                "price":"11,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"sos rybny",
+                "type":"przyprawy",
+                "brand":"przyprawpol",
+                "price_range":"tani",
+                "price":"11,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"sriracha",
+                "type":"przyprawy",
+                "brand":"przyprawpol",
+                "price_range":"tani",
+                "price":"7,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"ocet ryżowy",
+                "type":"przyprawy",
+                "brand":"przyprawpol",
+                "price_range":"tani",
+                "price":"7,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"berbere",
+                "type":"przyprawy",
+                "brand":"przyprawpol",
+                "price_range":"tani",
+                "price":"35,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"gałka muszkatołowa",
+                "type":"przyprawy",
+                "brand":"przyprawpol",
+                "price_range":"tani",
+                "price":"5,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"zioła zamiast soli",
+                "type":"przyprawy",
+                "brand":"przyprawpol",
+                "price_range":"tani",
+                "price":"11,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+
+            {
+                "name":"bazylia",
+                "type":"przyprawy",
+                "brand":"przyprawpol",
+                "price_range":"tani",
+                "price":"4,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"pasta z tamaryndowca",
+                "type":"pasty",
+                "brand":"pastpol",
+                "price_range":"tani",
+                "price":"9,78",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Vitolio",
+                "type":"perfumy",
+                "brand":"Vitolio",
+                "price_range":"tani",
+                "price":"23,99",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Jaushiu",
+                "type":"perfumy",
+                "brand":"Jaushiu",
+                "price_range":"tani",
+                "price":"53,99",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Polini",
+                "type":"perfumy",
+                "brand":"Polini",
+                "price_range":"tani",
+                "price":"73,99",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"Marcini",
+                "type":"perfumy",
+                "brand":"Marcini",
+                "price_range":"tani",
+                "price":"33,99",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"cygaro",
+                "type":"tytoń",
+                "brand":"papyrochy",
+                "price_range":"tani",
+                "price":"33,99",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"czekolada",
+                "type":"słodycze",
+                "brand":"słodyczpol",
+                "price_range":"tani",
+                "price":"5,99",
+                "quantity":"1szt",
+                "quality":"exquisite"
+            },
+
+            {
+                "name":"żelki",
+                "type":"słodycze",
+                "brand":"słodyczpol",
+                "price_range":"tani",
+                "price":"6,99",
+                "quantity":"1szt",
+                "quality":"exquisite"
             }
+
 
         ]
 
