@@ -84,6 +84,9 @@ class DialogManager:
                 response = "Czy mógłbym pomóc w czymś jeszcze?"
             elif "deny" in acts[0].act_type:
                 response = "Czy mógłbym pomóc w czymś jeszcze?"
+            elif "request" in acts[0].act_type:
+                r = random.randint(1, 10)
+                response = f"Cena produktu wynosi {r}.99zł."
             else:
                 response = "Nie rozumiem. Czym mogę Ci pomóc?"
 
@@ -187,7 +190,7 @@ class NLU:
                 acts.append(DialogAct("bye"))
             elif token.lower_ == "dziękuję" or token.lower_ == "dzięki" or token.lower_ == "podziękowania" or token.lower_ == "bóg":
                 acts.append(DialogAct("thankyou"))
-            elif token.lower_ == "proszę":
+            elif token.lower_ == "proszę" or token.lower_ == "ile" or token.lower_ == "cena":
                 acts.append(DialogAct("request"))
             elif token.lower_ == "powtórz":
                 acts.append(DialogAct("repeat"))
